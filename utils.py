@@ -59,3 +59,6 @@ def get_war_data(start_year, end_year):
     clean_long_conflicts()
     indicator_data = to_indicator()
     return indicator_data
+
+def get_loc_id(name):
+    raise Exception("Stephanie get ur ass on this")
