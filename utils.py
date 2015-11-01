@@ -62,3 +62,6 @@ def get_war_data(start_year, end_year):
 
 def get_loc_id(name):
     raise Exception("Stephanie get ur ass on this")
+
+def get_id_names(id):
+    raise Exception("This is just a reverse mapping of get_loc_id; returns a list of names that match the id")
