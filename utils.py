@@ -64,4 +64,71 @@ def get_loc_id(name):
     raise Exception("Stephanie get ur ass on this")
 
 def get_id_names(id):
-    raise Exception("This is just a reverse mapping of get_loc_id; returns a list of names that match the id")
+    return ["Afghanistan"]
+    #raise Exception("This is just a reverse mapping of get_loc_id; returns a list of names that match the id")
+
+def linear_extrapolate(known_values,min_year,max_year):
+    new_values = dict()
+    for year in known_values:
+        new_values[year] = known_values[year]
+    while len(new_values) != max_year - min_year:
+        add_vals = {}
+        for year in new_values:
+            if year+1 not in new_values and year+1 <= max_year:
+                if year-1 in new_values:
+                    add_vals[year+1] = new_values[year]*2 - new_values[year-1]
+                else:
+                    add_vals[year+1] = new_values[year]
+            if year-1 not in new_values and year-1 >= min_year:
+                if year+1 in new_values:
+                    add_vals[year-1] = new_values[year]*2 - new_values[year+1]
+                else:
+                    add_vals[year-1] = new_values[year]
+        for key in add_vals:
+            new_values[key] = add_vals[key]
+    return new_values
+
+class Dataset():
+    #requirements is a dict with column:value
+    def __init__(self,name,min_year,max_year,path,name_col,year_col,data_col,relevant_features,row_requirements=None):
+        with open(path, 'rb') as csvfile:
+            data_reader = csv.reader(csvfile)
+            values = dict()
+            for row in data_reader:
+                if len(row)<max(name_col,data_col,year_col)+1: continue
+                if row[name_col] not in get_id_names(id): continue
+                meets_reqs = True
+                if row_requirements is not None:
+                    for req in row_requirements:
+                        if row[req] != row_requirements[req]:
+                            meets_reqs = False
+                            break
+                if not meets_reqs: continue
+                values[int(row[year_col])] = float(row[data_col])
+
+            self.name = name
+            self.values = linear_extrapolate(values,min_year,max_year)
+            self.min_year = min_year
+            self.max_year = max_year
+            self.relevant_features = relevant_features
+
+    def feature_prevyears(self,id,year,years_back,features):
+        if year <= self.min_year or year > self.max_year+1:
+            return
+        for prevyear in range(year-years_back,year):
+            features[self.name+"_"+str(prevyear)] = self.values[prevyear]
+
+    def add_features(self,id,year,years_back,features):
+        for relevant_feature in self.relevant_features:
+            relevant_feature(self,id,year,years_back,features)
+
+
+def extract_features(id,year,years_back,datasets):
+    features = {}
+    for dataset in datasets:
+        dataset.add_features(id,year,years_back,features)
+    return features
+
+unemployment_dataset = Dataset("unemployment",1989,2015,"datasets/unemployment.csv",0,1,7,[Dataset.feature_prevyears],{2:"Total men and women"})
+gdpgrowth_dataset = Dataset("gdpgrowth",1989,2015,"datasets/gdpgrowth.csv",0,1,2,[Dataset.feature_prevyears])
+print extract_features(2,2010,5,[unemployment_dataset,gdpgrowth_dataset])
