@@ -60,12 +60,12 @@ def get_war_data(start_year, end_year):
     indicator_data = to_indicator()
     return indicator_data
 
+#returns the id of a given name, or -1 if not found.
 def get_loc_id(name):
     raise Exception("Stephanie get ur ass on this")
 
 def get_id_names(id):
-    return ["Afghanistan"]
-    #raise Exception("This is just a reverse mapping of get_loc_id; returns a list of names that match the id")
+    raise Exception("This is just a reverse mapping of get_loc_id; returns a list of names that match the id")
 
 def linear_extrapolate(known_values,min_year,max_year):
     new_values = dict()
@@ -96,7 +96,9 @@ class Dataset():
             values = dict()
             for row in data_reader:
                 if len(row)<max(name_col,data_col,year_col)+1: continue
-                if row[name_col] not in get_id_names(id): continue
+                id = get_loc_id(row[name_col])
+                if id is -1: continue
+                if id not in values: values[id] = {}
                 meets_reqs = True
                 if row_requirements is not None:
                     for req in row_requirements:
@@ -104,21 +106,42 @@ class Dataset():
                             meets_reqs = False
                             break
                 if not meets_reqs: continue
-                values[int(row[year_col])] = float(row[data_col])
+                try:
+                    values[id][int(row[year_col])] = float(row[data_col])
+                except:
+                    continue
 
             self.name = name
-            self.values = linear_extrapolate(values,min_year,max_year)
+            self.values = {}
+            for id in values:
+                self.values[id] = linear_extrapolate(values[id],min_year,max_year)
             self.min_year = min_year
             self.max_year = max_year
             self.relevant_features = relevant_features
 
     def feature_prevyears(self,id,year,years_back,features):
-        if year <= self.min_year or year > self.max_year+1:
+        for prevyear in range(year-years_back,year):
+            features[self.name+"_"+str(year-prevyear)] = self.values[id][prevyear]
+
+    def feature_linearchange(self,id,year,years_back,features):
+        if years_back < 2:
+            print "feature_linearchange failed; need at least 2 years back."
             return
         for prevyear in range(year-years_back,year):
-            features[self.name+"_"+str(prevyear)] = self.values[prevyear]
+            features[self.name+"_linchange_"+str(year-prevyear)] = 1 if self.values[id][prevyear] < self.values[id][year-1] else -1
+
+    def feature_average(self,id,year,years_back,features):
+        features[self.name+"_avg"] = sum(self.values[id][prevyear] for prevyear in range(year-years_back,year))/years_back
 
     def add_features(self,id,year,years_back,features):
+        if years_back<1:
+            print "Years back must be at least one."
+            return
+        if year-years_back < self.min_year or year > self.max_year+1:
+            print "Dataset "+self.name+"failed; year supplied was out of range."
+            return
+        if id not in self.values:
+            print "Id "+str(id)+"not found in dataset "+self.name
         for relevant_feature in self.relevant_features:
             relevant_feature(self,id,year,years_back,features)
 
@@ -130,5 +153,5 @@ def extract_features(id,year,years_back,datasets):
     return features
 
 unemployment_dataset = Dataset("unemployment",1989,2015,"datasets/unemployment.csv",0,1,7,[Dataset.feature_prevyears],{2:"Total men and women"})
-gdpgrowth_dataset = Dataset("gdpgrowth",1989,2015,"datasets/gdpgrowth.csv",0,1,2,[Dataset.feature_prevyears])
-print extract_features(2,2010,5,[unemployment_dataset,gdpgrowth_dataset])
+gdpgrowth_dataset = Dataset("gdpgrowth",1989,2015,"datasets/gdpgrowth.csv",0,1,2,[Dataset.feature_prevyears,Dataset.feature_linearchange,Dataset.feature_average])
+print extract_features(2,2010,5,[gdpgrowth_dataset])
