@@ -90,10 +90,11 @@ def linear_extrapolate(known_values,min_year,max_year):
 
 class Dataset():
     #requirements is a dict with column:value
+    #a value of -1 for year_col indicates that there is no year (like for Gini)
     def __init__(self,name,min_year,max_year,path,name_col,year_col,data_col,relevant_features,row_requirements=None):
+        values = dict()
         with open(path, 'rb') as csvfile:
             data_reader = csv.reader(csvfile)
-            values = dict()
             for row in data_reader:
                 if len(row)<max(name_col,data_col,year_col)+1: continue
                 id = get_loc_id(row[name_col])
@@ -107,17 +108,20 @@ class Dataset():
                             break
                 if not meets_reqs: continue
                 try:
-                    values[id][int(row[year_col])] = float(row[data_col])
+                    if year_col >= 0:
+                        values[id][int(row[year_col])] = float(row[data_col])
+                    else:
+                        values[id][min_year] = float(row[data_col])
                 except:
                     continue
 
-            self.name = name
-            self.values = {}
-            for id in values:
-                self.values[id] = linear_extrapolate(values[id],min_year,max_year)
-            self.min_year = min_year
-            self.max_year = max_year
-            self.relevant_features = relevant_features
+        self.name = name
+        self.values = {}
+        for id in values:
+            self.values[id] = linear_extrapolate(values[id],min_year,max_year)
+        self.min_year = min_year
+        self.max_year = max_year
+        self.relevant_features = relevant_features
 
     def feature_prevyears(self,id,year,years_back,features):
         for prevyear in range(year-years_back,year):
@@ -152,6 +156,7 @@ def extract_features(id,year,years_back,datasets):
         dataset.add_features(id,year,years_back,features)
     return features
 
-unemployment_dataset = Dataset("unemployment",1989,2015,"datasets/unemployment.csv",0,1,7,[Dataset.feature_prevyears],{2:"Total men and women"})
+unemployment_dataset = Dataset("unemployment",1989,2015,"datasets/unemployment.csv",0,1,7,[Dataset.feature_prevyears],row_requirements={2:"Total men and women"})
 gdpgrowth_dataset = Dataset("gdpgrowth",1989,2015,"datasets/gdpgrowth.csv",0,1,2,[Dataset.feature_prevyears,Dataset.feature_linearchange,Dataset.feature_average])
-print extract_features(2,2010,5,[gdpgrowth_dataset])
+gini_dataset = Dataset("gini",1989,2015,"datasets/inequality.csv",1,-1,28,[Dataset.feature_average])
+print extract_features(2,2010,5,[gdpgrowth_dataset,gini_dataset])
