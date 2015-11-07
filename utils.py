@@ -69,6 +69,9 @@ def get_loc_id(name):
     if name in rev:
         return rev[name]
     else:
+        for c in rev:
+            if name in c or c in name:
+                return rev[c]
         return -1
 
 def get_id_names(id):
@@ -193,3 +196,7 @@ def extract_features(id,year,years_back,datasets):
     for dataset in datasets:
         dataset.add_features(id,year,years_back,features)
     return features
+
+# unemployment_dataset = Dataset("unemployment",1989,2015,"datasets/unemployment.csv",0,1,7,[Dataset.feature_prevyears],{2:"Total men and women"})
+#gdpgrowth_dataset = Dataset("gdpgrowth",1989,2015,"datasets/gdpgrowth.csv",0,1,2,[Dataset.feature_prevyears,Dataset.feature_linearchange,Dataset.feature_average])
+#print extract_features(516,2010,5,[gdpgrowth_dataset])

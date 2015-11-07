@@ -57,7 +57,13 @@ def get_gwnums():
     return codes
 
 
-
+def read_undata(filename):
+    reader = get_reader(filename)
+    countries = set([])
+    for row in reader:
+        row = [dat.split(', ') if not is_number(dat) else dat for dat in row]
+        countries.update([', '.join(row[0])])
+    return countries
 
 
 
