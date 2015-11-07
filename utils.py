@@ -1,4 +1,5 @@
 import csv
+from data_util import *
 
 def get_war_data(start_year, end_year):
     countries = {}
@@ -53,25 +54,34 @@ def get_war_data(start_year, end_year):
                     country_history[country][year] = -1
         return country_history
 
-    get_locations_csv('statenames.csv',32)
-    get_data_csv('nostate.csv',0,20,15)
-    get_data_csv('state.csv',0,24,1,12)
+    get_locations_csv('datasets/upcd_statenames.csv',32)
+    get_data_csv('datasets/upcd_nostate.csv',0,20,15)
+    get_data_csv('datasets/upcd_state.csv',0,24,1,12)
     clean_long_conflicts()
     indicator_data = to_indicator()
     return indicator_data
 
 #returns the id of a given name, or -1 if not found.
+codes = get_gwnums()
+rev = reverse(codes)
+
 def get_loc_id(name):
-    raise Exception("Stephanie get ur ass on this")
+    if name in rev:
+        return rev[name]
+    else:
+        return -1
 
 def get_id_names(id):
-    raise Exception("This is just a reverse mapping of get_loc_id; returns a list of names that match the id")
+    if id in codes:
+        return codes[id]
+    else:
+        return -1
 
 def linear_extrapolate(known_values,min_year,max_year):
     new_values = dict()
     for year in known_values:
         new_values[year] = known_values[year]
-    while len(new_values) != max_year - min_year:
+    while len(new_values) < max_year - min_year:
         add_vals = {}
         for year in new_values:
             if year+1 not in new_values and year+1 <= max_year:
@@ -154,4 +164,4 @@ def extract_features(id,year,years_back,datasets):
 
 unemployment_dataset = Dataset("unemployment",1989,2015,"datasets/unemployment.csv",0,1,7,[Dataset.feature_prevyears],{2:"Total men and women"})
 gdpgrowth_dataset = Dataset("gdpgrowth",1989,2015,"datasets/gdpgrowth.csv",0,1,2,[Dataset.feature_prevyears,Dataset.feature_linearchange,Dataset.feature_average])
-print extract_features(2,2010,5,[gdpgrowth_dataset])
+print extract_features(516,2010,5,[gdpgrowth_dataset])
