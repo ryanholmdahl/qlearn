@@ -1,7 +1,7 @@
 from data_util import *
 
 
-acts, locs = read_actors_locations('datasets/upcd_statenames.csv')
+acts, locs = read_actors_locations('../datasets/upcd_statenames.csv')
 # print acts
 # print locs
 rev =  reverse(locs)
@@ -10,7 +10,7 @@ codes = get_gwnums()
 # print codes
 codes_inv = reverse(codes)
 
-countries = read_undata('datasets/gdpgrowth.csv')
+countries = read_undata('../datasets/gdpgrowth.csv')
 notincluded = []
 for c in countries:
     if c not in codes_inv:

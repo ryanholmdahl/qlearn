@@ -49,7 +49,7 @@ def reverse(dict):
 
 
 def get_gwnums():
-    f = open('datasets/gw_states.dat', 'r')
+    f = open('../datasets/gw_states.dat', 'r')
     codes = {}
     for line in f:
         line = line.split('\t')

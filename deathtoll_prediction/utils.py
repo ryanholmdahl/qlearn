@@ -1,78 +1,74 @@
 import csv
 from data_util import *
 
-def get_war_data(start_year, end_year):
-    countries = {}
-    def get_locations_csv(path, loc_col):
+def get_war_data():
+    conflicts = {}
+
+    def get_data_csv(path, conflict_id_col, loc_id_col, year_col, death_col, requirements=None):
         with open(path, 'rb') as csvfile:
             data_reader = csv.reader(csvfile)
             for row in data_reader:
-                if len(row) < loc_col+1: continue
-                if not row[loc_col].replace(',','').isdigit(): continue
-                tokens = row[loc_col].split(',')
-                for token in tokens:
-                    token_int = int(token.strip())
-                    if token_int not in countries:
-                        countries[token_int] = {}
+                if requirements is None: requirements = {}
+                if len(row) < max(conflict_id_col,loc_id_col,year_col,death_col,max(requirements))+1: continue
 
-    def get_data_csv(path, dyad_id_col, id_col, year_col, check_col=-1):
-        with open(path, 'rb') as csvfile:
-            data_reader = csv.reader(csvfile)
-            for row in data_reader:
-                if len(row) < max(dyad_id_col,id_col,year_col,check_col)+1: continue
-                if not row[id_col].replace(',','').isdigit(): continue
-                tokens = row[id_col].split(',')
-                for token in tokens:
-                    token_int = int(token.strip())
-                    if token_int not in countries:
-                        countries[token_int] = {}
-                    if check_col==-1 or row[check_col] == '3':
-                        year_int = int(row[year_col])
-                        if year_int > end_year or year_int < start_year: continue
-                        if year_int in countries[token_int]: continue
-                        #if year_int-1 in countries[token_int] and countries[token_int][year_int-1] == row[dyad_id_col]: continue
-                        countries[token_int][year_int] = row[dyad_id_col]
+                if not row[conflict_id_col].replace(',','').isdigit(): continue
+                if not row[loc_id_col].replace(',','').isdigit(): continue
+                if not row[year_col].replace(',','').isdigit(): continue
+                if not row[death_col].replace(',','').isdigit(): continue
 
-    def clean_long_conflicts():
-        for country in countries:
-            if len(countries[country]) == 0: continue
-            latest_year = max(countries[country].keys())
-            earliest_year = min(countries[country].keys())
-            for i in range(latest_year,earliest_year,-1):
-                if i not in countries[country]: continue
-                if i-1 in countries[country] and countries[country][i-1] == countries[country][i]:
-                    del countries[country][i]
+                passes_reqs = True
+                for req_col in requirements:
+                    satisfy = False
+                    for possibility in requirements[req_col]:
+                        if row[req_col]==possibility:
+                            satisfy = True
+                            break
+                    if not satisfy:
+                        passes_reqs = False
+                        break
 
-    def to_indicator():
-        country_history = dict()
-        for country in countries:
-            country_history[country] = dict()
-            for year in range(start_year,end_year+1):
-                if year in countries[country]:
-                    country_history[country][year] = 1
+                if not passes_reqs: continue
+
+                death_toll = int(row[death_col])
+                location_tokens = row[loc_id_col].split(',')
+                locations = []
+                for token in location_tokens:
+                    locations.append(int(token))
+                year = int(row[year_col])
+                conflict_id = int(row[conflict_id_col])
+
+                #(year,location,toll)
+                if conflict_id in conflicts:
+                    for location in locations:
+                        if location not in conflicts[conflict_id][1]:
+                            conflicts[conflict_id][1].append(location)
+                    conflicts[conflict_id] = (min(year,conflicts[conflict_id][0]),conflicts[conflict_id][1],conflicts[conflict_id][2]+death_toll)
                 else:
-                    country_history[country][year] = -1
-        return country_history
+                    conflicts[conflict_id] = (year,locations,death_toll)
 
-    get_locations_csv('datasets/upcd_statenames.csv',32)
-    get_data_csv('datasets/upcd_nostate.csv',0,20,15)
-    get_data_csv('datasets/upcd_state.csv',0,24,1,12)
-    clean_long_conflicts()
-    indicator_data = to_indicator()
-    return indicator_data
+    def get_tuples():
+        tuples = []
+        for key in conflicts:
+            for loc in conflicts[key][1]:
+                tuples.append(((loc,conflicts[key][0]),conflicts[key][2]))
+        return tuples
+
+    get_data_csv('../datasets/upcd_deathtolls.csv',0,20,2,11,{14:["3","4"]})
+    print len(conflicts)
+    return get_tuples()
+
+print len(get_war_data())
 
 #returns the id of a given name, or -1 if not found.
 codes = get_gwnums()
 rev = reverse(codes)
 
 def get_loc_id(name):
-    if name in rev:
-        return rev[name]
-    else:
-        for c in rev:
-            if name in c or c in name:
-                return rev[c]
-        return -1
+    for c in rev:
+        if name in c or c in name:
+            rev[name] = rev[c]
+            return rev[c]
+    return -1
 
 def get_id_names(id):
     if id in codes:
@@ -81,10 +77,16 @@ def get_id_names(id):
         return -1
 
 def linear_extrapolate(known_values,min_year,max_year):
+    def full(values):
+        for year in range(min_year,max_year+1):
+            if year not in values:
+                return False
+        return True
+
     new_values = dict()
     for year in known_values:
         new_values[year] = known_values[year]
-    while len(new_values) < max_year - min_year:
+    while not full(new_values):
         add_vals = {}
         for year in new_values:
             if year+1 not in new_values and year+1 <= max_year:
@@ -122,19 +124,30 @@ class Dataset():
                 try:
                     values[id][int(row[year_col])] = float(row[data_col])
                 except:
+                    print "yikes!"
                     continue
 
             self.name = name
             self.values = {}
             for id in values:
-                self.values[id] = linear_extrapolate(values[id],min_year,max_year)
+                #self.values[id] = values[id]
+                if len(values[id])>0:
+                    self.values[id] = linear_extrapolate(values[id],min_year,max_year)
             self.min_year = min_year
             self.max_year = max_year
             self.relevant_features = relevant_features
 
+    def tuple_valid(self,id,year,years_back):
+        if id not in self.values: return False
+        for i in range(year-years_back,year):
+            if i not in self.values[id]:
+                return False
+        return True
+
     def feature_prevyears(self,id,year,years_back,features):
         for prevyear in range(year-years_back,year):
-            features[self.name+"_"+str(year-prevyear)] = self.values[id][prevyear]
+            for i in range(1,3):
+                features[self.name+"_"+str(year-prevyear)+"_exp"+str(i)] = self.values[id][prevyear]**i
 
     def feature_linearchange(self,id,year,years_back,features):
         if years_back < 2:
@@ -151,12 +164,14 @@ class Dataset():
             print "Years back must be at least one."
             return
         if year-years_back < self.min_year or year > self.max_year+1:
-            print "Dataset "+self.name+"failed; year supplied was out of range."
+            print "Dataset "+self.name+" failed; year supplied was out of range."
             return
         if id not in self.values:
-            print "Id "+str(id)+"not found in dataset "+self.name
+            print "Id "+str(id)+" not found in dataset "+self.name
+            return
         for relevant_feature in self.relevant_features:
             relevant_feature(self,id,year,years_back,features)
+        return
 
 def dotProduct(d1, d2):
     """
@@ -177,7 +192,10 @@ def increment(d1, scale, d2):
     @param dict d2: a feature vector.
     """
     for f, v in d2.items():
-        d1[f] = d1.get(f, 0) + v * scale
+        if f in d1:
+            d1[f] += v * scale
+        else:
+            d1[f] = v * scale
 
 def evaluatePredictor(examples, predictor):
     '''
@@ -196,7 +214,3 @@ def extract_features(id,year,years_back,datasets):
     for dataset in datasets:
         dataset.add_features(id,year,years_back,features)
     return features
-
-# unemployment_dataset = Dataset("unemployment",1989,2015,"datasets/unemployment.csv",0,1,7,[Dataset.feature_prevyears],{2:"Total men and women"})
-#gdpgrowth_dataset = Dataset("gdpgrowth",1989,2015,"datasets/gdpgrowth.csv",0,1,2,[Dataset.feature_prevyears,Dataset.feature_linearchange,Dataset.feature_average])
-#print extract_features(516,2010,5,[gdpgrowth_dataset])

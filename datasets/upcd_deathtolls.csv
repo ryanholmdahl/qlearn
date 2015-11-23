@@ -1,0 +1,1004 @@
+ConflictID,DyadID,Year,LocationInc,SideA,SideA2nd,SideB,SideBID,SideB2nd,Incompatibility,TerritoryName,BdBest,BdLow,BdHigh,TypeOfConflict,BattleLocation,GWNoA,GWNoA2nd,GwNoB,GWNoB2nd,GWNoLoc,GWNoBattle,Region,Version
+6,260,1993,Iran,Government of Iran,,KDPI,1005,,1,Kurdistan,110,110,110,3,"Iran, Iraq",630,,,,630,"630, 645",2,5.0-2015
+6,260,1996,Iran,Government of Iran,,KDPI,1005,,1,Kurdistan,27,27,29,3,"Iran, Iraq",630,,,,630,"630, 645",2,5.0-2015
+6,260,1990,Iran,Government of Iran,,KDPI,1005,,1,Kurdistan,31,31,335,3,Iran,630,,,,630,630,2,5.0-2015
+10,"217, 220",1989,Philippines,Government of Philippines,,"CPP, Military faction (forces of Honasan, Abenina & Zumel)","1010, 1011",,2,,822,801,885,3,Philippines,840,,,,840,840,3,5.0-2015
+10,"217, 220",1990,Philippines,Government of Philippines,,"CPP, Military faction (forces of Honasan, Abenina & Zumel)","1010, 1011",,2,,1165,1165,1174,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,1991,Philippines,Government of Philippines,,CPP,1010,,2,,1514,1514,1933,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,1992,Philippines,Government of Philippines,,CPP,1010,,2,,430,430,454,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,1993,Philippines,Government of Philippines,,CPP,1010,,2,,99,99,114,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,1994,Philippines,Government of Philippines,,CPP,1010,,2,,69,69,73,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,1995,Philippines,Government of Philippines,,CPP,1010,,2,,36,36,41,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,1997,Philippines,Government of Philippines,,CPP,1010,,2,,32,32,32,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,1999,Philippines,Government of Philippines,,CPP,1010,,2,,93,93,98,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,2000,Philippines,Government of Philippines,,CPP,1010,,2,,140,140,140,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,2001,Philippines,Government of Philippines,,CPP,1010,,2,,97,93,299,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,2002,Philippines,Government of Philippines,,CPP,1010,,2,,280,280,291,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,2003,Philippines,Government of Philippines,,CPP,1010,,2,,231,227,236,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,2004,Philippines,Government of Philippines,,CPP,1010,,2,,270,264,344,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,2005,Philippines,Government of Philippines,,CPP,1010,,2,,234,222,243,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,2006,Philippines,Government of Philippines,,CPP,1010,,2,,310,310,1018,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,2007,Philippines,Government of Philippines,,CPP,1010,,2,,132,132,1077,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,2008,Philippines,Government of Philippines,,CPP,1010,,2,,184,184,217,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,2009,Philippines,Government of Philippines,,CPP,1010,,2,,377,377,400,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,2010,Philippines,Government of Philippines,,CPP,1010,,2,,258,258,352,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,2011,Philippines,Government of Philippines,,CPP,1010,,2,,204,204,210,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,2012,Philippines,Government of Philippines,,CPP,1010,,2,,182,181,193,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,2013,Philippines,Government of Philippines,,CPP,1010,,2,,165,165,170,3,Philippines,840,,,,840,840,3,5.0-2015
+10,217,2014,Philippines,Government of Philippines,,CPP,1010,,2,,190,187,199,3,Philippines,840,,,,840,840,3,5.0-2015
+20,345,1989,"India, Pakistan",Government of India,,Government of Pakistan,770,,1,Kashmir,25,25,25,2,"India, Pakistan",750,,770,,"750, 770","750, 770",3,5.0-2015
+20,345,1990,"India, Pakistan",Government of India,,Government of Pakistan,770,,1,Kashmir,25,25,25,2,"India, Pakistan",750,,770,,"750, 770","750, 770",3,5.0-2015
+20,345,1991,"India, Pakistan",Government of India,,Government of Pakistan,770,,1,Kashmir,78,78,168,2,"India, Pakistan",750,,770,,"750, 770","750, 770",3,5.0-2015
+20,345,1992,"India, Pakistan",Government of India,,Government of Pakistan,770,,1,Kashmir,25,25,33,2,"India, Pakistan",750,,770,,"750, 770","750, 770",3,5.0-2015
+20,345,1996,"India, Pakistan",Government of India,,Government of Pakistan,770,,1,Kashmir,25,25,25,2,"India, Pakistan",750,,770,,"750, 770","750, 770",3,5.0-2015
+20,345,1997,"India, Pakistan",Government of India,,Government of Pakistan,770,,1,Kashmir,55,55,55,2,"India, Pakistan",750,,770,,"750, 770","750, 770",3,5.0-2015
+20,345,1998,"India, Pakistan",Government of India,,Government of Pakistan,770,,1,Kashmir,25,25,25,2,"India, Pakistan",750,,770,,"750, 770","750, 770",3,5.0-2015
+20,345,1999,"India, Pakistan",Government of India,,Government of Pakistan,770,,1,Kashmir,885,865,1459,2,"India, Pakistan",750,,770,,"750, 770","750, 770",3,5.0-2015
+20,345,2000,"India, Pakistan",Government of India,,Government of Pakistan,770,,1,Kashmir,25,25,25,2,"India, Pakistan",750,,770,,"750, 770","750, 770",3,5.0-2015
+20,345,2001,"India, Pakistan",Government of India,,Government of Pakistan,770,,1,Kashmir,25,25,25,2,"India, Pakistan",750,,770,,"750, 770","750, 770",3,5.0-2015
+20,345,2002,"India, Pakistan",Government of India,,Government of Pakistan,770,,1,Kashmir,25,25,34,2,"India, Pakistan",750,,770,,"750, 770","750, 770",3,5.0-2015
+20,345,2003,"India, Pakistan",Government of India,,Government of Pakistan,770,,1,Kashmir,211,211,255,2,"India, Pakistan",750,,770,,"750, 770","750, 770",3,5.0-2015
+20,345,2014,"India, Pakistan",Government of India,,Government of Pakistan,770,,1,Kashmir,37,34,52,2,"India, Pakistan",750,,770,,"750, 770","750, 770",3,5.0-2015
+22,474,1989,Paraguay,Government of Paraguay,,Military faction (forces of Andres Rodriguez),1585,,2,,150,17,300,3,Paraguay,150,,,,150,150,5,5.0-2015
+23,306,1989,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,1000,809,1355,3,"Myanmar (Burma), Thailand",775,,,,775,"775, 800",3,5.0-2015
+23,306,1990,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,393,393,428,3,"Myanmar (Burma), Thailand",775,,,,775,"775, 800",3,5.0-2015
+23,306,1991,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,552,497,672,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+23,306,1992,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,1163,1130,1275,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+23,306,1994,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,25,25,25,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+23,306,1995,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,110,60,110,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+23,306,1997,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,41,41,41,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+23,306,1998,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,36,36,36,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+23,"306, 314",2000,Myanmar (Burma),Government of Myanmar (Burma),,"God's Army, KNU","1021, 1022",,1,Karen,114,112,114,3,"Myanmar (Burma), Myanmar (Burma), Thailand",775,,,,775,"775, 775, 800",3,5.0-2015
+23,306,2001,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,36,36,36,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+23,306,2002,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,110,108,121,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+23,306,2003,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,38,38,44,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+23,306,2004,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,27,25,28,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+23,306,2005,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,42,38,46,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+23,306,2006,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,104,79,105,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+23,306,2007,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,104,104,106,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+23,306,2008,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,33,33,36,3,"Myanmar (Burma), Thailand",775,,,,775,"775, 800",3,5.0-2015
+23,306,2009,Myanmar (Burma),Government of Myanmar (Burma),,KNU,1021,,1,Karen,58,58,78,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+23,"306, 805",2010,Myanmar (Burma),Government of Myanmar (Burma),,"DKBA 5, KNU","1021, 1992",,1,Karen,121,106,125,3,"Myanmar (Burma), Myanmar (Burma), Thailand",775,,,,775,"775, 775, 800",3,5.0-2015
+23,"306, 805",2011,Myanmar (Burma),Government of Myanmar (Burma),,"DKBA 5, KNU","1021, 1992",,1,Karen,334,318,1467,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+23,805,2013,Myanmar (Burma),Government of Myanmar (Burma),,DKBA 5,1992,,1,Karen,41,41,41,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+24,322,1992,Myanmar (Burma),Government of Myanmar (Burma),,ABSDF,1026,,2,,25,25,25,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+24,322,1994,Myanmar (Burma),Government of Myanmar (Burma),,ABSDF,1026,,2,,25,25,25,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+24,322,1990,Myanmar (Burma),Government of Myanmar (Burma),,ABSDF,1026,,2,,25,25,25,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+24,322,1991,Myanmar (Burma),Government of Myanmar (Burma),,ABSDF,1026,,2,,25,25,25,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+25,312,1994,Myanmar (Burma),Government of Myanmar (Burma),,RSO,1029,,1,Arakan,109,109,109,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+25,312,1991,Myanmar (Burma),Government of Myanmar (Burma),,RSO,1029,,1,Arakan,25,25,25,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+26,326,1996,Myanmar (Burma),Government of Myanmar (Burma),,BMA,1033,,1,Mon,80,80,80,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+26,310,1990,Myanmar (Burma),Government of Myanmar (Burma),,NMSP,1032,,1,Mon,112,112,112,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+29,405,1991,India,Government of India,,PWG,1035,,2,,78,78,78,3,India,750,,,,750,750,3,5.0-2015
+29,405,1992,India,Government of India,,PWG,1035,,2,,322,322,502,3,India,750,,,,750,750,3,5.0-2015
+29,405,1993,India,Government of India,,PWG,1035,,2,,182,174,193,3,India,750,,,,750,750,3,5.0-2015
+29,405,1994,India,Government of India,,PWG,1035,,2,,68,68,68,3,India,750,,,,750,750,3,5.0-2015
+29,405,1996,India,Government of India,,PWG,1035,,2,,173,172,173,3,India,750,,,,750,750,3,5.0-2015
+29,405,1997,India,Government of India,,PWG,1035,,2,,84,78,85,3,India,750,,,,750,750,3,5.0-2015
+29,405,1998,India,Government of India,,PWG,1035,,2,,99,99,111,3,India,750,,,,750,750,3,5.0-2015
+29,"405, 406",1999,India,Government of India,,"MCC, PWG","1035, 1036",,2,,126,120,130,3,India,750,,,,750,750,3,5.0-2015
+29,"405, 406, 11932",2000,India,Government of India,,"CPI-ML-J, MCC, PWG","1035, 1036, 3946",,2,,196,189,201,3,India,750,,,,750,750,3,5.0-2015
+29,"405, 406",2001,India,Government of India,,"MCC, PWG","1035, 1036",,2,,173,158,173,3,India,750,,,,750,750,3,5.0-2015
+29,"405, 406",2002,India,Government of India,,"MCC, PWG","1035, 1036",,2,,179,178,189,3,India,750,,,,750,750,3,5.0-2015
+29,"405, 406",2003,India,Government of India,,"MCC, PWG","1035, 1036",,2,,66,66,66,3,India,750,,,,750,750,3,5.0-2015
+29,"405, 406",2004,India,Government of India,,"MCC, PWG","1035, 1036",,2,,97,97,102,3,India,750,,,,750,750,3,5.0-2015
+29,451,2005,India,Government of India,,CPI-Maoist,1037,,2,,199,199,241,3,India,750,,,,750,750,3,5.0-2015
+29,451,2006,India,Government of India,,CPI-Maoist,1037,,2,,545,488,607,3,India,750,,,,750,750,3,5.0-2015
+29,451,2007,India,Government of India,,CPI-Maoist,1037,,2,,375,371,402,3,India,750,,,,750,750,3,5.0-2015
+29,451,2008,India,Government of India,,CPI-Maoist,1037,,2,,379,371,432,3,India,750,,,,750,750,3,5.0-2015
+29,451,2009,India,Government of India,,CPI-Maoist,1037,,2,,522,513,654,3,India,750,,,,750,750,3,5.0-2015
+29,451,2010,India,Government of India,,CPI-Maoist,1037,,2,,570,557,665,3,India,750,,,,750,750,3,5.0-2015
+29,451,2011,India,Government of India,,CPI-Maoist,1037,,2,,293,293,342,3,India,750,,,,750,750,3,5.0-2015
+29,451,2012,India,Government of India,,CPI-Maoist,1037,,2,,241,233,274,3,India,750,,,,750,750,3,5.0-2015
+29,451,2013,India,Government of India,,CPI-Maoist,1037,,2,,210,205,231,3,India,750,,,,750,750,3,5.0-2015
+29,451,2014,India,Government of India,,CPI-Maoist,1037,,2,,177,163,228,3,India,750,,,,750,750,3,5.0-2015
+33,784,2009,Yemen (North Yemen),Government of Yemen (North Yemen),Government of United States of America,AQAP,1747,,2,,94,94,103,4,Yemen (North Yemen),678,2,,,678,678,2,5.0-2015
+33,784,2010,Yemen (North Yemen),Government of Yemen (North Yemen),Government of United States of America,AQAP,1747,,2,,175,149,244,4,Yemen (North Yemen),678,2,,,678,678,2,5.0-2015
+33,784,2011,Yemen (North Yemen),Government of Yemen (North Yemen),Government of United States of America,AQAP,1747,,2,,1140,1135,1195,4,Yemen (North Yemen),678,2,,,678,678,2,5.0-2015
+33,784,2012,Yemen (North Yemen),Government of Yemen (North Yemen),Government of United States of America,AQAP,1747,,2,,2330,2328,2415,4,Yemen (North Yemen),678,2,,,678,678,2,5.0-2015
+33,784,2013,Yemen (North Yemen),Government of Yemen (North Yemen),Government of United States of America,AQAP,1747,,2,,582,581,641,4,Yemen (North Yemen),678,2,,,678,678,2,5.0-2015
+33,"784, 10855",2014,Yemen (North Yemen),Government of Yemen (North Yemen),Government of United States of America,"AQAP, Ansarallah","1747, 1976",,2,,1660,1660,2046,"3, 4",Yemen (North Yemen),678,2,,,678,678,2,5.0-2015
+34,304,1989,Myanmar (Burma),Government of Myanmar (Burma),,KIO,1043,,1,Kachin,194,194,194,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+34,304,1990,Myanmar (Burma),Government of Myanmar (Burma),,KIO,1043,,1,Kachin,25,25,25,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+34,304,1991,Myanmar (Burma),Government of Myanmar (Burma),,KIO,1043,,1,Kachin,25,25,25,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+34,304,1992,Myanmar (Burma),Government of Myanmar (Burma),,KIO,1043,,1,Kachin,25,25,25,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+34,304,2011,Myanmar (Burma),Government of Myanmar (Burma),,KIO,1043,,1,Kachin,209,208,574,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+34,304,2012,Myanmar (Burma),Government of Myanmar (Burma),,KIO,1043,,1,Kachin,702,676,2198,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+34,304,2013,Myanmar (Burma),Government of Myanmar (Burma),,KIO,1043,,1,Kachin,125,117,143,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+34,304,2014,Myanmar (Burma),Government of Myanmar (Burma),,KIO,1043,,1,Kachin,83,83,84,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+36,228,1989,Guatemala,Government of Guatemala,,URNG,1593,,2,,81,81,300,3,Guatemala,90,,,,90,90,5,5.0-2015
+36,228,1990,Guatemala,Government of Guatemala,,URNG,1593,,2,,72,72,103,3,Guatemala,90,,,,90,90,5,5.0-2015
+36,228,1991,Guatemala,Government of Guatemala,,URNG,1593,,2,,64,64,76,3,Guatemala,90,,,,90,90,5,5.0-2015
+36,228,1992,Guatemala,Government of Guatemala,,URNG,1593,,2,,66,66,94,3,Guatemala,90,,,,90,90,5,5.0-2015
+36,228,1993,Guatemala,Government of Guatemala,,URNG,1593,,2,,58,58,86,3,Guatemala,90,,,,90,90,5,5.0-2015
+36,228,1994,Guatemala,Government of Guatemala,,URNG,1593,,2,,33,33,35,3,Guatemala,90,,,,90,90,5,5.0-2015
+36,228,1995,Guatemala,Government of Guatemala,,URNG,1593,,2,,26,20,26,3,Guatemala,90,,,,90,90,5,5.0-2015
+37,"419, 428",1989,Israel,Government of Israel,,"PFLP, PFLP-GC","1047, 1048",,1,Palestine,54,54,63,3,"Israel, Lebanon",666,,,,666,"666, 660",2,5.0-2015
+37,377,1990,Israel,Government of Israel,,Fatah,1049,,1,Palestine,29,26,49,3,"Israel, Lebanon",666,,,,666,"666, 660",2,5.0-2015
+37,377,1991,Israel,Government of Israel,,Fatah,1049,,1,Palestine,28,28,30,3,"Israel, Lebanon",666,,,,666,"666, 660",2,5.0-2015
+37,377,1992,Israel,Government of Israel,,Fatah,1049,,1,Palestine,33,32,36,3,"Israel, Lebanon, France",666,,,,666,"666, 660, 220",2,5.0-2015
+37,381,1993,Israel,Government of Israel,,Hamas,1051,,1,Palestine,47,47,48,3,Israel,666,,,,666,666,2,5.0-2015
+37,381,1994,Israel,Government of Israel,,Hamas,1051,,1,Palestine,44,41,45,3,Israel,666,,,,666,666,2,5.0-2015
+37,380,1995,Israel,Government of Israel,,PIJ,1050,,1,Palestine,34,34,36,3,"Israel, Malta",666,,,,666,"666, 338",2,5.0-2015
+37,427,1996,Israel,Government of Israel,,PNA,1052,,1,Palestine,66,66,66,3,Israel,666,,,,666,666,2,5.0-2015
+37,"377, 427",2000,Israel,Government of Israel,,"Fatah, PNA","1049, 1052",,1,Palestine,77,74,79,3,Israel,666,,,,666,666,2,5.0-2015
+37,"377, 381, 419, 427",2001,Israel,Government of Israel,,"Fatah, Hamas, PFLP, PNA","1047, 1049, 1051, 1052",,1,Palestine,218,212,235,3,Israel,666,,,,666,666,2,5.0-2015
+37,"377, 380, 381, 426, 427",2002,Israel,Government of Israel,,"AMB, Fatah, Hamas, PIJ, PNA","1049, 1050, 1051, 1052, 1053",,1,Palestine,413,413,430,3,Israel,666,,,,666,666,2,5.0-2015
+37,"380, 381, 426",2003,Israel,Government of Israel,,"AMB, Hamas, PIJ","1050, 1051, 1053",,1,Palestine,307,307,326,3,Israel,666,,,,666,666,2,5.0-2015
+37,"380, 381, 426",2004,Israel,Government of Israel,,"AMB, Hamas, PIJ","1050, 1051, 1053",,1,Palestine,361,358,421,3,Israel,666,,,,666,666,2,5.0-2015
+37,"377, 380, 381",2005,Israel,Government of Israel,,"Fatah, Hamas, PIJ","1049, 1050, 1051",,1,Palestine,119,119,131,3,Israel,666,,,,666,666,2,5.0-2015
+37,"377, 380, 381, 629",2006,Israel,Government of Israel,,"Fatah, Hamas, PIJ, PRC","1049, 1050, 1051, 1054",,1,Palestine,328,321,378,3,Israel,666,,,,666,666,2,5.0-2015
+37,"377, 380, 381",2007,Israel,Government of Israel,,"Fatah, Hamas, PIJ","1049, 1050, 1051",,1,Palestine,272,271,301,3,Israel,666,,,,666,666,2,5.0-2015
+37,"380, 381",2008,Israel,Government of Israel,,"Hamas, PIJ","1050, 1051",,1,Palestine,665,584,712,3,Israel,666,,,,666,666,2,5.0-2015
+37,"380, 381",2009,Israel,Government of Israel,,"Hamas, PIJ","1050, 1051",,1,Palestine,682,580,853,3,Israel,666,,,,666,666,2,5.0-2015
+37,380,2010,Israel,Government of Israel,,PIJ,1050,,1,Palestine,27,27,27,3,Israel,666,,,,666,666,2,5.0-2015
+37,"380, 381",2011,Israel,Government of Israel,,"Hamas, PIJ","1050, 1051",,1,Palestine,56,56,59,3,Israel,666,,,,666,666,2,5.0-2015
+37,"380, 381",2012,Israel,Government of Israel,,"Hamas, PIJ","1050, 1051",,1,Palestine,64,64,85,3,Israel,666,,,,666,666,2,5.0-2015
+37,"380, 381",2014,Israel,Government of Israel,,"Hamas, PIJ","1050, 1051",,1,Palestine,1665,1651,1750,3,Israel,666,,,,666,666,2,5.0-2015
+54,286,1992,India,Government of India,,NSCN-IM,1065,,1,Nagaland,47,47,47,3,India,750,,,,750,750,3,5.0-2015
+54,286,1993,India,Government of India,,NSCN-IM,1065,,1,Nagaland,92,92,128,3,India,750,,,,750,750,3,5.0-2015
+54,286,1994,India,Government of India,,NSCN-IM,1065,,1,Nagaland,60,58,69,3,India,750,,,,750,750,3,5.0-2015
+54,286,1995,India,Government of India,,NSCN-IM,1065,,1,Nagaland,95,95,95,3,India,750,,,,750,750,3,5.0-2015
+54,286,1996,India,Government of India,,NSCN-IM,1065,,1,Nagaland,40,40,40,3,India,750,,,,750,750,3,5.0-2015
+54,286,1997,India,Government of India,,NSCN-IM,1065,,1,Nagaland,37,37,37,3,India,750,,,,750,750,3,5.0-2015
+54,286,2000,India,Government of India,,NSCN-IM,1065,,1,Nagaland,30,18,30,3,India,750,,,,750,750,3,5.0-2015
+56,311,1992,Myanmar (Burma),Government of Myanmar (Burma),,KNPP,1067,,1,Karenni,404,402,404,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+56,311,1996,Myanmar (Burma),Government of Myanmar (Burma),,KNPP,1067,,1,Karenni,124,124,140,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+56,311,2005,Myanmar (Burma),Government of Myanmar (Burma),,KNPP,1067,,1,Karenni,35,35,35,3,"Myanmar (Burma), Thailand",775,,,,775,"775, 800",3,5.0-2015
+62,298,1991,Iraq,Government of Iraq,,SCIRI,1073,,2,,237,237,237,3,Iraq,645,,,,645,645,2,5.0-2015
+62,298,1992,Iraq,Government of Iraq,,SCIRI,1073,,2,,280,280,741,3,Iraq,645,,,,645,645,2,5.0-2015
+62,298,1993,Iraq,Government of Iraq,,SCIRI,1073,,2,,75,75,203,3,Iraq,645,,,,645,645,2,5.0-2015
+62,298,1994,Iraq,Government of Iraq,,SCIRI,1073,,2,,25,25,36,3,Iraq,645,,,,645,645,2,5.0-2015
+62,298,1995,Iraq,Government of Iraq,,SCIRI,1073,,2,,325,325,560,3,Iraq,645,,,,645,645,2,5.0-2015
+62,298,1996,Iraq,Government of Iraq,,SCIRI,1073,,2,,42,42,66,3,Iraq,645,,,,645,645,2,5.0-2015
+62,"442, 443, 448",2004,Iraq,Government of Iraq,"Government of Albania, Government of Australia, Government of Azerbaijan, Government of Bulgaria, Government of Czech Republic, Government of Denmark, Government of Dominican Republic, Government of El Salvador, Government of Estonia, Government of Georgia, Government of Honduras, Government of Italy, Government of Kazakhstan, Government of Latvia, Government of Lithuania, Government of Macedonia, FYR, Government of Moldova, Government of Mongolia, Government of Netherlands, Government of Nicaragua, Government of Norway, Government of Philippines, Government of Poland, Government of Portugal, Government of Rumania, Government of Slovakia, Government of South Korea, Government of Spain, Government of Tonga, Government of Ukraine, Government of United Kingdom, Government of United States of America, Government of Albania, Government of Australia, Government of Azerbaijan, Government of Bulgaria, Government of Czech Republic, Government of Denmark, Government of Dominican Republic, Government of El Salvador, Government of Estonia, Government of Georgia, Government of Honduras, Government of Italy, Government of Kazakhstan, Government of Latvia, Government of Lithuania, Government of Macedonia, Government of Moldova, Government of Mongolia, Government of Netherlands, Government of Nicaragua, Government of Norway, Government of Philippines, Government of Poland, Government of Portugal, Government of South Korea , Government of Rumania, Government of Slovakia, Government of Spain, Government of Tonga, Government of Ukraine, Government of United Kingdom, Government of United States of America","Ansar al-Islam, IS, al-Mahdi Army","1075, 1076, 5659",,2,,4094,4081,6142,4,Iraq,645,"339, 900, 373, 355, 316, 390, 42, 92, 366, 372, 91, 325, 705, 367, 368, 343, 359, 712, 210, 93, 385, 840, 290, 235, 360, 317, 732, 230, 972, 369, 200, 2, 339, 900, 373, 355, 316, 390, 42, 92, 366, 372, 91, 325, 705, 367, 368, 343, 359, 712, 210, 93, 385, 840, 290, 235, 732, 360, 317, 230, 972, 369, 200, 2",,,645,645,2,5.0-2015
+62,"443, 448, 578",2005,Iraq,Government of Iraq,"Government of Albania, Government of Armenia, Government of Australia, Government of Azerbaijan, Government of Bosnia-Herzegovina, Government of Bulgaria, Government of Czech Republic, Government of Denmark, Government of El Salvador, Government of Estonia, Government of Georgia, Government of Italy, Government of Kazakhstan, Government of Latvia, Government of Lithuania, Government of Macedonia, Government of Moldova, Government of Mongolia, Government of Netherlands, Government of Norway, Government of Poland, Government of Portugal, Government of South Korea , Government of Rumania, Government of Slovakia, Government of Ukraine, Government of United Kingdom, Government of United States of America","Ansar al-Islam, IS, RJF","1075, 1076, 1077",,2,,2608,2542,3563,4,Iraq,645,"339, 371, 900, 373, 346, 355, 316, 390, 92, 366, 372, 325, 705, 367, 368, 343, 359, 712, 210, 385, 290, 235, 732, 360, 317, 369, 200, 2",,,645,645,2,5.0-2015
+62,"443, 448, 578",2006,Iraq,Government of Iraq,"Government of Albania, Government of Armenia, Government of Australia, Government of Azerbaijan, Government of Bosnia-Herzegovina, Government of Bulgaria, Government of Czech Republic, Government of Denmark, Government of El Salvador, Government of Estonia, Government of Georgia, , Government of Kazakhstan, Government of Latvia, Government of Lithuania, Government of Macedonia, Government of Moldova, Government of Mongolia, Government of Poland, Government of South Korea, Government of Rumania, Government of Slovakia, Government of United Kingdom, Government of United States of America","Ansar al-Islam, IS, RJF","1075, 1076, 1077",,2,,3934,3195,4134,4,Iraq,645,"339, 371, 900, 373, 346, 355, 316, 390, 92, 366, 372, 705, 367, 368, 343, 359, 712, 290, 732, 360, 317, 200, 2",,,645,645,2,5.0-2015
+62,"442, 443, 448, 578",2007,Iraq,Government of Iraq,"Government of Albania, Government of Armenia, Government of Australia, Government of Azerbaijan, Government of Bosnia-Herzegovina, Government of Bulgaria, Government of Czech Republic, Government of Denmark, Government of El Salvador, Government of Estonia, Government of Georgia, Government of Kazakhstan, Government of Latvia, Government of Lithuania, Government of Macedonia, FYR, Government of Moldova, Government of Mongolia, Government of Poland, Government of Rumania, Government of Slovakia, Government of South Korea, Government of Tonga, Government of United Kingdom, Government of United States of America, Government of Albania, Government of Armenia, Government of Australia, Government of Azerbaijan, Government of Bosnia-Herzegovina, Government of Bulgaria, Government of Czech Republic, Government of Denmark, Government of El Salvador, Government of Estonia, Government of Georgia, Government of Kazakhstan, Government of Latvia, Government of Lithuania, Government of Macedonia, Government of Moldova, Government of Mongolia, Government of Poland, Government of Rumania, Government of Slovakia, Government of South Korea, Government of Tonga, Government of United Kingdom, Government of United States of America","Ansar al-Islam, IS, RJF, al-Mahdi Army","1075, 1076, 1077, 5659",,2,,2212,2040,2481,4,Iraq,645,"339, 371, 900, 373, 346, 355, 316, 390, 92, 366, 372, 705, 367, 368, 343, 359, 712, 290, 360, 317, 732, 972, 200, 2",,,645,645,2,5.0-2015
+62,"442, 448",2008,Iraq,Government of Iraq,"Government of Albania, Government of Armenia, Government of Australia, Government of Azerbaijan, Government of Bosnia-Herzegovina, Government of Bulgaria, Government of Czech Republic, Government of El Salvador, Government of Estonia, Government of Georgia, Government of Kazakhstan, Government of Latvia, Government of Lithuania, Government of Macedonia, FYR, Government of Moldova, Government of Mongolia, Government of Poland, Government of Rumania, Government of South Korea, Government of Tonga, Government of Ukraine, Government of United Kingdom, Government of United States of America, Government of Albania, Government of Armenia, Government of Australia, Government of Azerbaijan, Government of Bosnia-Herzegovina, Government of Bulgaria, Government of Czech Republic, Government of El Salvador, Government of Estonia, Government of Georgia, Government of Kazakhstan, Government of Latvia, Government of Lithuania, Government of Macedonia, Government of Moldova, Government of Mongolia, Government of Poland, Government of Rumania, Government of South Korea, Government of Tonga, Government of Ukraine, Government of United Kingdom, Government of United States of America","IS, al-Mahdi Army","1076, 5659",,2,,2112,2098,2539,4,Iraq,645,"339, 371, 900, 373, 346, 355, 316, 92, 366, 372, 705, 367, 368, 343, 359, 712, 290, 360, 732, 972, 369, 200, 2",,,645,645,2,5.0-2015
+62,448,2009,Iraq,Government of Iraq,"Government of Australia, Government of El Salvador, Government of Estonia, Government of United Kingdom, Government of United States of America",IS,1076,,2,,1036,926,1074,4,Iraq,645,"900, 92, 366, 200, 2",,,645,645,2,5.0-2015
+62,448,2010,Iraq,Government of Iraq,Government of United States of America,IS,1076,,2,,1015,836,1060,4,Iraq,645,2,,,645,645,2,5.0-2015
+62,"443, 448",2011,Iraq,Government of Iraq,Government of United States of America,"Ansar al-Islam, IS","1075, 1076",,2,,864,737,959,4,Iraq,645,2,,,645,645,2,5.0-2015
+62,448,2012,Iraq,Government of Iraq,,IS,1076,,2,,565,487,598,3,Iraq,645,,,,645,645,2,5.0-2015
+62,448,2013,Iraq,Government of Iraq,,IS,1076,,2,,1870,1723,1924,3,Iraq,645,,,,645,645,2,5.0-2015
+62,448,2014,Iraq,Government of Iraq,"Government of Australia, Government of Bahrain, Government of Belgium, Government of Canada, Government of Denmark, Government of France, Government of Jordan, Government of Netherlands, Government of Saudi Arabia, Government of United Arab Emirates, Government of United Kingdom, Government of United States of America",IS,1076,,2,,12598,12537,14126,4,"Iraq, Syria",645,"900, 692, 211, 20, 390, 220, 663, 210, 670, 696, 200, 2",,,645,"645, 652",2,5.0-2015
+63,14244,2014,Lebanon,Government of Lebanon,,IS,1076,,2,,126,126,126,3,Lebanon,660,,,,660,660,2,5.0-2015
+63,"376, 383",1989,Lebanon,Government of Lebanon,Government of Syria,"Forces of Michel Aoun, Lebanese Forces","1084, 1085",,2,,704,574,898,4,Lebanon,660,652,,,660,660,2,5.0-2015
+63,376,1990,Lebanon,Government of Lebanon,Government of Syria,Forces of Michel Aoun,1084,,2,,700,400,800,4,Lebanon,660,652,,,660,660,2,5.0-2015
+65,382,1989,Laos,Government of Laos,,LRM,1088,,2,,30,30,30,3,Laos,812,,,,812,812,3,5.0-2015
+65,382,1990,Laos,Government of Laos,,LRM,1088,,2,,249,45,249,3,Laos,812,,,,812,812,3,5.0-2015
+67,308,1993,Myanmar (Burma),Government of Myanmar (Burma),,MTA,1097,,1,Shan,130,130,230,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+67,308,1994,Myanmar (Burma),Government of Myanmar (Burma),,MTA,1097,,1,Shan,526,526,984,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+67,308,1995,Myanmar (Burma),Government of Myanmar (Burma),,MTA,1097,,1,Shan,174,174,332,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+67,307,1996,Myanmar (Burma),Government of Myanmar (Burma),,RCSS,1098,,1,Shan,25,25,25,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+67,307,1997,Myanmar (Burma),Government of Myanmar (Burma),,RCSS,1098,,1,Shan,152,152,157,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+67,307,1998,Myanmar (Burma),Government of Myanmar (Burma),,RCSS,1098,,1,Shan,25,25,25,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+67,307,1999,Myanmar (Burma),Government of Myanmar (Burma),,RCSS,1098,,1,Shan,25,25,25,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+67,307,2000,Myanmar (Burma),Government of Myanmar (Burma),,RCSS,1098,,1,Shan,69,69,69,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+67,307,2001,Myanmar (Burma),Government of Myanmar (Burma),,RCSS,1098,,1,Shan,117,117,117,3,"Myanmar (Burma), Thailand",775,,,,775,"775, 800",3,5.0-2015
+67,307,2002,Myanmar (Burma),Government of Myanmar (Burma),,RCSS,1098,,1,Shan,184,183,250,3,"Myanmar (Burma), Thailand",775,,,,775,"775, 800",3,5.0-2015
+67,307,2005,Myanmar (Burma),Government of Myanmar (Burma),,RCSS,1098,,1,Shan,27,27,28,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+67,307,2006,Myanmar (Burma),Government of Myanmar (Burma),,RCSS,1098,,1,Shan,48,38,49,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+67,307,2007,Myanmar (Burma),Government of Myanmar (Burma),,RCSS,1098,,1,Shan,29,29,29,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+67,307,2008,Myanmar (Burma),Government of Myanmar (Burma),,RCSS,1098,,1,Shan,31,31,31,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+67,307,2009,Myanmar (Burma),Government of Myanmar (Burma),,RCSS,1098,,1,Shan,52,52,60,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+67,307,2010,Myanmar (Burma),Government of Myanmar (Burma),,RCSS,1098,,1,Shan,36,36,36,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+67,"307, 826",2011,Myanmar (Burma),Government of Myanmar (Burma),,"RCSS, SSPP","1098, 2007",,1,Shan,170,169,172,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+67,"307, 826",2013,Myanmar (Burma),Government of Myanmar (Burma),,"RCSS, SSPP","1098, 2007",,1,Shan,83,80,85,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+68,856,2013,DR Congo (Zaire),Government of DR Congo (Zaire),,Kata Katanga,3967,,1,Katanga,94,90,113,3,DR Congo (Zaire),490,,,,490,490,4,5.0-2015
+68,856,2014,DR Congo (Zaire),Government of DR Congo (Zaire),,Kata Katanga,3967,,1,Katanga,58,28,58,3,DR Congo (Zaire),490,,,,490,490,4,5.0-2015
+70,"48, 49",1989,Ethiopia,Government of Ethiopia,,"EPRDF, Military faction (forces of Amsha Desta and Merid Negusie)","1258, 1259",,2,,18403,18403,18420,3,Ethiopia,530,,,,530,530,4,5.0-2015
+70,48,1990,Ethiopia,Government of Ethiopia,,EPRDF,1259,,2,,18985,18985,18985,3,Ethiopia,530,,,,530,530,4,5.0-2015
+70,"48, 852",1991,Ethiopia,Government of Ethiopia,,"EPRDF, Military faction (Harar garrison)","1259, 2084",,2,,4520,4520,5570,3,Ethiopia,530,,,,530,530,4,5.0-2015
+72,349,1996,Nepal,Government of Nepal,,CPN-M,1100,,2,,44,44,46,3,Nepal,790,,,,790,790,3,5.0-2015
+72,349,1997,Nepal,Government of Nepal,,CPN-M,1100,,2,,40,40,40,3,Nepal,790,,,,790,790,3,5.0-2015
+72,349,1998,Nepal,Government of Nepal,,CPN-M,1100,,2,,250,118,302,3,Nepal,790,,,,790,790,3,5.0-2015
+72,349,1999,Nepal,Government of Nepal,,CPN-M,1100,,2,,156,147,306,3,Nepal,790,,,,790,790,3,5.0-2015
+72,349,2000,Nepal,Government of Nepal,,CPN-M,1100,,2,,268,259,295,3,Nepal,790,,,,790,790,3,5.0-2015
+72,349,2001,Nepal,Government of Nepal,,CPN-M,1100,,2,,429,380,479,3,Nepal,790,,,,790,790,3,5.0-2015
+72,349,2002,Nepal,Government of Nepal,,CPN-M,1100,,2,,3947,2771,4105,3,Nepal,790,,,,790,790,3,5.0-2015
+72,349,2003,Nepal,Government of Nepal,,CPN-M,1100,,2,,1341,1275,1405,3,Nepal,790,,,,790,790,3,5.0-2015
+72,349,2004,Nepal,Government of Nepal,,CPN-M,1100,,2,,1880,1848,2040,3,Nepal,790,,,,790,790,3,5.0-2015
+72,349,2005,Nepal,Government of Nepal,,CPN-M,1100,,2,,1104,1100,1169,3,Nepal,790,,,,790,790,3,5.0-2015
+72,349,2006,Nepal,Government of Nepal,,CPN-M,1100,,2,,457,452,477,3,Nepal,790,,,,790,790,3,5.0-2015
+74,"279, 285",1989,Iraq,Government of Iraq,,"KDP, PUK","1102, 1103",,1,Kurdistan,50,50,50,3,Iraq,645,,,,645,645,2,5.0-2015
+74,"279, 285",1990,Iraq,Government of Iraq,,"KDP, PUK","1102, 1103",,1,Kurdistan,94,94,94,3,Iraq,645,,,,645,645,2,5.0-2015
+74,"279, 285",1991,Iraq,Government of Iraq,,"KDP, PUK","1102, 1103",,1,Kurdistan,544,544,1000,3,Iraq,645,,,,645,645,2,5.0-2015
+74,285,1992,Iraq,Government of Iraq,,PUK,1103,,1,Kurdistan,26,26,52,3,Iraq,645,,,,645,645,2,5.0-2015
+74,285,1995,Iraq,Government of Iraq,,PUK,1103,,1,Kurdistan,262,262,302,3,Iraq,645,,,,645,645,2,5.0-2015
+74,285,1996,Iraq,Government of Iraq,,PUK,1103,,1,Kurdistan,356,356,366,3,"Iran, Iraq",645,,,,645,"630, 645",2,5.0-2015
+78,53,1989,Ethiopia,Government of Ethiopia,,EPLF,1261,,1,Eritrea,5930,5930,5930,3,Ethiopia,530,,,,530,530,4,5.0-2015
+78,53,1990,Ethiopia,Government of Ethiopia,,EPLF,1261,,1,Eritrea,30633,30633,30633,3,Ethiopia,530,,,,530,530,4,5.0-2015
+78,53,1991,Ethiopia,Government of Ethiopia,,EPLF,1261,,1,Eritrea,6907,6904,6907,3,Ethiopia,530,,,,530,530,4,5.0-2015
+80,475,1992,Venezuela,Government of Venezuela,,Military faction (forces of Hugo Chavez),1603,,2,,145,144,264,3,Venezuela,101,,,,101,101,5,5.0-2015
+86,39,1996,DR Congo (Zaire),Government of DR Congo (Zaire),,AFDL,1268,Government of Rwanda,2,,1304,1164,1852,4,DR Congo (Zaire),490,,,517,490,490,4,5.0-2015
+86,39,1997,DR Congo (Zaire),Government of DR Congo (Zaire),,AFDL,1268,"Government of Angola, Government of Rwanda, Government of Uganda",2,,4457,4051,4826,4,DR Congo (Zaire),490,,,"540, 517, 500",490,490,4,5.0-2015
+86,"40, 41",1998,DR Congo (Zaire),Government of DR Congo (Zaire),"Government of Angola, Government of Chad, Government of Namibia, Government of Zimbabwe (Rhodesia)","MLC, RCD","1269, 1270","Government of Rwanda, Government of Uganda, Government of Uganda",2,,3268,3022,5711,4,DR Congo (Zaire),490,"540, 483, 565, 552",,"500, 517, 500",490,490,4,5.0-2015
+86,"40, 41",1999,DR Congo (Zaire),Government of DR Congo (Zaire),"Government of Angola, Government of Chad, Government of Namibia, Government of Zimbabwe (Rhodesia)","MLC, RCD","1269, 1270","Government of Rwanda, Government of Uganda, Government of Uganda",2,,2953,2898,3229,4,DR Congo (Zaire),490,"540, 483, 565, 552",,"500, 517, 500",490,490,4,5.0-2015
+86,"40, 41",2000,DR Congo (Zaire),Government of DR Congo (Zaire),"Government of Angola, Government of Namibia, Government of Zimbabwe (Rhodesia)","MLC, RCD","1269, 1270","Government of Rwanda, Government of Uganda",2,,1294,1260,2458,4,DR Congo (Zaire),490,"540, 565, 552",,"500, 517",490,490,4,5.0-2015
+86,40,2001,DR Congo (Zaire),Government of DR Congo (Zaire),"Government of Angola, Government of Namibia, Government of Zimbabwe (Rhodesia)",RCD,1270,Government of Rwanda,2,,454,454,734,4,DR Congo (Zaire),490,"540, 565, 552",,517,490,490,4,5.0-2015
+86,646,2006,DR Congo (Zaire),Government of DR Congo (Zaire),,CNDP,1272,,2,,182,54,362,3,"DR Congo (Zaire), Uganda",490,,,,490,"490, 500",4,5.0-2015
+86,646,2007,DR Congo (Zaire),Government of DR Congo (Zaire),,CNDP,1272,,2,,516,516,553,3,DR Congo (Zaire),490,,,,490,490,4,5.0-2015
+86,646,2008,DR Congo (Zaire),Government of DR Congo (Zaire),,CNDP,1272,,2,,486,486,486,3,DR Congo (Zaire),490,,,,490,490,4,5.0-2015
+86,831,2012,DR Congo (Zaire),Government of DR Congo (Zaire),,M23,2045,"Government of Rwanda, Government of Uganda",2,,660,611,749,4,"DR Congo (Zaire), Rwanda",490,,,"517, 500",490,"490, 517",4,5.0-2015
+86,"831, 858, 12463",2013,DR Congo (Zaire),Government of DR Congo (Zaire),,"APCLS, Forces of Paul Joseph Mukungubila, M23","2045, 2091, 4286",", Government of Rwanda",2,,1378,1358,1433,"3, 4","DR Congo (Zaire), DR Congo (Zaire), Rwanda",490,,,517,490,"490, 490, 517",4,5.0-2015
+86,"858, 11377",2014,DR Congo (Zaire),Government of DR Congo (Zaire),,"APCLS, PARC-FAAL","2091, 3043",,2,,56,34,60,3,DR Congo (Zaire),490,,,,490,490,4,5.0-2015
+90,11,1991,Burundi,Government of Burundi,,Palipehutu,1276,,2,,272,272,551,3,Burundi,516,,,,516,516,4,5.0-2015
+90,11,1992,Burundi,Government of Burundi,,Palipehutu,1276,,2,,61,61,61,3,Burundi,516,,,,516,516,4,5.0-2015
+90,12,1994,Burundi,Government of Burundi,,CNDD,1277,,2,,56,56,532,3,Burundi,516,,,,516,516,4,5.0-2015
+90,12,1995,Burundi,Government of Burundi,,CNDD,1277,,2,,254,235,526,3,Burundi,516,,,,516,516,4,5.0-2015
+90,12,1996,Burundi,Government of Burundi,,CNDD,1277,,2,,531,496,962,3,Burundi,516,,,,516,516,4,5.0-2015
+90,"12, 13, 15",1997,Burundi,Government of Burundi,,"CNDD, Frolina, Palipehutu-FNL","1277, 1278, 1279",,2,,639,539,1216,3,Burundi,516,,,,516,516,4,5.0-2015
+90,"12, 14, 15",1998,Burundi,Government of Burundi,,"CNDD, CNDD-FDD, Palipehutu-FNL","1277, 1278, 1280",,2,,621,621,740,3,Burundi,516,,,,516,516,4,5.0-2015
+90,"14, 15",1999,Burundi,Government of Burundi,,"CNDD-FDD, Palipehutu-FNL","1278, 1280",,2,,524,321,679,3,Burundi,516,,,,516,516,4,5.0-2015
+90,"14, 15",2000,Burundi,Government of Burundi,,"CNDD-FDD, Palipehutu-FNL","1278, 1280",,2,,1348,1227,2123,3,Burundi,516,,,,516,516,4,5.0-2015
+90,"14, 15",2001,Burundi,Government of Burundi,,"CNDD-FDD, Palipehutu-FNL","1278, 1280",,2,,1182,1169,2488,3,Burundi,516,,,,516,516,4,5.0-2015
+90,"14, 15",2002,Burundi,Government of Burundi,,"CNDD-FDD, Palipehutu-FNL","1278, 1280",,2,,1114,782,1591,3,"Burundi, Burundi, DR Congo (Zaire)",516,,,,516,"516, 516, 490",4,5.0-2015
+90,"14, 15",2003,Burundi,Government of Burundi,,"CNDD-FDD, Palipehutu-FNL","1278, 1280",,2,,972,972,1138,3,Burundi,516,,,,516,516,4,5.0-2015
+90,15,2004,Burundi,Government of Burundi,,Palipehutu-FNL,1278,,2,,387,367,425,3,Burundi,516,,,,516,516,4,5.0-2015
+90,15,2005,Burundi,Government of Burundi,,Palipehutu-FNL,1278,,2,,286,286,356,3,Burundi,516,,,,516,516,4,5.0-2015
+90,15,2006,Burundi,Government of Burundi,,Palipehutu-FNL,1278,,2,,141,141,141,3,Burundi,516,,,,516,516,4,5.0-2015
+90,15,2008,Burundi,Government of Burundi,,Palipehutu-FNL,1278,,2,,201,201,205,3,Burundi,516,,,,516,516,4,5.0-2015
+91,"18, 19, 20",1989,Chad,Government of Chad,,"Islamic Legion, MOSANAT, Revolutionary Forces of 1 April","1288, 1289, 1290",,2,,315,315,1585,3,"Chad, Chad, Sudan, Sudan",483,,,,483,"483, 483, 625, 625",4,5.0-2015
+91,"20, 23",1990,Chad,Government of Chad,,"Islamic Legion, MPS","1288, 1291",,2,,1352,1352,8932,3,"Chad, Chad, Sudan",483,,,,483,"483, 483, 625",4,5.0-2015
+91,"25, 777",1991,Chad,Government of Chad,,"MDD, Military faction (forces of Maldoum Bada Abbas)","1292, 1295",,2,,68,68,68,3,Chad,483,,,,483,483,4,5.0-2015
+91,"21, 22, 24, 25",1992,Chad,Government of Chad,,"CNR, CSNPD, FNT, MDD","1292, 1293, 1294, 1296",,2,,899,899,1553,3,Chad,483,,,,483,483,4,5.0-2015
+91,"21, 22, 24, 25",1993,Chad,Government of Chad,,"CNR, CSNPD, FNT, MDD","1292, 1293, 1294, 1296",,2,,120,120,120,3,Chad,483,,,,483,483,4,5.0-2015
+91,"21, 22, 24",1994,Chad,Government of Chad,,"CNR, CSNPD, FNT","1293, 1294, 1296",,2,,161,161,265,3,Chad,483,,,,483,483,4,5.0-2015
+91,"25, 26",1997,Chad,Government of Chad,,"FARF, MDD","1292, 1297",,2,,97,97,97,3,Chad,483,,,,483,483,4,5.0-2015
+91,26,1998,Chad,Government of Chad,,FARF,1297,,2,,34,34,34,3,Chad,483,,,,483,483,4,5.0-2015
+91,27,1999,Chad,Government of Chad,,MDJT,1298,,2,,394,394,1149,3,Chad,483,,,,483,483,4,5.0-2015
+91,27,2000,Chad,Government of Chad,,MDJT,1298,,2,,989,989,1041,3,Chad,483,,,,483,483,4,5.0-2015
+91,27,2001,Chad,Government of Chad,,MDJT,1298,,2,,226,226,326,3,Chad,483,,,,483,483,4,5.0-2015
+91,27,2002,Chad,Government of Chad,,MDJT,1298,,2,,294,294,350,3,Chad,483,,,,483,483,4,5.0-2015
+91,27,2003,Chad,Government of Chad,,MDJT,1298,,2,,37,37,189,3,Chad,483,,,,483,483,4,5.0-2015
+91,455,2005,Chad,Government of Chad,,FUCD,1299,,2,,100,100,356,3,Chad,483,,,,483,483,4,5.0-2015
+91,"455, 633, 634",2006,Chad,Government of Chad,,"FUCD, RAFD, UFDD","1299, 1300, 1302",,2,,1250,1250,2623,3,Chad,483,,,,483,483,4,5.0-2015
+91,634,2007,Chad,Government of Chad,,UFDD,1302,,2,,69,69,380,3,Chad,483,,,,483,483,4,5.0-2015
+91,767,2008,Chad,Government of Chad,,AN,1577,,2,,991,991,1361,3,Chad,483,,,,483,483,4,5.0-2015
+91,783,2009,Chad,Government of Chad,,UFR,1953,,2,,131,131,324,3,Chad,483,,,,483,483,4,5.0-2015
+91,807,2010,Chad,Government of Chad,,PFNR,1997,,2,,42,42,83,3,"Chad, Sudan",483,,,,483,"483, 625",4,5.0-2015
+92,"237, 342, 343",1989,Colombia,Government of Colombia,,"ELN, EPL, FARC","1604, 1605, 1607",,2,,236,236,254,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342, 343",1990,Colombia,Government of Colombia,,"ELN, EPL, FARC","1604, 1605, 1607",,2,,474,474,541,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",1991,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,725,725,754,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",1992,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,758,758,782,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",1993,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,195,195,205,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",1994,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,1123,1123,1134,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",1995,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,823,823,828,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",1996,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,1192,1185,1229,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",1997,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,554,554,670,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",1998,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,938,937,1383,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",1999,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,933,933,1425,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",2000,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,1017,1017,1355,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",2001,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,1072,1072,1340,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",2002,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,1200,1156,1374,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",2003,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,500,475,521,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342, 343",2004,Colombia,Government of Colombia,,"ELN, EPL, FARC","1604, 1605, 1607",,2,,1234,1210,1286,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",2005,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,1389,1389,1455,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",2006,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,502,502,514,3,Colombia,100,,,,100,100,5,5.0-2015
+92,237,2007,Colombia,Government of Colombia,,FARC,1604,,2,,316,316,323,3,"Colombia, Venezuela",100,,,,100,"100, 101",5,5.0-2015
+92,"237, 342",2008,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,244,240,253,3,"Colombia, Colombia, Ecuador",100,,,,100,"100, 100, 130",5,5.0-2015
+92,237,2009,Colombia,Government of Colombia,,FARC,1604,,2,,377,377,421,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",2010,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,419,419,425,3,Colombia,100,,,,100,100,5,5.0-2015
+92,237,2011,Colombia,Government of Colombia,,FARC,1604,,2,,202,202,208,3,Colombia,100,,,,100,100,5,5.0-2015
+92,237,2012,Colombia,Government of Colombia,,FARC,1604,,2,,211,211,310,3,Colombia,100,,,,100,100,5,5.0-2015
+92,"237, 342",2013,Colombia,Government of Colombia,,"ELN, FARC","1604, 1605",,2,,140,140,183,3,Colombia,100,,,,100,100,5,5.0-2015
+92,237,2014,Colombia,Government of Colombia,,FARC,1604,,2,,113,113,113,3,Colombia,100,,,,100,100,5,5.0-2015
+95,"235, 319",1989,Peru,Government of Peru,,"MRTA, Sendero Luminoso","1611, 1612",,2,,1735,1553,1850,3,Peru,135,,,,135,135,5,5.0-2015
+95,"235, 319",1990,Peru,Government of Peru,,"MRTA, Sendero Luminoso","1611, 1612",,2,,1047,778,1048,3,Peru,135,,,,135,135,5,5.0-2015
+95,"235, 319",1991,Peru,Government of Peru,,"MRTA, Sendero Luminoso","1611, 1612",,2,,1277,862,1277,3,Peru,135,,,,135,135,5,5.0-2015
+95,"235, 319",1992,Peru,Government of Peru,,"MRTA, Sendero Luminoso","1611, 1612",,2,,984,901,1180,3,Peru,135,,,,135,135,5,5.0-2015
+95,"235, 319",1993,Peru,Government of Peru,,"MRTA, Sendero Luminoso","1611, 1612",,2,,603,579,605,3,Peru,135,,,,135,135,5,5.0-2015
+95,235,1994,Peru,Government of Peru,,Sendero Luminoso,1611,,2,,224,222,256,3,Peru,135,,,,135,135,5,5.0-2015
+95,235,1995,Peru,Government of Peru,,Sendero Luminoso,1611,,2,,178,178,198,3,Peru,135,,,,135,135,5,5.0-2015
+95,235,1996,Peru,Government of Peru,,Sendero Luminoso,1611,,2,,80,80,80,3,Peru,135,,,,135,135,5,5.0-2015
+95,235,1997,Peru,Government of Peru,,Sendero Luminoso,1611,,2,,92,92,100,3,Peru,135,,,,135,135,5,5.0-2015
+95,235,1998,Peru,Government of Peru,,Sendero Luminoso,1611,,2,,25,25,25,3,Peru,135,,,,135,135,5,5.0-2015
+95,235,1999,Peru,Government of Peru,,Sendero Luminoso,1611,,2,,75,75,84,3,Peru,135,,,,135,135,5,5.0-2015
+95,235,2007,Peru,Government of Peru,,Sendero Luminoso,1611,,2,,32,32,32,3,Peru,135,,,,135,135,5,5.0-2015
+95,235,2008,Peru,Government of Peru,,Sendero Luminoso,1611,,2,,56,56,56,3,Peru,135,,,,135,135,5,5.0-2015
+95,235,2009,Peru,Government of Peru,,Sendero Luminoso,1611,,2,,50,50,80,3,Peru,135,,,,135,135,5,5.0-2015
+95,235,2010,Peru,Government of Peru,,Sendero Luminoso,1611,,2,,28,28,28,3,Peru,135,,,,135,135,5,5.0-2015
+97,517,2011,"Cambodia (Kampuchea), Thailand",Government of Cambodia (Kampuchea),,Government of Thailand,800,,1,Common Border,29,29,36,2,"Cambodia (Kampuchea), Thailand",811,,800,,"800, 811","811, 800",3,5.0-2015
+100,793,2009,Nigeria,Government of Nigeria,,Jama'atu Ahlis Sunna Lidda'awati wal-Jihad,1935,,2,,405,402,835,3,Nigeria,475,,,,475,475,4,5.0-2015
+100,793,2011,Nigeria,Government of Nigeria,,Jama'atu Ahlis Sunna Lidda'awati wal-Jihad,1935,,2,,324,266,547,3,Nigeria,475,,,,475,475,4,5.0-2015
+100,793,2012,Nigeria,Government of Nigeria,"Government of Chad, Government of Niger",Jama'atu Ahlis Sunna Lidda'awati wal-Jihad,1935,,2,,812,812,1156,4,Nigeria,475,"483, 436",,,475,475,4,5.0-2015
+100,793,2013,Nigeria,Government of Nigeria,"Government of Chad, Government of Niger",Jama'atu Ahlis Sunna Lidda'awati wal-Jihad,1935,,2,,1629,1474,2080,4,Nigeria,475,"483, 436",,,475,475,4,5.0-2015
+100,793,2014,Nigeria,Government of Nigeria,"Government of Cameroon, Government of Chad, Government of Niger",Jama'atu Ahlis Sunna Lidda'awati wal-Jihad,1935,,2,,4621,4480,5006,4,"Cameroon, Nigeria",475,"471, 483, 436",,,475,"471, 475",4,5.0-2015
+102,867,2011,Syria,Government of Syria,,Syrian insurgents,4456,,2,,842,789,1132,3,Syria,652,,,,652,652,2,5.0-2015
+102,867,2012,Syria,Government of Syria,,Syrian insurgents,4456,,2,,15056,14828,30848,3,Syria,652,,,,652,652,2,5.0-2015
+102,867,2013,Syria,Government of Syria,,Syrian insurgents,4456,,2,,49171,19085,49171,3,Syria,652,,,,652,652,2,5.0-2015
+102,867,2014,Syria,Government of Syria,,Syrian insurgents,4456,,2,,53948,-99,53948,3,Syria,652,,,,652,652,2,5.0-2015
+103,"364, 378, 379",1989,Cambodia (Kampuchea),Government of Cambodia (Kampuchea),Government of Vietnam (North Vietnam),"FUNCINPEC, KPNLF, KR","1112, 1114, 1115",,2,,818,818,2438,4,"Cambodia (Kampuchea), Cambodia (Kampuchea), Thailand",811,816,,,811,"811, 811, 800",3,5.0-2015
+103,"364, 378",1990,Cambodia (Kampuchea),Government of Cambodia (Kampuchea),,"KPNLF, KR","1112, 1114",,2,,274,268,657,3,Cambodia (Kampuchea),811,,,,811,811,3,5.0-2015
+103,"364, 378, 379",1991,Cambodia (Kampuchea),Government of Cambodia (Kampuchea),,"FUNCINPEC, KPNLF, KR","1112, 1114, 1115",,2,,220,220,451,3,Cambodia (Kampuchea),811,,,,811,811,3,5.0-2015
+103,364,1992,Cambodia (Kampuchea),Government of Cambodia (Kampuchea),,KR,1112,,2,,118,118,118,3,Cambodia (Kampuchea),811,,,,811,811,3,5.0-2015
+103,364,1993,Cambodia (Kampuchea),Government of Cambodia (Kampuchea),,KR,1112,,2,,274,274,393,3,Cambodia (Kampuchea),811,,,,811,811,3,5.0-2015
+103,364,1994,Cambodia (Kampuchea),Government of Cambodia (Kampuchea),,KR,1112,,2,,464,404,1126,3,Cambodia (Kampuchea),811,,,,811,811,3,5.0-2015
+103,364,1995,Cambodia (Kampuchea),Government of Cambodia (Kampuchea),,KR,1112,,2,,694,684,1105,3,Cambodia (Kampuchea),811,,,,811,811,3,5.0-2015
+103,364,1996,Cambodia (Kampuchea),Government of Cambodia (Kampuchea),,KR,1112,,2,,788,788,1007,3,Cambodia (Kampuchea),811,,,,811,811,3,5.0-2015
+103,"364, 379",1997,Cambodia (Kampuchea),Government of Cambodia (Kampuchea),,"FUNCINPEC, KR","1112, 1115",,2,,427,427,664,3,"Cambodia (Kampuchea), Cambodia (Kampuchea), Thailand",811,,,,811,"811, 811, 800",3,5.0-2015
+103,364,1998,Cambodia (Kampuchea),Government of Cambodia (Kampuchea),,KR,1112,,2,,235,235,374,3,"Cambodia (Kampuchea), Thailand",811,,,,811,"811, 800",3,5.0-2015
+111,57,2000,Guinea,Government of Guinea,,RFDG,1309,,2,,217,182,522,3,Guinea,438,,,,438,438,4,5.0-2015
+111,57,2001,Guinea,Government of Guinea,,RFDG,1309,,2,,432,432,778,3,"Guinea, Liberia, Sierra Leone",438,,,,438,"438, 450, 451",4,5.0-2015
+112,247,1989,Philippines,Government of Philippines,,MNLF,1117,,1,Mindanao,115,115,115,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"242, 247",1990,Philippines,Government of Philippines,,"MILF, MNLF","1117, 1118",,1,Mindanao,141,141,141,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"247, 249",1993,Philippines,Government of Philippines,,"ASG, MNLF","1117, 1119",,1,Mindanao,154,154,178,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"242, 249",1994,Philippines,Government of Philippines,,"ASG, MILF","1118, 1119",,1,Mindanao,196,196,213,3,Philippines,840,,,,840,840,3,5.0-2015
+112,249,1995,Philippines,Government of Philippines,,ASG,1119,,1,Mindanao,116,116,122,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"242, 249",1996,Philippines,Government of Philippines,,"ASG, MILF","1118, 1119",,1,Mindanao,180,180,184,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"242, 249",1997,Philippines,Government of Philippines,,"ASG, MILF","1118, 1119",,1,Mindanao,270,230,348,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"242, 249",1998,Philippines,Government of Philippines,,"ASG, MILF","1118, 1119",,1,Mindanao,93,93,93,3,Philippines,840,,,,840,840,3,5.0-2015
+112,242,1999,Philippines,Government of Philippines,,MILF,1118,,1,Mindanao,106,73,135,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"242, 249",2000,Philippines,Government of Philippines,,"ASG, MILF","1118, 1119",,1,Mindanao,1427,1405,1559,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"242, 249, 252",2001,Philippines,Government of Philippines,,"ASG, MILF, MNLF - NM","1118, 1119, 1120",,1,Mindanao,652,555,797,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"242, 249",2002,Philippines,Government of Philippines,,"ASG, MILF","1118, 1119",,1,Mindanao,382,382,416,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"242, 249",2003,Philippines,Government of Philippines,,"ASG, MILF","1118, 1119",,1,Mindanao,825,699,1041,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"242, 249",2004,Philippines,Government of Philippines,,"ASG, MILF","1118, 1119",,1,Mindanao,69,66,99,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"242, 249, 252",2005,Philippines,Government of Philippines,,"ASG, MILF, MNLF - NM","1118, 1119, 1120",,1,Mindanao,236,233,287,3,Philippines,840,,,,840,840,3,5.0-2015
+112,249,2006,Philippines,Government of Philippines,,ASG,1119,,1,Mindanao,50,50,116,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"242, 249, 647",2007,Philippines,Government of Philippines,,"ASG, MILF, MNLF - HM","1118, 1119, 1121",,1,Mindanao,307,307,326,3,Philippines,840,,,,840,840,3,5.0-2015
+112,242,2008,Philippines,Government of Philippines,,MILF,1118,,1,Mindanao,297,297,546,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"242, 249",2009,Philippines,Government of Philippines,,"ASG, MILF","1118, 1119",,1,Mindanao,517,501,548,3,Philippines,840,,,,840,840,3,5.0-2015
+112,249,2010,Philippines,Government of Philippines,,ASG,1119,,1,Mindanao,74,74,85,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"242, 249",2011,Philippines,Government of Philippines,,"ASG, MILF","1118, 1119",,1,Mindanao,146,146,171,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"249, 834",2012,Philippines,Government of Philippines,,"ASG, BIFM","1119, 2031",,1,Mindanao,113,107,138,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"249, 252, 834",2013,Philippines,Government of Philippines,,"ASG, BIFM, MNLF - NM","1119, 1120, 2031",,1,Mindanao,349,349,414,3,Philippines,840,,,,840,840,3,5.0-2015
+112,"249, 834",2014,Philippines,Government of Philippines,,"ASG, BIFM","1119, 2031",,1,Mindanao,280,276,288,3,Philippines,840,,,,840,840,3,5.0-2015
+113,641,1989,Sudan,Government of Sudan,,SPLM/A,1312,,2,,4253,4253,5253,3,"Sudan, Uganda",625,,,,625,"625, 500",4,5.0-2015
+113,641,1990,Sudan,Government of Sudan,,SPLM/A,1312,,2,,4335,4335,4335,3,"Sudan, Uganda",625,,,,625,"625, 500",4,5.0-2015
+113,641,1991,Sudan,Government of Sudan,,SPLM/A,1312,,2,,1317,1317,4317,3,"Sudan, Uganda",625,,,,625,"625, 500",4,5.0-2015
+113,641,1992,Sudan,Government of Sudan,,SPLM/A,1312,,2,,1083,1083,4083,3,Sudan,625,,,,625,625,4,5.0-2015
+113,641,1993,Sudan,Government of Sudan,,SPLM/A,1312,,2,,942,942,942,3,Sudan,625,,,,625,625,4,5.0-2015
+113,641,1994,Sudan,Government of Sudan,,SPLM/A,1312,,2,,337,337,337,3,Sudan,625,,,,625,625,4,5.0-2015
+113,641,1995,Sudan,Government of Sudan,,SPLM/A,1312,,2,,1000,1000,1882,3,Sudan,625,,,,625,625,4,5.0-2015
+113,"641, 645",1996,Sudan,Government of Sudan,,"NDA, SPLM/A","1312, 1314",,2,,2289,2289,2291,3,Sudan,625,,,,625,625,4,5.0-2015
+113,"641, 645",1997,Sudan,Government of Sudan,,"NDA, SPLM/A","1312, 1314",,2,,3709,3709,7228,3,Sudan,625,,,,625,625,4,5.0-2015
+113,"641, 645",1998,Sudan,Government of Sudan,,"NDA, SPLM/A","1312, 1314",,2,,4891,4891,5572,3,Sudan,625,,,,625,625,4,5.0-2015
+113,"641, 645",1999,Sudan,Government of Sudan,,"NDA, SPLM/A","1312, 1314",,2,,1408,1408,1597,3,Sudan,625,,,,625,625,4,5.0-2015
+113,"641, 645",2000,Sudan,Government of Sudan,,"NDA, SPLM/A","1312, 1314",,2,,2841,2841,3610,3,Sudan,625,,,,625,625,4,5.0-2015
+113,"641, 645",2001,Sudan,Government of Sudan,,"NDA, SPLM/A","1312, 1314",,2,,3408,3408,3658,3,Sudan,625,,,,625,625,4,5.0-2015
+113,641,2002,Sudan,Government of Sudan,,SPLM/A,1312,,2,,2021,2021,3021,3,Sudan,625,,,,625,625,4,5.0-2015
+113,"433, 434, 641",2003,Sudan,Government of Sudan,Government of Chad,"JEM, SLM/A, SPLM/A","1312, 1315, 1316",,2,,1999,1899,2856,"3, 4",Sudan,625,483,,,625,625,4,5.0-2015
+113,"433, 434, 641",2004,Sudan,Government of Sudan,,"JEM, SLM/A, SPLM/A","1312, 1315, 1316",,2,,3278,3278,4588,3,Sudan,625,,,,625,625,4,5.0-2015
+113,433,2005,Sudan,Government of Sudan,,SLM/A,1316,,2,,161,161,191,3,Sudan,625,,,,625,625,4,5.0-2015
+113,"433, 630, 631",2006,Sudan,Government of Sudan,,"NRF, SLM/A, SLM/A - MM","1316, 1317, 1318",,2,,1002,1002,2719,3,Sudan,625,,,,625,625,4,5.0-2015
+113,"434, 648",2007,Sudan,Government of Sudan,,"JEM, SLM/A-Unity","1315, 1319",,2,,217,201,222,3,Sudan,625,,,,625,625,4,5.0-2015
+113,"433, 434, 648",2008,Sudan,Government of Sudan,,"JEM, SLM/A, SLM/A-Unity","1315, 1316, 1319",,2,,598,598,1476,3,Sudan,625,,,,625,625,4,5.0-2015
+113,"433, 434",2009,Sudan,Government of Sudan,,"JEM, SLM/A","1315, 1316",,2,,353,353,370,3,"Chad, Sudan, Sudan",625,,,,625,"483, 625, 625",4,5.0-2015
+113,"433, 434, 808",2010,Sudan,Government of Sudan,,"JEM, SLM/A, SSDM/A","1315, 1316, 1993",,2,,1010,1010,1888,3,Sudan,625,,,,625,625,4,5.0-2015
+113,"433, 434, 808, 812, 813, 833",2011,Sudan,Government of Sudan,,"JEM, SLM/A, SPLM/A-North, SRF, SSDM/A, SSLM/A","1315, 1316, 1993, 2008, 2009, 2047",,2,,1324,1300,2185,3,"Ethiopia, Sudan, Sudan",625,,,,625,"530, 625, 625",4,5.0-2015
+113,833,2012,Sudan,Government of Sudan,,SRF,2047,,2,,1173,1123,1803,3,Sudan,625,,,,625,625,4,5.0-2015
+113,833,2013,Sudan,Government of Sudan,,SRF,2047,,2,,589,523,2697,3,Sudan,625,,,,625,625,4,5.0-2015
+113,"833, 14134, 14150",2014,Sudan,Government of Sudan,,"Darfur Joint Resistance Forces, SARC, SRF","2047, 5849, 5866",,2,,856,815,2163,3,"South Sudan, Sudan, Sudan",625,,,,625,"625, 626, 625",4,5.0-2015
+117,256,1989,Sri Lanka,Government of Sri Lanka,,JVP,1123,,2,,388,388,517,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+117,256,1990,Sri Lanka,Government of Sri Lanka,,JVP,1123,,2,,61,61,61,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+118,"148, 151",1989,Uganda,Government of Uganda,,"LRA, UPA","1334, 1336",,2,,1019,1019,1040,3,Uganda,500,,,,500,500,4,5.0-2015
+118,"148, 151",1990,Uganda,Government of Uganda,,"LRA, UPA","1334, 1336",,2,,621,621,633,3,Uganda,500,,,,500,500,4,5.0-2015
+118,"148, 151",1991,Uganda,Government of Uganda,,"LRA, UPA","1334, 1336",,2,,853,853,853,3,Uganda,500,,,,500,500,4,5.0-2015
+118,148,1992,Uganda,Government of Uganda,,UPA,1334,,2,,72,72,72,3,Uganda,500,,,,500,500,4,5.0-2015
+118,151,1994,Uganda,Government of Uganda,,LRA,1336,,2,,149,149,226,3,Uganda,500,,,,500,500,4,5.0-2015
+118,151,1995,Uganda,Government of Uganda,,LRA,1336,,2,,295,295,332,3,"Sudan, Uganda",500,,,,500,"625, 500",4,5.0-2015
+118,"151, 152, 153",1996,Uganda,Government of Uganda,,"ADF, LRA, WNBF","1336, 1337, 1338",,2,,1240,1240,1586,3,"DR Congo (Zaire), Uganda, Uganda",500,,,,500,"490, 500, 500",4,5.0-2015
+118,"151, 153, 431",1997,Uganda,Government of Uganda,,"ADF, LRA, UNRF II","1336, 1337, 1339",,2,,888,888,1179,3,"Sudan, Uganda, Uganda",500,,,,500,"500, 625, 500",4,5.0-2015
+118,"151, 153",1998,Uganda,Government of Uganda,,"ADF, LRA","1336, 1337",,2,,833,833,1046,3,"DR Congo (Zaire), Uganda, Uganda",500,,,,500,"490, 500, 500",4,5.0-2015
+118,153,1999,Uganda,Government of Uganda,,ADF,1337,,2,,355,355,355,3,"DR Congo (Zaire), Uganda",500,,,,500,"490, 500",4,5.0-2015
+118,"151, 153",2000,Uganda,Government of Uganda,,"ADF, LRA","1336, 1337",,2,,388,388,407,3,"DR Congo (Zaire), Uganda, Uganda",500,,,,500,"490, 500, 500",4,5.0-2015
+118,"151, 153",2001,Uganda,Government of Uganda,,"ADF, LRA","1336, 1337",,2,,189,189,237,3,"DR Congo (Zaire), Uganda, Sudan, Uganda",500,,,,500,"490, 500, 625, 500",4,5.0-2015
+118,"151, 153",2002,Uganda,Government of Uganda,,"ADF, LRA","1336, 1337",,2,,1086,1086,1881,3,"DR Congo (Zaire), Uganda, Sudan, Uganda",500,,,,500,"490, 500, 625, 500",4,5.0-2015
+118,151,2003,Uganda,Government of Uganda,,LRA,1336,,2,,642,641,1100,3,"Sudan, Uganda",500,,,,500,"625, 500",4,5.0-2015
+118,151,2004,Uganda,Government of Uganda,,LRA,1336,,2,,1610,1609,2215,3,"Sudan, Uganda",500,,,,500,"625, 500",4,5.0-2015
+118,151,2005,Uganda,Government of Uganda,Government of Sudan,LRA,1336,,2,,695,695,814,4,"Sudan, Uganda",500,625,,,500,"625, 500",4,5.0-2015
+118,151,2006,Uganda,Government of Uganda,,LRA,1336,,2,,221,221,318,3,"DR Congo (Zaire), Sudan, Uganda",500,,,,500,"490, 625, 500",4,5.0-2015
+118,153,2007,Uganda,Government of Uganda,,ADF,1337,,2,,91,91,147,3,Uganda,500,,,,500,500,4,5.0-2015
+118,151,2008,Uganda,Government of Uganda,"Government of DR Congo (Zaire) , Government of Sudan",LRA,1336,,2,,53,53,66,4,"DR Congo (Zaire), Sudan",500,"490, 625",,,500,"490, 625",4,5.0-2015
+118,151,2009,Uganda,Government of Uganda,"Government of Central African Republic, Government of DR Congo (Zaire) , Government of Sudan",LRA,1336,,2,,238,238,263,4,"Central African Republic, DR Congo (Zaire), Sudan",500,"482, 490, 625",,,500,"482, 490, 625",4,5.0-2015
+118,"151, 153",2010,Uganda,Government of Uganda,"Government of Central African Republic, Government of DR Congo (Zaire) , Government of Sudan, Government of DR Congo (Zaire)","ADF, LRA","1336, 1337",,2,,120,120,138,4,"Central African Republic, DR Congo (Zaire), Sudan, DR Congo (Zaire)",500,"482, 490, 625, 490",,,500,"482, 490, 625, 490",4,5.0-2015
+118,"151, 153",2011,Uganda,Government of Uganda,"Government of Central African Republic, Government of DR Congo (Zaire) , Government of South Sudan, Government of Sudan, Government of DR Congo (Zaire)","ADF, LRA","1336, 1337",,2,,136,136,146,4,"Central African Republic, DR Congo (Zaire), South Sudan, Sudan, DR Congo (Zaire)",500,"482, 490, 626, 625, 490",,,500,"482, 490, 626, 625, 490",4,5.0-2015
+118,"151, 153",2013,Uganda,Government of Uganda,"Government of Central African Republic, Government of DR Congo (Zaire) , Government of South Sudan, Government of DR Congo (Zaire)","ADF, LRA","1336, 1337",,2,,100,100,118,4,"Central African Republic, DR Congo (Zaire), DR Congo (Zaire)",500,"482, 490, 626, 490",,,500,"482, 490, 490",4,5.0-2015
+118,"151, 153",2014,Uganda,Government of Uganda,"Government of DR Congo (Zaire), Government of DR Congo (Zaire), Government of South Sudan","ADF, LRA","1336, 1337",,2,,864,864,1036,4,"Central African Republic, DR Congo (Zaire), DR Congo (Zaire)",500,"490, 490, 626",,,500,"482, 490, 490",4,5.0-2015
+119,248,1998,United Kingdom,Government of United Kingdom,,RIRA,1125,,1,Northern Ireland,29,29,29,3,United Kingdom,200,,,,200,200,1,5.0-2015
+119,216,1989,United Kingdom,Government of United Kingdom,,PIRA,1124,,1,Northern Ireland,37,37,38,3,"Germany, United Kingdom",200,,,,200,"260, 200",1,5.0-2015
+119,216,1990,United Kingdom,Government of United Kingdom,,PIRA,1124,,1,Northern Ireland,44,44,46,3,"Germany, Netherlands, United Kingdom",200,,,,200,"260, 210, 200",1,5.0-2015
+119,216,1991,United Kingdom,Government of United Kingdom,,PIRA,1124,,1,Northern Ireland,26,26,27,3,United Kingdom,200,,,,200,200,1,5.0-2015
+120,225,1989,El Salvador,Government of El Salvador,,FMLN,1616,,2,,4925,4925,4953,3,El Salvador,92,,,,92,92,5,5.0-2015
+120,225,1990,El Salvador,Government of El Salvador,,FMLN,1616,,2,,848,848,998,3,El Salvador,92,,,,92,92,5,5.0-2015
+120,225,1991,El Salvador,Government of El Salvador,,FMLN,1616,,2,,88,88,93,3,El Salvador,92,,,,92,92,5,5.0-2015
+126,223,1989,Bangladesh,Government of Bangladesh,,JSS/SB,1127,,1,Chittagong Hill Tracts,26,26,26,3,Bangladesh,771,,,,771,771,3,5.0-2015
+126,223,1990,Bangladesh,Government of Bangladesh,,JSS/SB,1127,,1,Chittagong Hill Tracts,45,45,45,3,Bangladesh,771,,,,771,771,3,5.0-2015
+126,223,1991,Bangladesh,Government of Bangladesh,,JSS/SB,1127,,1,Chittagong Hill Tracts,25,22,45,3,Bangladesh,771,,,,771,771,3,5.0-2015
+129,639,2004,Pakistan,Government of Pakistan,,BLA,1129,,1,Balochistan,43,43,58,3,Pakistan,770,,,,770,770,3,5.0-2015
+129,"638, 639",2006,Pakistan,Government of Pakistan,,"BLA, Baloch Ittehad","1129, 1130",,1,Balochistan,200,200,209,3,Pakistan,770,,,,770,770,3,5.0-2015
+129,639,2007,Pakistan,Government of Pakistan,,BLA,1129,,1,Balochistan,83,82,331,3,Pakistan,770,,,,770,770,3,5.0-2015
+129,"639, 774",2008,Pakistan,Government of Pakistan,,"BLA, BRA","1129, 1131",,1,Balochistan,197,186,233,3,Pakistan,770,,,,770,770,3,5.0-2015
+129,"639, 774",2009,Pakistan,Government of Pakistan,,"BLA, BRA","1129, 1131",,1,Balochistan,81,81,102,3,Pakistan,770,,,,770,770,3,5.0-2015
+129,639,2011,Pakistan,Government of Pakistan,,BLA,1129,,1,Balochistan,42,42,123,3,Pakistan,770,,,,770,770,3,5.0-2015
+129,"544, 639, 774",2012,Pakistan,Government of Pakistan,,"BLA, BLF, BRA","1129, 1131, 2053",,1,Balochistan,118,118,362,3,Pakistan,770,,,,770,770,3,5.0-2015
+129,639,2013,Pakistan,Government of Pakistan,,BLA,1129,,1,Balochistan,45,45,45,3,Pakistan,770,,,,770,770,3,5.0-2015
+129,"639, 774",2014,Pakistan,Government of Pakistan,,"BLA, BRA","1129, 1131",,1,Balochistan,90,90,90,3,Pakistan,770,,,,770,770,3,5.0-2015
+130,435,2003,Eritrea,Government of Eritrea,,EIJM - AS,1343,,2,,57,57,57,3,Eritrea,531,,,,531,531,4,5.0-2015
+130,435,1997,Eritrea,Government of Eritrea,,EIJM - AS,1343,,2,,31,31,117,3,Eritrea,531,,,,531,531,4,5.0-2015
+130,435,1999,Eritrea,Government of Eritrea,,EIJM - AS,1343,,2,,25,25,239,3,Eritrea,531,,,,531,531,4,5.0-2015
+131,7,1989,Angola,Government of Angola,Government of Cuba,UNITA,1421,,2,,2810,2810,6283,4,Angola,540,40,,,540,540,4,5.0-2015
+131,7,1990,Angola,Government of Angola,,UNITA,1421,,2,,2558,2557,4452,3,Angola,540,,,,540,540,4,5.0-2015
+131,7,1991,Angola,Government of Angola,,UNITA,1421,,2,,491,491,647,3,Angola,540,,,,540,540,4,5.0-2015
+131,7,1992,Angola,Government of Angola,,UNITA,1421,,2,,2321,2321,3572,3,Angola,540,,,,540,540,4,5.0-2015
+131,7,1993,Angola,Government of Angola,,UNITA,1421,,2,,12054,12054,23329,3,Angola,540,,,,540,540,4,5.0-2015
+131,7,1994,Angola,Government of Angola,,UNITA,1421,,2,,3924,3920,11087,3,"Angola, DR Congo (Zaire)",540,,,,540,"540, 490",4,5.0-2015
+131,7,1995,Angola,Government of Angola,,UNITA,1421,,2,,162,162,522,3,Angola,540,,,,540,540,4,5.0-2015
+131,7,1998,Angola,Government of Angola,,UNITA,1421,,2,,1041,1041,1516,3,Angola,540,,,,540,540,4,5.0-2015
+131,7,1999,Angola,Government of Angola,Government of Namibia,UNITA,1421,,2,,2273,2273,6431,4,"Angola, Namibia",540,565,,,540,"540, 565",4,5.0-2015
+131,7,2000,Angola,Government of Angola,Government of Namibia,UNITA,1421,,2,,1000,407,3799,4,"Angola, Namibia",540,565,,,540,"540, 565",4,5.0-2015
+131,7,2001,Angola,Government of Angola,Government of Namibia,UNITA,1421,,2,,1123,1123,2447,4,Angola,540,565,,,540,540,4,5.0-2015
+131,7,2002,Angola,Government of Angola,Government of Namibia,UNITA,1421,,2,,461,461,461,4,"Angola, Namibia",540,565,,,540,"540, 565",4,5.0-2015
+133,283,1993,Ethiopia,Government of Ethiopia,,AIAI,1394,,1,Ogaden,36,36,36,3,Ethiopia,530,,,,530,530,4,5.0-2015
+133,54,1994,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,50,50,50,3,Ethiopia,530,,,,530,530,4,5.0-2015
+133,"54, 283",1996,Ethiopia,Government of Ethiopia,,"AIAI, ONLF","1346, 1394",,1,Ogaden,211,211,481,3,"Ethiopia, Ethiopia, Somalia",530,,,,530,"530, 530, 520",4,5.0-2015
+133,54,1998,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,25,25,90,3,Ethiopia,530,,,,530,530,4,5.0-2015
+133,"54, 283",1999,Ethiopia,Government of Ethiopia,,"AIAI, ONLF","1346, 1394",,1,Ogaden,50,50,640,3,"Ethiopia, Somalia",530,,,,530,"530, 520",4,5.0-2015
+133,54,2000,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,25,25,855,3,Ethiopia,530,,,,530,530,4,5.0-2015
+133,54,2001,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,25,25,117,3,Ethiopia,530,,,,530,530,4,5.0-2015
+133,54,2002,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,25,25,637,3,Ethiopia,530,,,,530,530,4,5.0-2015
+133,54,2003,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,25,25,260,3,Ethiopia,530,,,,530,530,4,5.0-2015
+133,54,2004,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,25,25,525,3,"Ethiopia, Somalia",530,,,,530,"530, 520",4,5.0-2015
+133,54,2005,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,58,58,695,3,Ethiopia,530,,,,530,530,4,5.0-2015
+133,54,2006,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,25,25,818,3,Ethiopia,530,,,,530,530,4,5.0-2015
+133,54,2007,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,152,152,737,3,Ethiopia,530,,,,530,530,4,5.0-2015
+133,54,2008,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,25,25,416,3,Ethiopia,530,,,,530,530,4,5.0-2015
+133,54,2009,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,473,473,995,3,Ethiopia,530,,,,530,530,4,5.0-2015
+133,54,2010,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,126,123,1860,3,"Ethiopia, Somalia",530,,,,530,"530, 520",4,5.0-2015
+133,54,2011,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,25,25,379,3,"Ethiopia, Kenya",530,,,,530,"530, 501",4,5.0-2015
+133,54,2012,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,25,25,406,3,Ethiopia,530,,,,530,530,4,5.0-2015
+133,54,2013,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,52,52,908,3,Ethiopia,530,,,,530,530,4,5.0-2015
+133,54,2014,Ethiopia,Government of Ethiopia,,ONLF,1346,,1,Ogaden,25,25,220,3,Ethiopia,530,,,,530,530,4,5.0-2015
+134,344,1992,Indonesia,Government of Indonesia,,Fretilin,1132,,1,East Timor,39,39,39,3,Indonesia,850,,,,850,850,3,5.0-2015
+134,344,1997,Indonesia,Government of Indonesia,,Fretilin,1132,,1,East Timor,51,51,79,3,Indonesia,850,,,,850,850,3,5.0-2015
+134,344,1998,Indonesia,Government of Indonesia,,Fretilin,1132,,1,East Timor,30,14,48,3,Indonesia,850,,,,850,850,3,5.0-2015
+134,344,1999,Indonesia,Government of Indonesia,,Fretilin,1132,,1,East Timor,26,26,30,3,Indonesia,850,,,,850,850,3,5.0-2015
+135,98,1989,Morocco,Government of Morocco,,POLISARIO,1417,,1,Western Sahara,207,207,378,3,Morocco,600,,,,600,600,4,5.0-2015
+136,99,1992,Mozambique,Government of Mozambique,,Renamo,1347,,2,,309,309,445,3,Mozambique,541,,,,541,541,4,5.0-2015
+136,99,2013,Mozambique,Government of Mozambique,,Renamo,1347,,2,,27,25,98,3,Mozambique,541,,,,541,541,4,5.0-2015
+136,99,1989,Mozambique,Government of Mozambique,Government of Zimbabwe (Rhodesia),Renamo,1347,,2,,1149,1144,3750,4,Mozambique,541,552,,,541,541,4,5.0-2015
+136,99,1990,Mozambique,Government of Mozambique,Government of Zimbabwe (Rhodesia),Renamo,1347,,2,,1577,327,1577,4,Mozambique,541,552,,,541,541,4,5.0-2015
+136,99,1991,Mozambique,Government of Mozambique,,Renamo,1347,,2,,1326,326,2389,3,Mozambique,541,,,,541,541,4,5.0-2015
+137,"411, 412, 413, 732, 760",1989,Afghanistan,Government of Afghanistan,Government of Russia (Soviet Union),"Hizb-i Islami-yi Afghanistan, Hizb-i Islami-yi Afghanistan - Khalis faction, Hizb-i Wahdat, Jam'iyyat-i Islami-yi Afghanistan, Mahaz-i Milli-yi Islami-yi Afghanistan","1134, 1136, 1138, 1141, 1142",,2,,5249,1979,17047,4,Afghanistan,700,365,,,700,700,3,5.0-2015
+137,"411, 412, 413, 476, 760",1990,Afghanistan,Government of Afghanistan,,"Hizb-i Islami-yi Afghanistan, Hizb-i Islami-yi Afghanistan - Khalis faction, Hizb-i Wahdat, Jam'iyyat-i Islami-yi Afghanistan, Military faction (forces of Shahnawaz Tanay)","1134, 1136, 1141, 1142, 1143",,2,,1478,1323,2275,3,Afghanistan,700,,,,700,700,3,5.0-2015
+137,"411, 412, 413, 760",1991,Afghanistan,Government of Afghanistan,,"Hizb-i Islami-yi Afghanistan, Hizb-i Islami-yi Afghanistan - Khalis faction, Hizb-i Wahdat, Jam'iyyat-i Islami-yi Afghanistan","1134, 1136, 1141, 1142",,2,,3302,3156,3802,3,Afghanistan,700,,,,700,700,3,5.0-2015
+137,"411, 412, 413",1992,Afghanistan,Government of Afghanistan,,"Hizb-i Islami-yi Afghanistan, Hizb-i Wahdat, Jam'iyyat-i Islami-yi Afghanistan","1134, 1141, 1142",,2,,4276,4259,5460,3,Afghanistan,700,,,,700,700,3,5.0-2015
+137,"412, 413, 422",1993,Afghanistan,Government of Afghanistan,,"Hizb-i Islami-yi Afghanistan, Hizb-i Wahdat, Junbish-i Milli-yi Islami","1141, 1142, 1144",,2,,3721,3713,7805,3,Afghanistan,700,,,,700,700,3,5.0-2015
+137,"412, 413, 422",1994,Afghanistan,Government of Afghanistan,,"Hizb-i Islami-yi Afghanistan, Hizb-i Wahdat, Junbish-i Milli-yi Islami","1141, 1142, 1144",,2,,8937,8937,11955,3,Afghanistan,700,,,,700,700,3,5.0-2015
+137,"327, 412, 413, 422",1995,Afghanistan,Government of Afghanistan,,"Hizb-i Islami-yi Afghanistan, Hizb-i Wahdat, Junbish-i Milli-yi Islami, Taleban","1141, 1142, 1144, 1146",,2,,5516,5516,6490,3,Afghanistan,700,,,,700,700,3,5.0-2015
+137,"327, 411, 423",1996,Afghanistan,Government of Afghanistan,,"Jam'iyyat-i Islami-yi Afghanistan, Taleban, UIFSA","1134, 1146, 1147",,2,,3100,3084,3561,3,Afghanistan,700,,,,700,700,3,5.0-2015
+137,423,1997,Afghanistan,Government of Afghanistan,,UIFSA,1147,,2,,6396,4244,8281,3,Afghanistan,700,,,,700,700,3,5.0-2015
+137,423,1998,Afghanistan,Government of Afghanistan,,UIFSA,1147,,2,,6294,6206,7736,3,Afghanistan,700,,,,700,700,3,5.0-2015
+137,423,1999,Afghanistan,Government of Afghanistan,,UIFSA,1147,,2,,4626,4591,4774,3,Afghanistan,700,,,,700,700,3,5.0-2015
+137,423,2000,Afghanistan,Government of Afghanistan,,UIFSA,1147,,2,,5235,4053,5511,3,Afghanistan,700,,,,700,700,3,5.0-2015
+137,423,2001,Afghanistan,Government of Afghanistan,,UIFSA,1147,"Government of Australia, Government of Canada, Government of France, Government of Germany, Government of Italy, Government of Japan, Government of Jordan, Government of Netherlands, Government of Poland, Government of Russia (Soviet Union), Government of Turkey, Government of United Kingdom, Government of United States of America",2,,3813,3694,9910,4,Afghanistan,700,,,"900, 20, 220, 260, 325, 740, 663, 210, 290, 365, 640, 200, 2",700,700,3,5.0-2015
+137,412,2002,Afghanistan,Government of Afghanistan,,Hizb-i Islami-yi Afghanistan,1141,,2,,30,30,30,3,Afghanistan,700,,,,700,700,3,5.0-2015
+137,"327, 412",2003,Afghanistan,Government of Afghanistan,"Government of Australia, Government of Denmark, Government of France, Government of Germany, Government of Italy, Government of Netherlands, Government of New Zealand, Government of Norway, Government of Poland, Government of Rumania, Government of United Kingdom, Government of United States of America","Hizb-i Islami-yi Afghanistan, Taleban","1141, 1146",,2,,664,650,988,"3, 4",Afghanistan,700,"900, 390, 220, 260, 325, 210, 920, 385, 290, 360, 200, 2",,,700,700,3,5.0-2015
+137,327,2004,Afghanistan,Government of Afghanistan,"Government of Belgium, Government of Canada, Government of Czech Republic, Government of France, Government of Germany, Government of Italy, Government of Pakistan, Government of Poland, Government of Portugal, Government of Rumania, Government of Slovakia, Government of Spain, Government of United Kingdom, Government of United States of America",Taleban,1146,,2,,705,663,1237,4,Afghanistan,700,"211, 20, 316, 220, 260, 325, 770, 290, 235, 360, 317, 230, 200, 2",,,700,700,3,5.0-2015
+137,327,2005,Afghanistan,Government of Afghanistan,"Government of Australia, Government of Belgium, Government of Canada, Government of Denmark, Government of France, Government of Germany, Government of Italy, Government of Netherlands, Government of Norway, Government of Pakistan, Government of Poland, Government of Rumania, Government of Slovakia, Government of Spain, Government of United Kingdom, Government of United States of America",Taleban,1146,,2,,1628,1424,1992,4,Afghanistan,700,"900, 211, 20, 390, 220, 260, 325, 210, 385, 770, 290, 360, 317, 230, 200, 2",,,700,700,3,5.0-2015
+137,"327, 412",2006,Afghanistan,Government of Afghanistan,"Government of Albania, Government of Australia, Government of Austria, Government of Azerbaijan, Government of Belgium, Government of Bulgaria, Government of Canada, Government of Croatia, Government of Czech Republic, Government of Denmark, Government of Estonia, Government of Finland, Government of France, Government of Germany, Government of Greece, Government of Hungary, Government of Iceland, Government of Ireland, Government of Italy, Government of Latvia, Government of Lithuania, Government of Luxembourg, Government of Macedonia, FYR, Government of Netherlands, Government of New Zealand, Government of Norway, Government of Pakistan, Government of Poland, Government of Portugal, Government of Rumania, Government of Slovakia, Government of Slovenia, Government of Spain, Government of Sweden, Government of Switzerland, Government of Turkey, Government of United Kingdom, Government of United States of America","Hizb-i Islami-yi Afghanistan, Taleban","1141, 1146",,2,,4734,4665,5543,"3, 4",Afghanistan,700,"339, 900, 305, 373, 211, 355, 20, 344, 316, 390, 366, 375, 220, 260, 350, 310, 395, 205, 325, 367, 368, 212, 343, 210, 920, 385, 770, 290, 235, 360, 317, 349, 230, 380, 225, 640, 200, 2",,,700,700,3,5.0-2015
+137,327,2007,Afghanistan,Government of Afghanistan,"Government of Albania, Government of Australia, Government of Austria, Government of Azerbaijan, Government of Belgium, Government of Bulgaria, Government of Canada, Government of Croatia, Government of Czech Republic, Government of Denmark, Government of Estonia, Government of Finland, Government of France, Government of Germany, Government of Greece, Government of Hungary, Government of Iceland, Government of Ireland, Government of Italy, Government of Jordan, Government of Latvia, Government of Lithuania, Government of Luxembourg, Government of Macedonia, FYR, Government of Netherlands, Government of New Zealand, Government of Norway, Government of Pakistan, Government of Poland, Government of Portugal, Government of Rumania, Government of Slovakia, Government of Slovenia, Government of Spain, Government of Sweden, Government of Switzerland, Government of Turkey, Government of United Kingdom, Government of United States of America",Taleban,1146,,2,,6705,6209,8178,4,Afghanistan,700,"339, 900, 305, 373, 211, 355, 20, 344, 316, 390, 366, 375, 220, 260, 350, 310, 395, 205, 325, 663, 367, 368, 212, 343, 210, 920, 385, 770, 290, 235, 360, 317, 349, 230, 380, 225, 640, 200, 2",,,700,700,3,5.0-2015
+137,"327, 412",2008,Afghanistan,Government of Afghanistan,"Government of Albania, Government of Australia, Government of Austria, Government of Azerbaijan, Government of Belgium, Government of Bulgaria, Government of Canada, Government of Croatia, Government of Czech Republic, Government of Denmark, Government of Estonia, Government of Finland, Government of France, Government of Georgia, Government of Germany, Government of Greece, Government of Hungary, Government of Iceland, Government of Ireland, Government of Italy, Government of Latvia, Government of Lithuania, Government of Luxembourg, Government of Netherlands, Government of New Zealand, Government of Norway, Government of Pakistan, Government of Poland, Government of Portugal, Government of Rumania, Government of Slovakia, Government of Slovenia, Government of Spain, Government of Sweden, Government of Turkey, Government of United Kingdom, Government of United States of America","Hizb-i Islami-yi Afghanistan, Taleban","1141, 1146",,2,,5665,5222,7197,4,"Afghanistan, Pakistan",700,"339, 900, 305, 373, 211, 355, 20, 344, 316, 390, 366, 375, 220, 372, 260, 350, 310, 395, 205, 325, 367, 368, 212, 210, 920, 385, 770, 290, 235, 360, 317, 349, 230, 380, 640, 200, 2",,,700,"700, 770",3,5.0-2015
+137,"327, 412",2009,Afghanistan,Government of Afghanistan,"Government of Albania, Government of Australia, Government of Azerbaijan, Government of Belgium, Government of Bosnia-Herzegovina, Government of Bulgaria, Government of Canada, Government of Croatia, Government of Czech Republic, Government of Denmark, Government of Estonia, Government of Finland, Government of France, Government of Georgia, Government of Germany, Government of Greece, Government of Hungary, Government of Iceland, Government of Italy, Government of Latvia, Government of Lithuania, Government of Luxembourg, Government of Macedonia, FYR, Government of Netherlands, Government of New Zealand, Government of Norway, Government of Pakistan, Government of Poland, Government of Portugal, Government of Rumania, Government of Singapore, Government of Slovakia, Government of Slovenia, Government of Spain, Government of Sweden, Government of Turkey, Government of Ukraine, Government of United Arab Emirates, Government of United Kingdom, Government of United States of America","Hizb-i Islami-yi Afghanistan, Taleban","1141, 1146",,2,,5231,4555,6639,4,"Afghanistan, Afghanistan, Pakistan",700,"339, 900, 373, 211, 346, 355, 20, 344, 316, 390, 366, 375, 220, 372, 260, 350, 310, 395, 325, 367, 368, 212, 343, 210, 920, 385, 770, 290, 235, 360, 830, 317, 349, 230, 380, 640, 369, 696, 200, 2",,,700,"700, 700, 770",3,5.0-2015
+137,"327, 412",2010,Afghanistan,Government of Afghanistan,"Government of Albania, Government of Armenia, Government of Australia, Government of Austria, Government of Azerbaijan, Government of Belgium, Government of Bosnia-Herzegovina, Government of Bulgaria, Government of Canada, Government of Croatia, Government of Czech Republic, Government of Denmark, Government of Estonia, Government of Finland, Government of France, Government of Georgia, Government of Germany, Government of Greece, Government of Hungary, Government of Iceland, Government of Ireland, Government of Italy, Government of Jordan, Government of Latvia, Government of Lithuania, Government of Luxembourg, Government of Macedonia, FYR, Government of Malaysia, Government of Mongolia, Government of Montenegro, Government of Netherlands, Government of New Zealand, Government of Norway, Government of Pakistan, Government of Poland, Government of Portugal, Government of Rumania, Government of Singapore, Government of Slovakia, Government of Slovenia, Government of South Korea, Government of Spain, Government of Sweden, Government of Turkey, Government of Ukraine, Government of United Arab Emirates, Government of United Kingdom, Government of United States of America, Government of Albania, Government of Armenia, Government of Australia, Government of Austria, Government of Azerbaijan, Government of Belgium, Government of Bosnia-Herzegovina, Government of Bulgaria, Government of Canada, Government of Croatia, Government of Czech Republic, Government of Denmark, Government of Estonia, Government of Finland, Government of France, Government of Georgia, Government of Germany, Government of Greece, Government of Hungary, Government of Iceland, Government of Ireland, Government of Italy, Government of Jordan, Government of Latvia, Government of Lithuania, Government of Luxembourg, Government of Macedonia, FYR, Government of Malaysia, Government of Mongolia, Government of Montenegro, Government of Netherlands, Government of New Zealand, Government of Norway, Government of Poland, Government of Portugal, Government of Rumania, Government of Singapore, Government of Slovakia, Government of Slovenia, Government of South Korea, Government of Spain, Government of Sweden, Government of Turkey, Government of Ukraine, Government of United Arab Emirates, Government of United Kingdom, Government of United States of America","Hizb-i Islami-yi Afghanistan, Taleban","1141, 1146",,2,,6377,6228,7889,4,"Afghanistan, Afghanistan, Pakistan",700,"339, 371, 900, 305, 373, 211, 346, 355, 20, 344, 316, 390, 366, 375, 220, 372, 260, 350, 310, 395, 205, 325, 663, 367, 368, 212, 343, 820, 712, 341, 210, 920, 385, 290, 235, 360, 830, 317, 349, 732, 230, 380, 640, 369, 696, 200, 2, 339, 371, 900, 305, 373, 211, 346, 355, 20, 344, 316, 390, 366, 375, 220, 372, 260, 350, 310, 395, 205, 325, 663, 367, 368, 212, 343, 820, 712, 341, 210, 920, 385, 770, 290, 235, 360, 830, 317, 349, 732, 230, 380, 640, 369, 696, 200, 2",,,700,"700, 700, 770",3,5.0-2015
+137,"327, 412",2011,Afghanistan,Government of Afghanistan,"Government of Albania, Government of Armenia, Government of Australia, Government of Austria, Government of Azerbaijan, Government of Belgium, Government of Bosnia-Herzegovina, Government of Bulgaria, Government of Canada, Government of Croatia, Government of Czech Republic, Government of Denmark, Government of El Salvador, Government of Estonia, Government of Finland, Government of France, Government of Georgia, Government of Germany, Government of Greece, Government of Hungary, Government of Iceland, Government of Ireland, Government of Italy, Government of Latvia, Government of Lithuania, Government of Luxembourg, Government of Macedonia, FYR, Government of Malaysia, Government of Mongolia, Government of Montenegro, Government of Netherlands, Government of New Zealand, Government of Norway, Government of Pakistan, Government of Poland, Government of Portugal, Government of Rumania, Government of Singapore, Government of Slovakia, Government of Slovenia, Government of South Korea, Government of Spain, Government of Sweden, Government of Tonga, Government of Turkey, Government of Ukraine, Government of United Arab Emirates, Government of United Kingdom, Government of United States of America, Government of Albania, Government of Armenia, Government of Australia, Government of Austria, Government of Azerbaijan, Government of Belgium, Government of Bosnia-Herzegovina, Government of Bulgaria, Government of Canada, Government of Croatia, Government of Czech Republic, Government of Denmark, Government of El Salvador, Government of Estonia, Government of Finland, Government of France, Government of Georgia, Government of Germany, Government of Greece, Government of Hungary, Government of Iceland, Government of Ireland, Government of Italy, Government of Latvia, Government of Lithuania, Government of Luxembourg, Government of Macedonia, FYR, Government of Malaysia, Government of Mongolia, Government of Montenegro, Government of Netherlands, Government of New Zealand, Government of Norway, Government of Poland, Government of Portugal, Government of Rumania, Government of Singapore, Government of Slovakia, Government of Slovenia, Government of South Korea, Government of Spain, Government of Sweden, Government of Tonga, Government of Turkey, Government of Ukraine, Government of United Arab Emirates, Government of United Kingdom, Government of United States of America","Hizb-i Islami-yi Afghanistan, Taleban","1141, 1146",,2,,7228,7085,8096,4,"Afghanistan, Afghanistan, Pakistan",700,"339, 371, 900, 305, 373, 211, 346, 355, 20, 344, 316, 390, 92, 366, 375, 220, 372, 260, 350, 310, 395, 205, 325, 367, 368, 212, 343, 820, 712, 341, 210, 920, 385, 290, 235, 360, 830, 317, 349, 732, 230, 380, 972, 640, 369, 696, 200, 2, 339, 371, 900, 305, 373, 211, 346, 355, 20, 344, 316, 390, 92, 366, 375, 220, 372, 260, 350, 310, 395, 205, 325, 367, 368, 212, 343, 820, 712, 341, 210, 920, 385, 770, 290, 235, 360, 830, 317, 349, 732, 230, 380, 972, 640, 369, 696, 200, 2",,,700,"700, 700, 770",3,5.0-2015
+137,327,2012,Afghanistan,Government of Afghanistan,"Government of Albania, Government of Armenia, Government of Australia, Government of Austria, Government of Azerbaijan, Government of Bahrain, Government of Belgium, Government of Bosnia-Herzegovina, Government of Bulgaria, Government of Canada, Government of Croatia, Government of Czech Republic, Government of Denmark, Government of El Salvador, Government of Estonia, Government of Finland, Government of France, Government of Georgia, Government of Germany, Government of Greece, Government of Hungary, Government of Iceland, Government of Ireland, Government of Italy, Government of Latvia, Government of Lithuania, Government of Luxembourg, Government of Macedonia, FYR, Government of Malaysia, Government of Mongolia, Government of Montenegro, Government of Netherlands, Government of New Zealand, Government of Norway, Government of Pakistan, Government of Poland, Government of Portugal, Government of Rumania, Government of Singapore, Government of Slovakia, Government of Slovenia, Government of South Korea, Government of Spain, Government of Sweden, Government of Tonga, Government of Turkey, Government of Ukraine, Government of United Arab Emirates, Government of United Kingdom, Government of United States of America",Taleban,1146,,2,,7442,7271,8501,4,"Afghanistan, Pakistan",700,"339, 371, 900, 305, 373, 692, 211, 346, 355, 20, 344, 316, 390, 92, 366, 375, 220, 372, 260, 350, 310, 395, 205, 325, 367, 368, 212, 343, 820, 712, 341, 210, 920, 385, 770, 290, 235, 360, 830, 317, 349, 732, 230, 380, 972, 640, 369, 696, 200, 2",,,700,"700, 770",3,5.0-2015
+137,"327, 412",2013,Afghanistan,Government of Afghanistan,"Government of Albania, Government of Armenia, Government of Australia, Government of Austria, Government of Azerbaijan, Government of Belgium, Government of Bosnia-Herzegovina, Government of Bulgaria, Government of Canada, Government of Croatia, Government of Czech Republic, Government of Denmark, Government of El Salvador, Government of Estonia, Government of Finland, Government of France, Government of Georgia, Government of Germany, Government of Greece, Government of Hungary, Government of Iceland, Government of Ireland, Government of Italy, Government of Latvia, Government of Lithuania, Government of Luxembourg, Government of Macedonia, FYR, Government of Malaysia, Government of Mongolia, Government of Montenegro, Government of Netherlands, Government of New Zealand, Government of Norway, Government of Pakistan, Government of Poland, Government of Portugal, Government of Rumania, Government of Singapore, Government of Slovakia, Government of Slovenia, Government of South Korea, Government of Spain, Government of Sweden, Government of Tonga, Government of Turkey, Government of Ukraine, Government of United Arab Emirates, Government of United Kingdom, Government of United States of America, Government of Albania, Government of Armenia, Government of Australia, Government of Austria, Government of Azerbaijan, Government of Belgium, Government of Bosnia-Herzegovina, Government of Bulgaria, Government of Canada, Government of Croatia, Government of Czech Republic, Government of Denmark, Government of El Salvador, Government of Estonia, Government of Finland, Government of France, Government of Georgia, Government of Germany, Government of Greece, Government of Hungary, Government of Iceland, Government of Ireland, Government of Italy, Government of Latvia, Government of Lithuania, Government of Luxembourg, Government of Macedonia, FYR, Government of Malaysia, Government of Mongolia, Government of Montenegro, Government of Netherlands, Government of New Zealand, Government of Norway, Government of Poland, Government of Portugal, Government of Rumania, Government of Singapore, Government of Slovakia, Government of Slovenia, Government of South Korea, Government of Spain, Government of Sweden, Government of Tonga, Government of Turkey, Government of Ukraine, Government of United Arab Emirates, Government of United Kingdom, Government of United States of America","Hizb-i Islami-yi Afghanistan, Taleban","1141, 1146",,2,,8048,7612,10172,4,"Afghanistan, Afghanistan, Pakistan",700,"339, 371, 900, 305, 373, 211, 346, 355, 20, 344, 316, 390, 92, 366, 375, 220, 372, 260, 350, 310, 395, 205, 325, 367, 368, 212, 343, 820, 712, 341, 210, 920, 385, 290, 235, 360, 830, 317, 349, 732, 230, 380, 972, 640, 369, 696, 200, 2, 339, 371, 900, 305, 373, 211, 346, 355, 20, 344, 316, 390, 92, 366, 375, 220, 372, 260, 350, 310, 395, 205, 325, 367, 368, 212, 343, 820, 712, 341, 210, 920, 385, 770, 290, 235, 360, 830, 317, 349, 732, 230, 380, 972, 640, 369, 696, 200, 2",,,700,"700, 700, 770",3,5.0-2015
+137,327,2014,Afghanistan,Government of Afghanistan,"Government of Albania, Government of Armenia, Government of Australia, Government of Austria, Government of Azerbaijan, Government of Belgium, Government of Bosnia-Herzegovina, Government of Bulgaria, Government of Canada, Government of Croatia, Government of Czech Republic, Government of Denmark, Government of El Salvador, Government of Estonia, Government of Finland, Government of France, Government of Georgia, Government of Germany, Government of Greece, Government of Hungary, Government of Iceland, Government of Ireland, Government of Italy, Government of Jordan, Government of Latvia, Government of Lithuania, Government of Luxembourg, Government of Macedonia, FYR, Government of Malaysia, Government of Mongolia, Government of Montenegro, Government of Netherlands, Government of New Zealand, Government of Norway, Government of Pakistan, Government of Poland, Government of Portugal, Government of Rumania, Government of Slovakia, Government of Slovenia, Government of South Korea, Government of Spain, Government of Sweden, Government of Tonga, Government of Turkey, Government of Ukraine, Government of United Arab Emirates, Government of United Kingdom, Government of United States of America",Taleban,1146,,2,,12311,11520,15675,4,"Afghanistan, Pakistan",700,"339, 371, 900, 305, 373, 211, 346, 355, 20, 344, 316, 390, 92, 366, 375, 220, 372, 260, 350, 310, 395, 205, 325, 663, 367, 368, 212, 343, 820, 712, 341, 210, 920, 385, 770, 290, 235, 360, 317, 349, 732, 230, 380, 972, 640, 369, 696, 200, 2",,,700,"700, 770",3,5.0-2015
+139,262,1992,India,Government of India,,ATTF,1149,,1,Tripura,29,29,31,3,India,750,,,,750,750,3,5.0-2015
+139,"262, 269",1997,India,Government of India,,"ATTF, NLFT","1149, 1150",,1,Tripura,72,52,72,3,India,750,,,,750,750,3,5.0-2015
+139,269,1999,India,Government of India,,NLFT,1150,,1,Tripura,32,38,38,3,India,750,,,,750,750,3,5.0-2015
+139,269,2000,India,Government of India,,NLFT,1150,,1,Tripura,61,59,64,3,India,750,,,,750,750,3,5.0-2015
+139,269,2001,India,Government of India,,NLFT,1150,,1,Tripura,32,32,32,3,India,750,,,,750,750,3,5.0-2015
+139,269,2002,India,Government of India,,NLFT,1150,,1,Tripura,40,40,40,3,India,750,,,,750,750,3,5.0-2015
+139,269,2003,India,Government of India,,NLFT,1150,,1,Tripura,32,32,32,3,India,750,,,,750,750,3,5.0-2015
+139,11299,2004,India,Government of India,,NLFT-B,2939,,1,Tripura,26,26,26,3,India,750,,,,750,750,3,5.0-2015
+140,231,1989,Nicaragua,Government of Nicaragua,,Contras/FDN,1620,,2,,526,526,533,3,Nicaragua,93,,,,93,93,5,5.0-2015
+140,231,1990,Nicaragua,Government of Nicaragua,,Contras/FDN,1620,,2,,39,39,43,3,Nicaragua,93,,,,93,93,5,5.0-2015
+141,"207, 208",1989,Somalia,Government of Somalia,,"SNM, SPM","1350, 1351",,2,,379,379,4504,3,"Djibouti, Somalia, Somalia",520,,,,520,"520, 522, 520",4,5.0-2015
+141,"207, 208, 210",1990,Somalia,Government of Somalia,,"SNM, SPM, USC/SSA","1350, 1351, 1352",,2,,2710,1644,2962,3,"Djibouti, Somalia, Somalia",520,,,,520,"520, 522, 520",4,5.0-2015
+141,"207, 208, 210, 211",1991,Somalia,Government of Somalia,,"SNM, SPM, USC/SNA, USC/SSA","1350, 1351, 1352, 1353",,2,,8005,7230,9005,3,Somalia,520,,,,520,520,4,5.0-2015
+141,211,1992,Somalia,Government of Somalia,,USC/SNA,1353,,2,,1154,1154,9823,3,Somalia,520,,,,520,520,4,5.0-2015
+141,211,1993,Somalia,Government of Somalia,,USC/SNA,1353,,2,,25,18,25,3,Somalia,520,,,,520,520,4,5.0-2015
+141,211,1994,Somalia,Government of Somalia,,USC/SNA,1353,,2,,237,237,614,3,Somalia,520,,,,520,520,4,5.0-2015
+141,211,1995,Somalia,Government of Somalia,,USC/SNA,1353,,2,,104,97,108,3,Somalia,520,,,,520,520,4,5.0-2015
+141,211,1996,Somalia,Government of Somalia,,USC/SNA,1353,,2,,256,255,308,3,Somalia,520,,,,520,520,4,5.0-2015
+141,212,2001,Somalia,Government of Somalia,,SRRC,1354,,2,,228,223,268,3,Somalia,520,,,,520,520,4,5.0-2015
+141,212,2002,Somalia,Government of Somalia,,SRRC,1354,,2,,114,113,207,3,Somalia,520,,,,520,520,4,5.0-2015
+141,632,2006,Somalia,Government of Somalia,Government of Ethiopia,ARS/UIC,1355,,2,,547,463,1293,4,Somalia,520,530,,,520,520,4,5.0-2015
+141,632,2007,Somalia,Government of Somalia,Government of Ethiopia,ARS/UIC,1355,,2,,1588,1570,2088,4,"Kenya, Somalia",520,530,,,520,"501, 520",4,5.0-2015
+141,"632, 770",2008,Somalia,Government of Somalia,Government of Ethiopia,"ARS/UIC, Al-Shabaab","1355, 1578",,2,,1499,1441,2083,4,Somalia,520,530,,,520,520,4,5.0-2015
+141,"770, 804",2009,Somalia,Government of Somalia,Government of Ethiopia,"Al-Shabaab, Hizbul Islam","1578, 1882",,2,,1471,1267,1755,4,Somalia,520,530,,,520,520,4,5.0-2015
+141,"770, 804",2010,Somalia,Government of Somalia,Government of Ethiopia,"Al-Shabaab, Hizbul Islam","1578, 1882",,2,,2151,1916,2356,4,Somalia,520,530,,,520,520,4,5.0-2015
+141,770,2011,Somalia,Government of Somalia,"Government of Ethiopia, Government of Kenya",Al-Shabaab,1578,,2,,1938,1559,2259,4,"Kenya, Somalia",520,"530, 501",,,520,"501, 520",4,5.0-2015
+141,770,2012,Somalia,Government of Somalia,"Government of Burundi, Government of Djibouti, Government of Ethiopia, Government of Ghana, Government of Kenya, Government of Nigeria, Government of Sierra Leone, Government of Uganda",Al-Shabaab,1578,,2,,2622,2446,2921,4,"Kenya, Somalia",520,"516, 522, 530, 452, 501, 475, 451, 500",,,520,"501, 520",4,5.0-2015
+141,770,2013,Somalia,Government of Somalia,"Government of Burundi, Government of Djibouti, Government of Ethiopia, Government of Ghana, Government of Kenya, Government of Nigeria, Government of Sierra Leone, Government of Uganda",Al-Shabaab,1578,,2,,926,746,1755,4,"Ethiopia, Kenya, Somalia",520,"516, 522, 530, 452, 501, 475, 451, 500",,,520,"530, 501, 520",4,5.0-2015
+141,770,2014,Somalia,Government of Somalia,"Government of Burundi, Government of Djibouti, Government of Ethiopia, Government of Ghana, Government of Kenya, Government of Nigeria, Government of Sierra Leone, Government of Uganda",Al-Shabaab,1578,,2,,1140,894,2271,4,"Ethiopia, Kenya, Somalia",520,"516, 522, 530, 452, 501, 475, 451, 500",,,520,"530, 501, 520",4,5.0-2015
+143,246,1991,Iran,Government of Iran,,MEK,1151,,2,,45,45,45,3,"Iran, Iraq",630,,,,630,"630, 645",2,5.0-2015
+143,246,1993,Iran,Government of Iran,,MEK,1151,,2,,76,76,152,3,"Iran, Iraq, Italy, Pakistan",630,,,,630,"630, 645, 325, 770",2,5.0-2015
+143,246,1997,Iran,Government of Iran,,MEK,1151,,2,,34,34,38,3,"Iran, Iraq",630,,,,630,"630, 645",2,5.0-2015
+143,246,1999,Iran,Government of Iran,,MEK,1151,,2,,28,28,35,3,"Iran, Iraq",630,,,,630,"630, 645",2,5.0-2015
+143,246,2000,Iran,Government of Iran,,MEK,1151,,2,,40,40,77,3,"Iran, Iraq",630,,,,630,"630, 645",2,5.0-2015
+143,246,2001,Iran,Government of Iran,,MEK,1151,,2,,119,119,149,3,"Iran, Iraq",630,,,,630,"630, 645",2,5.0-2015
+143,459,2005,Iran,Government of Iran,,PJAK,1152,,2,,28,28,37,3,Iran,630,,,,630,630,2,5.0-2015
+143,"459, 640",2006,Iran,Government of Iran,,"Jondullah, PJAK","1152, 1153",,2,,57,52,123,3,"Iran, Iran, Iraq",630,,,,630,"630, 630, 645",2,5.0-2015
+143,"459, 640",2007,Iran,Government of Iran,,"Jondullah, PJAK","1152, 1153",,2,,72,68,210,3,"Iran, Iran, Iraq",630,,,,630,"630, 630, 645",2,5.0-2015
+143,"459, 640",2008,Iran,Government of Iran,,"Jondullah, PJAK","1152, 1153",,2,,121,121,265,3,"Iran, Iraq, Iran, Pakistan",630,,,,630,"630, 645, 630, 770",2,5.0-2015
+143,"459, 640",2009,Iran,Government of Iran,,"Jondullah, PJAK","1152, 1153",,2,,133,121,148,3,Iran,630,,,,630,630,2,5.0-2015
+143,640,2010,Iran,Government of Iran,,Jondullah,1153,,2,,74,74,74,3,Iran,630,,,,630,630,2,5.0-2015
+143,459,2011,Iran,Government of Iran,,PJAK,1152,,2,,228,228,241,3,"Iran, Iraq",630,,,,630,"630, 645",2,5.0-2015
+146,93,1989,Liberia,Government of Liberia,,NPFL,1358,,2,,27,27,27,3,Liberia,450,,,,450,450,4,5.0-2015
+146,"93, 94",1990,Liberia,Government of Liberia,,"INPFL, NPFL","1358, 1359",,2,,347,347,431,3,"Ivory Coast, Liberia, Liberia",450,,,,450,"437, 450, 450",4,5.0-2015
+146,95,2000,Liberia,Government of Liberia,,LURD,1360,,2,,57,57,57,3,Liberia,450,,,,450,450,4,5.0-2015
+146,95,2001,Liberia,Government of Liberia,,LURD,1360,,2,,341,341,341,3,Liberia,450,,,,450,450,4,5.0-2015
+146,95,2002,Liberia,Government of Liberia,,LURD,1360,,2,,492,391,517,3,Liberia,450,,,,450,450,4,5.0-2015
+146,"95, 352",2003,Liberia,Government of Liberia,,"LURD, MODEL","1360, 1361",,2,,1787,1787,1887,3,Liberia,450,,,,450,450,4,5.0-2015
+147,366,1991,Spain,Government of Spain,,ETA,1156,,1,Basque,44,44,44,3,Spain,230,,,,230,230,1,5.0-2015
+152,336,1993,India,Government of India,,UNLF,1158,,1,Manipur,25,25,25,3,India,750,,,,750,750,3,5.0-2015
+152,336,1994,India,Government of India,,UNLF,1158,,1,Manipur,25,25,25,3,India,750,,,,750,750,3,5.0-2015
+152,325,1995,India,Government of India,,PLA,1157,,1,Manipur,25,25,25,3,India,750,,,,750,750,3,5.0-2015
+152,325,1996,India,Government of India,,PLA,1157,,1,Manipur,28,28,28,3,India,750,,,,750,750,3,5.0-2015
+152,325,1998,India,Government of India,,PLA,1157,,1,Manipur,25,25,25,3,India,750,,,,750,750,3,5.0-2015
+152,336,1999,India,Government of India,,UNLF,1158,,1,Manipur,31,31,31,3,India,750,,,,750,750,3,5.0-2015
+152,"325, 336",2000,India,Government of India,,"PLA, UNLF","1157, 1158",,1,Manipur,60,60,64,3,India,750,,,,750,750,3,5.0-2015
+152,336,2003,India,Government of India,,UNLF,1158,,1,Manipur,27,27,27,3,India,750,,,,750,750,3,5.0-2015
+152,"325, 336",2004,India,Government of India,,"PLA, UNLF","1157, 1158",,1,Manipur,60,60,60,3,India,750,,,,750,750,3,5.0-2015
+152,336,2005,India,Government of India,,UNLF,1158,,1,Manipur,47,47,53,3,India,750,,,,750,750,3,5.0-2015
+152,"325, 336",2006,India,Government of India,,"PLA, UNLF","1157, 1158",,1,Manipur,73,69,75,3,India,750,,,,750,750,3,5.0-2015
+152,336,2007,India,Government of India,,UNLF,1158,,1,Manipur,45,45,73,3,India,750,,,,750,750,3,5.0-2015
+152,"764, 766",2008,India,Government of India,,"KCP, PREPAK","1160, 1161",,1,Manipur,99,99,100,3,India,750,,,,750,750,3,5.0-2015
+152,"336, 764, 766",2009,India,Government of India,,"KCP, PREPAK, UNLF","1158, 1160, 1161",,1,Manipur,96,59,114,3,India,750,,,,750,750,3,5.0-2015
+156,387,1992,India,Government of India,,Sikh insurgents,1162,,1,Punjab/Khalistan,2390,2390,2444,3,India,750,,,,750,750,3,5.0-2015
+156,387,1993,India,Government of India,,Sikh insurgents,1162,,1,Punjab/Khalistan,358,358,360,3,India,750,,,,750,750,3,5.0-2015
+156,387,1989,India,Government of India,,Sikh insurgents,1162,,1,Punjab/Khalistan,905,905,928,3,India,750,,,,750,750,3,5.0-2015
+156,387,1990,India,Government of India,,Sikh insurgents,1162,,1,Punjab/Khalistan,1839,1839,1882,3,India,750,,,,750,750,3,5.0-2015
+156,387,1991,India,Government of India,,Sikh insurgents,1162,,1,Punjab/Khalistan,2673,2673,2739,3,India,750,,,,750,750,3,5.0-2015
+157,"243, 687",1989,Sri Lanka,Government of Sri Lanka,,"EPRLF, LTTE","1163, 1165",,1,Eelam,145,145,145,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,1990,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,3561,3561,4600,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,1991,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,6432,6432,6787,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,1992,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,4091,4091,4247,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,1993,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,2075,2075,2347,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,1994,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,657,657,746,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,1995,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,4755,4748,5062,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,1996,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,3868,3868,4254,3,"France, Sri Lanka",780,,,,780,"220, 780",3,5.0-2015
+157,243,1997,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,2880,2880,3959,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,1998,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,3762,3763,4420,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,1999,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,1882,1882,2616,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,2000,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,2525,2525,4155,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,2001,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,1144,1144,1145,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,2003,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,29,17,46,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,2005,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,88,88,90,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,2006,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,1970,1970,2845,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,2007,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,2494,2391,3070,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,2008,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,8243,8243,9898,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+157,243,2009,Sri Lanka,Government of Sri Lanka,,LTTE,1163,,1,Eelam,10165,10136,13702,3,Sri Lanka,780,,,,780,780,3,5.0-2015
+159,333,1989,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,227,227,234,3,Turkey,640,,,,640,640,2,5.0-2015
+159,333,1990,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,245,245,303,3,Turkey,640,,,,640,640,2,5.0-2015
+159,333,1991,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,304,304,310,3,Turkey,640,,,,640,640,2,5.0-2015
+159,333,1992,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,1518,1518,1598,3,"Turkey, Iraq",640,,,,640,"640, 645",2,5.0-2015
+159,333,1993,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,2099,2099,2394,3,Turkey,640,,,,640,640,2,5.0-2015
+159,333,1994,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,4000,4000,4488,3,"Turkey, Iraq",640,,,,640,"640, 645",2,5.0-2015
+159,333,1995,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,3076,3076,3951,3,Turkey,640,,,,640,640,2,5.0-2015
+159,333,1996,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,3533,3533,3578,3,"Turkey, Iraq",640,,,,640,"640, 645",2,5.0-2015
+159,333,1997,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,4247,4247,5483,3,"Turkey, Iraq",640,,,,640,"640, 645",2,5.0-2015
+159,333,1998,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,1952,1952,2039,3,"Turkey, Iraq",640,,,,640,"640, 645",2,5.0-2015
+159,333,1999,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,1403,1403,1481,3,"Turkey, Iraq",640,,,,640,"640, 645",2,5.0-2015
+159,333,2000,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,173,173,189,3,"Turkey, Iraq",640,,,,640,"640, 645",2,5.0-2015
+159,333,2001,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,81,81,96,3,Turkey,640,,,,640,640,2,5.0-2015
+159,333,2002,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,56,35,100,3,Turkey,640,,,,640,640,2,5.0-2015
+159,333,2003,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,79,79,82,3,Turkey,640,,,,640,640,2,5.0-2015
+159,333,2004,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,180,180,322,3,Turkey,640,,,,640,640,2,5.0-2015
+159,333,2005,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,330,324,611,3,Turkey,640,,,,640,640,2,5.0-2015
+159,333,2006,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,210,210,274,3,Turkey,640,,,,640,640,2,5.0-2015
+159,333,2007,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,458,458,509,3,"Turkey, Iraq",640,,,,640,"640, 645",2,5.0-2015
+159,333,2008,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,513,501,1068,3,"Turkey, Iraq",640,,,,640,"640, 645",2,5.0-2015
+159,333,2009,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,133,128,149,3,"Turkey, Iraq",640,,,,640,"640, 646",2,5.0-2015
+159,333,2010,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,328,328,433,3,"Turkey, Iraq",640,,,,640,"640, 645",2,5.0-2015
+159,333,2011,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,599,599,822,3,"Turkey, Iraq",640,,,,640,"640, 645",2,5.0-2015
+159,333,2012,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,811,811,884,3,"Turkey, Iraq",640,,,,640,"640, 645",2,5.0-2015
+159,333,2013,Turkey,Government of Turkey,,PKK,1166,,1,Kurdistan,30,30,67,3,"Turkey, Iraq",640,,,,640,"640, 645",2,5.0-2015
+167,158,1989,Comoros,Government of Comoros,,Presidential guard,1370,,2,,29,29,30,3,Comoros,581,,,,581,581,4,5.0-2015
+168,52,1996,Ethiopia,Government of Ethiopia,,ARDUF,1372,,1,Afar,25,25,25,3,Ethiopia,530,,,,530,530,4,5.0-2015
+169,355,1990,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,407,402,586,3,India,750,,,,750,750,3,5.0-2015
+169,355,1991,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,330,330,551,3,India,750,,,,750,750,3,5.0-2015
+169,355,1992,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,265,265,337,3,India,750,,,,750,750,3,5.0-2015
+169,355,1993,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,846,845,1159,3,India,750,,,,750,750,3,5.0-2015
+169,355,1994,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,958,955,1148,3,India,750,,,,750,750,3,5.0-2015
+169,355,1995,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,687,687,894,3,India,750,,,,750,750,3,5.0-2015
+169,355,1996,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,489,489,512,3,India,750,,,,750,750,3,5.0-2015
+169,355,1997,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,533,533,555,3,India,750,,,,750,750,3,5.0-2015
+169,355,1998,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,576,576,701,3,India,750,,,,750,750,3,5.0-2015
+169,355,1999,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,864,844,876,3,India,750,,,,750,750,3,5.0-2015
+169,355,2000,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,2358,2341,2414,3,India,750,,,,750,750,3,5.0-2015
+169,355,2001,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,734,663,3460,3,India,750,,,,750,750,3,5.0-2015
+169,355,2002,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,1464,1464,1464,3,India,750,,,,750,750,3,5.0-2015
+169,355,2003,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,1139,1139,1292,3,India,750,,,,750,750,3,5.0-2015
+169,355,2004,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,1104,1094,1205,3,India,750,,,,750,750,3,5.0-2015
+169,355,2005,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,1058,1055,1139,3,India,750,,,,750,750,3,5.0-2015
+169,355,2006,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,705,698,728,3,India,750,,,,750,750,3,5.0-2015
+169,355,2007,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,550,540,562,3,India,750,,,,750,750,3,5.0-2015
+169,355,2008,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,493,475,518,3,India,750,,,,750,750,3,5.0-2015
+169,355,2009,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,361,358,393,3,India,750,,,,750,750,3,5.0-2015
+169,355,2010,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,370,365,437,3,India,750,,,,750,750,3,5.0-2015
+169,355,2011,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,140,140,147,3,India,750,,,,750,750,3,5.0-2015
+169,355,2012,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,141,140,144,3,India,750,,,,750,750,3,5.0-2015
+169,355,2013,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,146,140,147,3,India,750,,,,750,750,3,5.0-2015
+169,355,2014,India,Government of India,,Kashmir insurgents,1168,,1,Kashmir,177,176,205,3,India,750,,,,750,750,3,5.0-2015
+170,296,1990,India,Government of India,,ULFA,1169,,1,Assam,30,6,30,3,India,750,,,,750,750,3,5.0-2015
+170,296,1994,India,Government of India,,ULFA,1169,,1,Assam,25,25,126,3,India,750,,,,750,750,3,5.0-2015
+170,296,1995,India,Government of India,,ULFA,1169,,1,Assam,29,17,78,3,India,750,,,,750,750,3,5.0-2015
+170,296,1996,India,Government of India,,ULFA,1169,,1,Assam,48,48,53,3,India,750,,,,750,750,3,5.0-2015
+170,296,1997,India,Government of India,,ULFA,1169,,1,Assam,112,112,119,3,India,750,,,,750,750,3,5.0-2015
+170,296,1998,India,Government of India,,ULFA,1169,,1,Assam,55,55,57,3,India,750,,,,750,750,3,5.0-2015
+170,296,1999,India,Government of India,,ULFA,1169,,1,Assam,53,53,58,3,India,750,,,,750,750,3,5.0-2015
+170,296,2000,India,Government of India,,ULFA,1169,,1,Assam,87,76,87,3,India,750,,,,750,750,3,5.0-2015
+170,296,2001,India,Government of India,,ULFA,1169,,1,Assam,113,113,124,3,India,750,,,,750,750,3,5.0-2015
+170,296,2002,India,Government of India,,ULFA,1169,,1,Assam,59,59,59,3,India,750,,,,750,750,3,5.0-2015
+170,296,2003,India,Government of India,,ULFA,1169,,1,Assam,43,43,58,3,India,750,,,,750,750,3,5.0-2015
+170,296,2004,India,Government of India,,ULFA,1169,,1,Assam,70,69,74,3,India,750,,,,750,750,3,5.0-2015
+170,296,2005,India,Government of India,,ULFA,1169,,1,Assam,78,77,78,3,India,750,,,,750,750,3,5.0-2015
+170,296,2006,India,Government of India,,ULFA,1169,,1,Assam,49,49,50,3,India,750,,,,750,750,3,5.0-2015
+170,296,2007,India,Government of India,,ULFA,1169,,1,Assam,114,114,120,3,India,750,,,,750,750,3,5.0-2015
+170,296,2008,India,Government of India,,ULFA,1169,,1,Assam,75,75,78,3,India,750,,,,750,750,3,5.0-2015
+170,296,2009,India,Government of India,,ULFA,1169,,1,Assam,63,61,65,3,India,750,,,,750,750,3,5.0-2015
+170,296,2010,India,Government of India,,ULFA,1169,,1,Assam,32,32,33,3,India,750,,,,750,750,3,5.0-2015
+171,347,1990,Indonesia,Government of Indonesia,,GAM,1170,,1,Aceh,72,61,127,3,Indonesia,850,,,,850,850,3,5.0-2015
+171,347,1991,Indonesia,Government of Indonesia,,GAM,1170,,1,Aceh,58,57,132,3,Indonesia,850,,,,850,850,3,5.0-2015
+171,347,1999,Indonesia,Government of Indonesia,,GAM,1170,,1,Aceh,187,179,258,3,Indonesia,850,,,,850,850,3,5.0-2015
+171,347,2000,Indonesia,Government of Indonesia,,GAM,1170,,1,Aceh,286,242,332,3,Indonesia,850,,,,850,850,3,5.0-2015
+171,347,2001,Indonesia,Government of Indonesia,,GAM,1170,,1,Aceh,278,254,306,3,Indonesia,850,,,,850,850,3,5.0-2015
+171,347,2002,Indonesia,Government of Indonesia,,GAM,1170,,1,Aceh,458,429,563,3,Indonesia,850,,,,850,850,3,5.0-2015
+171,347,2003,Indonesia,Government of Indonesia,,GAM,1170,,1,Aceh,478,445,1161,3,Indonesia,850,,,,850,850,3,5.0-2015
+171,347,2004,Indonesia,Government of Indonesia,,GAM,1170,,1,Aceh,738,738,888,3,Indonesia,850,,,,850,850,3,5.0-2015
+171,347,2005,Indonesia,Government of Indonesia,,GAM,1170,,1,Aceh,213,213,215,3,Indonesia,850,,,,850,850,3,5.0-2015
+172,461,1989,Panama,Government of Panama,,Military faction (forces of Moises Giroldi),1622,,2,,77,24,233,3,Panama,95,,,,95,95,5,5.0-2015
+173,233,1989,"Panama, United States of America",Government of Panama,,Government of United States of America,2,,2,,843,745,2001,2,Panama,95,,"95, 2",,"2, 95",95,5,5.0-2015
+174,337,1990,Papua New Guinea,Government of Papua New Guinea,,BRA,1171,,1,Bougainville,55,55,65,3,Papua New Guinea,910,,,,910,910,3,5.0-2015
+174,337,1992,Papua New Guinea,Government of Papua New Guinea,,BRA,1171,,1,Bougainville,35,35,55,3,"Papua New Guinea, Solomon Islands",910,,,,910,"910, 940",3,5.0-2015
+174,337,1993,Papua New Guinea,Government of Papua New Guinea,,BRA,1171,,1,Bougainville,34,34,62,3,Papua New Guinea,910,,,,910,910,3,5.0-2015
+174,337,1994,Papua New Guinea,Government of Papua New Guinea,,BRA,1171,,1,Bougainville,26,26,26,3,Papua New Guinea,910,,,,910,910,3,5.0-2015
+174,337,1995,Papua New Guinea,Government of Papua New Guinea,,BRA,1171,,1,Bougainville,29,29,31,3,Papua New Guinea,910,,,,910,910,3,5.0-2015
+174,337,1996,Papua New Guinea,Government of Papua New Guinea,,BRA,1171,,1,Bougainville,78,78,80,3,Papua New Guinea,910,,,,910,910,3,5.0-2015
+175,357,1989,Rumania,Government of Rumania,,NSF,1172,,2,,196,196,196,3,Rumania,360,,,,360,360,1,5.0-2015
+176,320,1990,"Iraq, Kuwait",Government of Iraq,,Government of Kuwait,690,,1,Kuwait,1058,1058,1058,2,Kuwait,645,,690,,"645, 690",690,2,5.0-2015
+176,320,1991,"Iraq, Kuwait",Government of Iraq,,Government of Kuwait,690,"Government of Argentina, Government of Australia, Government of Bahrain, Government of Bangladesh, Government of Belgium, Government of Canada, Government of Czechoslovakia, Government of Denmark, Government of Egypt, Government of France, Government of Greece, Government of Honduras, Government of Italy, Government of Morocco, Government of Netherlands, Government of Niger, Government of Norway, Government of Oman, Government of Pakistan, Government of Portugal, Government of Qatar, Government of Saudi Arabia, Government of Senegal, Government of Sierra Leone, Government of Spain, Government of Syria, Government of Turkey, Government of United Arab Emirates, Government of United Kingdom, Government of United States of America",1,Kuwait,21790,21747,26206,2,"Iraq, Kuwait, Philippines, Saudi Arabia",645,,690,"160, 900, 692, 771, 211, 20, 315, 390, 651, 220, 350, 91, 325, 600, 210, 436, 385, 698, 770, 235, 694, 670, 433, 451, 230, 652, 640, 696, 200, 2","645, 690","645, 690, 840, 670",2,5.0-2015
+177,96,1990,Mali,Government of Mali,,MPA,1373,,1,Azawad,203,203,217,3,Mali,432,,,,432,432,4,5.0-2015
+177,97,1994,Mali,Government of Mali,,FIAA,1374,,1,Azawad,106,106,106,3,Mali,432,,,,432,432,4,5.0-2015
+177,650,2007,Mali,Government of Mali,,ATNMC,1375,,1,Azawad,39,39,39,3,Mali,432,,,,432,432,4,5.0-2015
+177,650,2008,Mali,Government of Mali,,ATNMC,1375,,1,Azawad,112,112,127,3,Mali,432,,,,432,432,4,5.0-2015
+177,650,2009,Mali,Government of Mali,,ATNMC,1375,,1,Azawad,39,39,39,3,Mali,432,,,,432,432,4,5.0-2015
+177,836,2012,Mali,Government of Mali,,MNLA,2043,,1,Azawad,131,126,309,3,Mali,432,,,,432,432,4,5.0-2015
+177,836,2014,Mali,Government of Mali,,MNLA,2043,,1,Azawad,80,80,80,3,Mali,432,,,,432,432,4,5.0-2015
+178,111,1994,Niger,Government of Niger,,CRA,1377,,1,Air and Azawad,50,50,90,3,Niger,436,,,,436,436,4,5.0-2015
+179,127,1990,Rwanda,Government of Rwanda,Government of DR Congo (Zaire),FPR,1379,,2,,1126,1098,2338,4,Rwanda,517,490,,,517,517,4,5.0-2015
+179,127,1991,Rwanda,Government of Rwanda,,FPR,1379,,2,,153,150,1977,3,Rwanda,517,,,,517,517,4,5.0-2015
+179,127,1992,Rwanda,Government of Rwanda,,FPR,1379,,2,,87,87,1390,3,Rwanda,517,,,,517,517,4,5.0-2015
+179,127,1993,Rwanda,Government of Rwanda,,FPR,1379,,2,,353,353,403,3,Rwanda,517,,,,517,517,4,5.0-2015
+179,127,1994,Rwanda,Government of Rwanda,,FPR,1379,,2,,1054,1054,1245,3,Rwanda,517,,,,517,517,4,5.0-2015
+179,128,1996,Rwanda,Government of Rwanda,,ALiR,2013,,2,,60,60,60,3,Rwanda,517,,,,517,517,4,5.0-2015
+179,128,1997,Rwanda,Government of Rwanda,,ALiR,2013,,2,,636,636,1024,3,"DR Congo (Zaire), Rwanda",517,,,,517,"490, 517",4,5.0-2015
+179,128,1998,Rwanda,Government of Rwanda,,ALiR,2013,,2,,1096,1096,1901,3,"DR Congo (Zaire), Rwanda",517,,,,517,"490, 517",4,5.0-2015
+179,128,1999,Rwanda,Government of Rwanda,,ALiR,2013,,2,,315,115,315,3,DR Congo (Zaire),517,,,,517,490,4,5.0-2015
+179,128,2000,Rwanda,Government of Rwanda,,ALiR,2013,,2,,155,155,294,3,DR Congo (Zaire),517,,,,517,490,4,5.0-2015
+179,828,2001,Rwanda,Government of Rwanda,,FDLR,1380,,2,,2044,349,2074,3,Rwanda,517,,,,517,517,4,5.0-2015
+179,828,2002,Rwanda,Government of Rwanda,,FDLR,1380,,2,,59,59,59,3,Burundi,517,,,,517,516,4,5.0-2015
+179,828,2009,Rwanda,Government of Rwanda,Government of DR Congo (Zaire),FDLR,1380,,2,,1824,1720,2077,4,DR Congo (Zaire),517,490,,,517,490,4,5.0-2015
+179,828,2010,Rwanda,Government of Rwanda,Government of DR Congo (Zaire),FDLR,1380,,2,,208,207,219,4,DR Congo (Zaire),517,490,,,517,490,4,5.0-2015
+179,828,2011,Rwanda,Government of Rwanda,Government of DR Congo (Zaire),FDLR,1380,,2,,116,101,117,4,DR Congo (Zaire),517,490,,,517,490,4,5.0-2015
+179,828,2012,Rwanda,Government of Rwanda,Government of DR Congo (Zaire),FDLR,1380,,2,,83,59,99,4,"DR Congo (Zaire), Rwanda",517,490,,,517,"490, 517",4,5.0-2015
+180,129,1990,Senegal,Government of Senegal,,MFDC,1381,,1,Casamance,58,58,58,3,Senegal,433,,,,433,433,4,5.0-2015
+180,129,1992,Senegal,Government of Senegal,,MFDC,1381,,1,Casamance,78,78,78,3,"Guinea-Bissau, Senegal",433,,,,433,"404, 433",4,5.0-2015
+180,129,1993,Senegal,Government of Senegal,,MFDC,1381,,1,Casamance,233,233,243,3,Senegal,433,,,,433,433,4,5.0-2015
+180,129,1995,Senegal,Government of Senegal,,MFDC,1381,,1,Casamance,299,299,303,3,Senegal,433,,,,433,433,4,5.0-2015
+180,129,1997,Senegal,Government of Senegal,,MFDC,1381,,1,Casamance,319,319,319,3,Senegal,433,,,,433,433,4,5.0-2015
+180,129,1998,Senegal,Government of Senegal,,MFDC,1381,,1,Casamance,242,242,252,3,Senegal,433,,,,433,433,4,5.0-2015
+180,129,2000,Senegal,Government of Senegal,,MFDC,1381,,1,Casamance,47,47,52,3,"Guinea-Bissau, Senegal",433,,,,433,"404, 433",4,5.0-2015
+180,129,2001,Senegal,Government of Senegal,,MFDC,1381,,1,Casamance,33,33,223,3,Senegal,433,,,,433,433,4,5.0-2015
+180,129,2003,Senegal,Government of Senegal,,MFDC,1381,,1,Casamance,39,38,39,3,Senegal,433,,,,433,433,4,5.0-2015
+180,129,2011,Senegal,Government of Senegal,,MFDC,1381,,1,Casamance,25,25,43,3,Senegal,433,,,,433,433,4,5.0-2015
+181,370,1990,Russia (Soviet Union),Government of Russia (Soviet Union),,Republic of Armenia,1173,,1,Nagorno-Karabakh,61,61,134,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+181,370,1991,Russia (Soviet Union),Government of Russia (Soviet Union),,Republic of Armenia,1173,,1,Nagorno-Karabakh,220,220,501,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+182,373,1990,Russia (Soviet Union),Government of Russia (Soviet Union),,APF,1174,,1,Azerbaijan,120,25,143,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+183,219,1990,Trinidad and Tobago,Government of Trinidad and Tobago,,Jamaat al-Muslimeen,1623,,2,,39,32,55,3,Trinidad and Tobago,52,,,,52,52,5,5.0-2015
+184,43,1992,Djibouti,Government of Djibouti,,FRUD,1382,,2,,129,44,757,3,Djibouti,522,,,,522,522,4,5.0-2015
+184,43,1993,Djibouti,Government of Djibouti,,FRUD,1382,,2,,33,33,107,3,Djibouti,522,,,,522,522,4,5.0-2015
+184,43,1994,Djibouti,Government of Djibouti,,FRUD,1382,,2,,39,39,46,3,Djibouti,522,,,,522,522,4,5.0-2015
+184,44,1999,Djibouti,Government of Djibouti,,FRUD - AD,1383,,2,,25,25,57,3,Djibouti,522,,,,522,522,4,5.0-2015
+184,43,1991,Djibouti,Government of Djibouti,,FRUD,1382,,2,,59,59,239,3,Djibouti,522,,,,522,522,4,5.0-2015
+185,"239, 289",1992,Georgia,Government of Georgia,,"National Guard and Mkhedrioni, Zviadists","1175, 1176",,2,,102,102,107,3,Georgia,372,,,,372,372,1,5.0-2015
+185,289,1993,Georgia,Government of Georgia,,Zviadists,1176,,2,,152,152,152,3,Georgia,372,,,,372,372,1,5.0-2015
+185,239,1991,Georgia,Government of Georgia,,National Guard and Mkhedrioni,1175,,2,,59,59,170,3,Georgia,372,,,,372,372,1,5.0-2015
+186,"440, 441",2004,Haiti,Government of Haiti,,"FLRN, OP Lavalas (Chimeres)","1626, 1627",,2,,244,144,465,3,Haiti,41,,,,41,41,5,5.0-2015
+186,244,1989,Haiti,Government of Haiti,,Military faction (forces of Himmler Rebu and Guy Francois),1624,,2,,48,21,57,3,Haiti,41,,,,41,41,5,5.0-2015
+186,251,1991,Haiti,Government of Haiti,,Military faction (forces of Raol Cedras),1625,,2,,200,85,399,3,Haiti,41,,,,41,41,5,5.0-2015
+187,130,1991,Sierra Leone,Government of Sierra Leone,"Government of Guinea, Government of Nigeria",RUF,1384,,2,,552,551,1263,4,Sierra Leone,451,"438, 475",,,451,451,4,5.0-2015
+187,130,1992,Sierra Leone,Government of Sierra Leone,"Government of Guinea, Government of Nigeria",RUF,1384,,2,,218,218,342,4,Sierra Leone,451,"438, 475",,,451,451,4,5.0-2015
+187,130,1993,Sierra Leone,Government of Sierra Leone,"Government of Guinea, Government of Nigeria",RUF,1384,,2,,415,415,1088,4,"Liberia, Sierra Leone",451,"438, 475",,,451,"450, 451",4,5.0-2015
+187,130,1994,Sierra Leone,Government of Sierra Leone,"Government of Guinea, Government of Nigeria",RUF,1384,,2,,628,628,779,4,Sierra Leone,451,"438, 475",,,451,451,4,5.0-2015
+187,130,1995,Sierra Leone,Government of Sierra Leone,"Government of Guinea, Government of Nigeria",RUF,1384,,2,,1472,1472,2052,4,Sierra Leone,451,"438, 475",,,451,451,4,5.0-2015
+187,130,1996,Sierra Leone,Government of Sierra Leone,"Government of Guinea, Government of Nigeria",RUF,1384,,2,,570,570,735,4,Sierra Leone,451,"438, 475",,,451,451,4,5.0-2015
+187,"130, 131, 132",1997,Sierra Leone,Government of Sierra Leone,"Government of Guinea, Government of Nigeria","AFRC, Kamajors, RUF","1384, 1385, 1386","Government of Guinea, Government of Nigeria",2,,747,747,1552,"3, 4",Sierra Leone,451,"438, 475",,"438, 475",451,451,4,5.0-2015
+187,"130, 131, 132",1998,Sierra Leone,Government of Sierra Leone,"Government of Guinea, Government of Nigeria","AFRC, Kamajors, RUF","1384, 1385, 1386","Government of Guinea, Government of Nigeria",2,,2901,2901,3811,4,Sierra Leone,451,"438, 475",,"438, 475",451,451,4,5.0-2015
+187,"130, 131",1999,Sierra Leone,Government of Sierra Leone,"Government of Ghana, Government of Guinea, Government of Mali, Government of Nigeria","AFRC, RUF","1384, 1385",,2,,2644,2644,5141,4,Sierra Leone,451,"452, 438, 432, 475",,,451,451,4,5.0-2015
+187,"130, 714",2000,Sierra Leone,Government of Sierra Leone,Government of United Kingdom,"RUF, WSB","1384, 1387",,2,,382,382,642,4,Sierra Leone,451,200,,,451,451,4,5.0-2015
+187,130,2001,Sierra Leone,Government of Sierra Leone,,RUF,1384,,2,,48,48,92,3,Sierra Leone,451,,,,451,451,4,5.0-2015
+188,330,1992,Turkey,Government of Turkey,,Devrimci Sol,1177,,2,,66,66,66,3,Turkey,640,,,,640,640,2,5.0-2015
+188,457,2005,Turkey,Government of Turkey,,MKP,1178,,2,,29,21,30,3,Turkey,640,,,,640,640,2,5.0-2015
+188,330,1991,Turkey,Government of Turkey,,Devrimci Sol,1177,,2,,40,40,41,3,Turkey,640,,,,640,640,2,5.0-2015
+189,281,1991,Serbia (Yugoslavia),Government of Serbia (Yugoslavia),,Republic of Slovenia,1179,,1,Slovenia,64,64,64,3,Serbia (Yugoslavia),345,,,,345,345,1,5.0-2015
+190,"272, 273",1991,Serbia (Yugoslavia),Government of Serbia (Yugoslavia),,"Croatian irregulars, Republic of Croatia","1180, 1213",,1,Croatia,3933,2738,4251,3,Serbia (Yugoslavia),345,,,,345,345,1,5.0-2015
+191,2,1991,Algeria,Government of Algeria,,Takfir wa'l Hijra,1388,,2,,34,34,34,3,Algeria,615,,,,615,615,4,5.0-2015
+191,1,1992,Algeria,Government of Algeria,,AIS,1389,,2,,257,257,336,3,Algeria,615,,,,615,615,4,5.0-2015
+191,"1, 3",1993,Algeria,Government of Algeria,,"AIS, GIA","1389, 1390",,2,,800,800,860,3,Algeria,615,,,,615,615,4,5.0-2015
+191,"1, 3",1994,Algeria,Government of Algeria,,"AIS, GIA","1389, 1390",,2,,1916,1916,2079,3,Algeria,615,,,,615,615,4,5.0-2015
+191,"1, 3",1995,Algeria,Government of Algeria,,"AIS, GIA","1389, 1390",,2,,3008,2984,6091,3,Algeria,615,,,,615,615,4,5.0-2015
+191,"1, 3",1996,Algeria,Government of Algeria,,"AIS, GIA","1389, 1390",,2,,1084,1078,1507,3,Algeria,615,,,,615,615,4,5.0-2015
+191,"1, 3",1997,Algeria,Government of Algeria,,"AIS, GIA","1389, 1390",,2,,1403,1403,2061,3,Algeria,615,,,,615,615,4,5.0-2015
+191,3,1998,Algeria,Government of Algeria,,GIA,1390,,2,,3029,3029,3665,3,Algeria,615,,,,615,615,4,5.0-2015
+191,"3, 4",1999,Algeria,Government of Algeria,,"AQIM, GIA","1390, 1391",,2,,1016,1016,1044,3,Algeria,615,,,,615,615,4,5.0-2015
+191,"3, 4",2000,Algeria,Government of Algeria,,"AQIM, GIA","1390, 1391",,2,,931,931,1010,3,Algeria,615,,,,615,615,4,5.0-2015
+191,"3, 4",2001,Algeria,Government of Algeria,,"AQIM, GIA","1390, 1391",,2,,642,642,866,3,Algeria,615,,,,615,615,4,5.0-2015
+191,"3, 4",2002,Algeria,Government of Algeria,,"AQIM, GIA","1390, 1391",,2,,538,538,539,3,Algeria,615,,,,615,615,4,5.0-2015
+191,"3, 4",2003,Algeria,Government of Algeria,,"AQIM, GIA","1390, 1391",,2,,670,670,686,3,Algeria,615,,,,615,615,4,5.0-2015
+191,4,2004,Algeria,Government of Algeria,"Government of Chad, Government of Mali, Government of Niger",AQIM,1391,,2,,451,451,467,4,"Algeria, Chad, Niger",615,"483, 432, 436",,,615,"615, 483, 436",4,5.0-2015
+191,4,2005,Algeria,Government of Algeria,,AQIM,1391,,2,,229,228,262,3,"Algeria, Mali",615,,,,615,"615, 432",4,5.0-2015
+191,4,2006,Algeria,Government of Algeria,,AQIM,1391,,2,,255,255,286,3,Algeria,615,,,,615,615,4,5.0-2015
+191,4,2007,Algeria,Government of Algeria,,AQIM,1391,,2,,472,471,518,3,Algeria,615,,,,615,615,4,5.0-2015
+191,4,2008,Algeria,Government of Algeria,,AQIM,1391,,2,,339,339,410,3,Algeria,615,,,,615,615,4,5.0-2015
+191,4,2009,Algeria,Government of Algeria,,AQIM,1391,,2,,505,493,674,3,Algeria,615,,,,615,615,4,5.0-2015
+191,4,2010,Algeria,Government of Algeria,,AQIM,1391,,2,,236,236,276,3,Algeria,615,,,,615,615,4,5.0-2015
+191,4,2011,Algeria,Government of Algeria,,AQIM,1391,,2,,267,259,273,3,Algeria,615,,,,615,615,4,5.0-2015
+191,"4, 845",2012,Algeria,Government of Algeria,,"AQIM, MUJAO","1391, 2046",,2,,256,250,310,3,Algeria,615,,,,615,615,4,5.0-2015
+191,4,2013,Algeria,Government of Algeria,,AQIM,1391,,2,,147,147,165,3,Algeria,615,,,,615,615,4,5.0-2015
+191,4,2014,Algeria,Government of Algeria,,AQIM,1391,,2,,107,83,147,3,Algeria,615,,,,615,615,4,5.0-2015
+192,191,1991,Angola,Government of Angola,,FLEC-R,1392,,1,Cabinda,35,35,41,3,Angola,540,,,,540,540,4,5.0-2015
+192,"190, 191",1994,Angola,Government of Angola,,"FLEC-FAC, FLEC-R","1392, 1393",,1,Cabinda,50,50,152,3,Angola,540,,,,540,540,4,5.0-2015
+192,190,1996,Angola,Government of Angola,,FLEC-FAC,1393,,1,Cabinda,72,43,240,3,Angola,540,,,,540,540,4,5.0-2015
+192,"190, 191",1997,Angola,Government of Angola,,"FLEC-FAC, FLEC-R","1392, 1393",,1,Cabinda,50,50,69,3,Angola,540,,,,540,540,4,5.0-2015
+192,190,1998,Angola,Government of Angola,,FLEC-FAC,1393,,1,Cabinda,34,34,290,3,Angola,540,,,,540,540,4,5.0-2015
+192,"190, 191",2002,Angola,Government of Angola,,"FLEC-FAC, FLEC-R","1392, 1393",,1,Cabinda,55,55,371,3,Angola,540,,,,540,540,4,5.0-2015
+192,190,2004,Angola,Government of Angola,,FLEC-FAC,1393,,1,Cabinda,37,37,48,3,Angola,540,,,,540,540,4,5.0-2015
+192,190,2007,Angola,Government of Angola,,FLEC-FAC,1393,,1,Cabinda,25,25,110,3,Angola,540,,,,540,540,4,5.0-2015
+192,190,2009,Angola,Government of Angola,,FLEC-FAC,1393,,1,Cabinda,25,25,66,3,Angola,540,,,,540,540,4,5.0-2015
+193,361,1991,Azerbaijan,Government of Azerbaijan,,Republic of Nagorno-Karabakh,1181,Government of Armenia,1,Nagorno-Karabakh,35,35,35,4,Azerbaijan,373,,,371,373,373,1,5.0-2015
+193,361,1992,Azerbaijan,Government of Azerbaijan,,Republic of Nagorno-Karabakh,1181,Government of Armenia,1,Nagorno-Karabakh,2167,2099,3632,4,"Armenia, Azerbaijan",373,,,371,373,"371, 373",1,5.0-2015
+193,361,1993,Azerbaijan,Government of Azerbaijan,,Republic of Nagorno-Karabakh,1181,Government of Armenia,1,Nagorno-Karabakh,1171,968,1801,4,"Armenia, Azerbaijan",373,,,371,373,"371, 373",1,5.0-2015
+193,361,1994,Azerbaijan,Government of Azerbaijan,,Republic of Nagorno-Karabakh,1181,,1,Nagorno-Karabakh,1227,1477,3657,3,"Armenia, Azerbaijan",373,,,,373,"371, 373",1,5.0-2015
+193,361,1997,Azerbaijan,Government of Azerbaijan,,Republic of Nagorno-Karabakh,1181,Government of Armenia,1,Nagorno-Karabakh,29,29,36,4,Azerbaijan,373,,,371,373,373,1,5.0-2015
+193,361,1998,Azerbaijan,Government of Azerbaijan,,Republic of Nagorno-Karabakh,1181,Government of Armenia,1,Nagorno-Karabakh,34,34,38,4,Azerbaijan,373,,,371,373,373,1,5.0-2015
+193,361,2005,Azerbaijan,Government of Azerbaijan,,Republic of Nagorno-Karabakh,1181,Government of Armenia,1,Nagorno-Karabakh,88,88,89,4,"Armenia, Azerbaijan",373,,,371,373,"371, 373",1,5.0-2015
+193,361,2008,Azerbaijan,Government of Azerbaijan,,Republic of Nagorno-Karabakh,1181,Government of Armenia,1,Nagorno-Karabakh,30,30,43,4,Azerbaijan,373,,,371,373,373,1,5.0-2015
+193,361,2012,Azerbaijan,Government of Azerbaijan,,Republic of Nagorno-Karabakh,1181,Government of Armenia,1,Nagorno-Karabakh,25,25,27,4,"Armenia, Azerbaijan",373,,,371,373,"371, 373",1,5.0-2015
+193,361,2014,Azerbaijan,Government of Azerbaijan,,Republic of Nagorno-Karabakh,1181,Government of Armenia,1,Nagorno-Karabakh,46,45,54,4,Azerbaijan,373,,,371,373,373,1,5.0-2015
+194,"292, 300",1992,Bosnia-Herzegovina,Government of Bosnia-Herzegovina,,"Serbian Republic of Bosnia-Herzegovina, Serbian irregulars","1182, 1214",Government of Serbia (Yugoslavia),1,Serb,4989,4412,7365,4,"Bosnia-Herzegovina, Bosnia-Herzegovina, Croatia",346,,,345,346,"346, 346, 344",1,5.0-2015
+194,"292, 300",1993,Bosnia-Herzegovina,Government of Bosnia-Herzegovina,,"Serbian Republic of Bosnia-Herzegovina, Serbian irregulars","1182, 1214",Government of Serbia (Yugoslavia),1,Serb,3810,3189,5174,4,Bosnia-Herzegovina,346,,,345,346,346,1,5.0-2015
+194,"292, 300",1994,Bosnia-Herzegovina,Government of Bosnia-Herzegovina,,"Serbian Republic of Bosnia-Herzegovina, Serbian irregulars","1182, 1214",,1,Serb,1640,1270,4844,3,Bosnia-Herzegovina,346,,,,346,346,1,5.0-2015
+194,"292, 300",1995,Bosnia-Herzegovina,Government of Bosnia-Herzegovina,,"Serbian Republic of Bosnia-Herzegovina, Serbian irregulars","1182, 1214",,1,Serb,1194,816,2945,3,Bosnia-Herzegovina,346,,,,346,346,1,5.0-2015
+195,"291, 303",1992,Croatia,Government of Croatia,,"Serbian Republic of Krajina, Serbian irregulars","1183, 1214",Government of Serbia (Yugoslavia),1,Serb,126,126,160,4,"Croatia, Croatia, Bosnia-Herzegovina",344,,,345,344,"344, 344, 346",1,5.0-2015
+195,303,1993,Croatia,Government of Croatia,,Serbian Republic of Krajina,1183,Government of Serbia (Yugoslavia),1,Serb,345,345,413,4,Croatia,344,,,345,344,344,1,5.0-2015
+195,303,1995,Croatia,Government of Croatia,,Serbian Republic of Krajina,1183,,1,Serb,858,427,2547,3,"Croatia, Bosnia-Herzegovina",344,,,,344,"344, 346",1,5.0-2015
+196,241,1993,Egypt,Government of Egypt,,al-Gama'a al-Islamiyya,1184,,2,,103,103,119,3,Egypt,651,,,,651,651,2,5.0-2015
+196,241,1994,Egypt,Government of Egypt,,al-Gama'a al-Islamiyya,1184,,2,,145,145,157,3,Egypt,651,,,,651,651,2,5.0-2015
+196,241,1995,Egypt,Government of Egypt,,al-Gama'a al-Islamiyya,1184,,2,,191,191,199,3,"Egypt, Ethiopia",651,,,,651,"651, 530",2,5.0-2015
+196,241,1996,Egypt,Government of Egypt,,al-Gama'a al-Islamiyya,1184,,2,,85,85,99,3,Egypt,651,,,,651,651,2,5.0-2015
+196,241,1997,Egypt,Government of Egypt,,al-Gama'a al-Islamiyya,1184,,2,,66,66,69,3,Egypt,651,,,,651,651,2,5.0-2015
+196,241,1998,Egypt,Government of Egypt,,al-Gama'a al-Islamiyya,1184,,2,,27,27,29,3,Egypt,651,,,,651,651,2,5.0-2015
+196,12487,2014,Egypt,Government of Egypt,,IS-SP,4319,,2,,208,208,208,3,Egypt,651,,,,651,651,2,5.0-2015
+197,259,1992,Georgia,Government of Georgia,,Republic of Abkhazia,1185,,1,Abkhazia,566,566,1195,3,Georgia,372,,,,372,372,1,5.0-2015
+197,259,1993,Georgia,Government of Georgia,,Republic of Abkhazia,1185,,1,Abkhazia,1611,1611,2563,3,Georgia,372,,,,372,372,1,5.0-2015
+198,297,1992,Georgia,Government of Georgia,,Republic of South Ossetia,1186,,1,South Ossetia,134,134,137,3,Georgia,372,,,,372,372,1,5.0-2015
+198,297,2008,Georgia,Government of Georgia,,Republic of South Ossetia,1186,Government of Russia (Soviet Union),1,South Ossetia,621,621,859,4,Georgia,372,,,365,372,372,1,5.0-2015
+198,297,2004,Georgia,Government of Georgia,,Republic of South Ossetia,1186,,1,South Ossetia,27,27,73,3,Georgia,372,,,,372,372,1,5.0-2015
+199,367,1992,Moldova,Government of Moldova,,PMR,1187,,1,Dniestr,585,316,637,3,Moldova,359,,,,359,359,1,5.0-2015
+200,"353, 848",1992,Tajikistan,Government of Tajikistan,,"PFT, UTO","1188, 2073",,2,,3281,3278,4144,3,Tajikistan,702,,,,702,702,3,5.0-2015
+200,353,1993,Tajikistan,Government of Tajikistan,"Government of Russia (Soviet Union), Government of Uzbekistan",UTO,1188,,2,,1395,1395,1596,4,"Afghanistan, Tajikistan",702,"365, 704",,,702,"700, 702",3,5.0-2015
+200,353,1994,Tajikistan,Government of Tajikistan,"Government of Russia (Soviet Union), Government of Uzbekistan",UTO,1188,,2,,356,356,645,4,Tajikistan,702,"365, 704",,,702,702,3,5.0-2015
+200,353,1995,Tajikistan,Government of Tajikistan,Government of Russia (Soviet Union),UTO,1188,,2,,368,362,649,4,"Afghanistan, Tajikistan",702,365,,,702,"700, 702",3,5.0-2015
+200,353,1996,Tajikistan,Government of Tajikistan,Government of Russia (Soviet Union),UTO,1188,,2,,2790,2790,2869,4,Tajikistan,702,365,,,702,702,3,5.0-2015
+200,415,1997,Tajikistan,Government of Tajikistan,,Forces of Khudoberdiyev,1189,,2,,87,87,87,3,Tajikistan,702,,,,702,702,3,5.0-2015
+200,"353, 415",1998,Tajikistan,Government of Tajikistan,,"Forces of Khudoberdiyev, UTO","1188, 1189",,2,,600,600,617,3,Tajikistan,702,,,,702,702,3,5.0-2015
+200,849,2000,Tajikistan,Government of Tajikistan,,Forces of Mullo Abdullo,2085,,2,,46,46,46,3,Tajikistan,702,,,,702,702,3,5.0-2015
+200,"809, 849",2010,Tajikistan,Government of Tajikistan,,"Forces of Mullo Abdullo, IMU","1202, 2085",,2,,98,93,244,3,Tajikistan,702,,,,702,702,3,5.0-2015
+200,809,2011,Tajikistan,Government of Tajikistan,,IMU,1202,,2,,28,21,30,3,Tajikistan,702,,,,702,702,3,5.0-2015
+201,362,1993,Azerbaijan,Government of Azerbaijan,,Military faction (forces of Suret Husseinov),1190,,2,,63,63,91,3,Azerbaijan,373,,,,373,373,1,5.0-2015
+201,407,1995,Azerbaijan,Government of Azerbaijan,,OPON Forces,1191,,2,,44,44,72,3,Azerbaijan,373,,,,373,373,1,5.0-2015
+202,294,1993,Bosnia-Herzegovina,Government of Bosnia-Herzegovina,,Autonomous Province of Western Bosnia,1192,,1,Bihaca Krajina,133,104,219,3,Bosnia-Herzegovina,346,,,,346,346,1,5.0-2015
+202,294,1994,Bosnia-Herzegovina,Government of Bosnia-Herzegovina,,Autonomous Province of Western Bosnia,1192,,1,Bihaca Krajina,722,709,1026,3,Bosnia-Herzegovina,346,,,,346,346,1,5.0-2015
+202,294,1995,Bosnia-Herzegovina,Government of Bosnia-Herzegovina,,Autonomous Province of Western Bosnia,1192,,1,Bihaca Krajina,116,116,388,3,"Bosnia-Herzegovina, Croatia",346,,,,346,"346, 344",1,5.0-2015
+203,"293, 301",1993,Bosnia-Herzegovina,Government of Bosnia-Herzegovina,,"Croatian Republic of Bosnia-Herzegovina, Croatian irregulars","1193, 1213",Government of Croatia,1,Croat,3302,3096,4344,4,Bosnia-Herzegovina,346,,,344,346,346,1,5.0-2015
+203,"293, 301",1994,Bosnia-Herzegovina,Government of Bosnia-Herzegovina,,"Croatian Republic of Bosnia-Herzegovina, Croatian irregulars","1193, 1213",,1,Croat,326,194,335,3,Bosnia-Herzegovina,346,,,,346,346,1,5.0-2015
+204,350,1993,Russia (Soviet Union),Government of Russia (Soviet Union),,Parliamentary Forces,1194,,2,,145,145,147,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+205,230,1994,Mexico,Government of Mexico,,EZLN,1628,,2,,145,145,445,3,Mexico,70,,,,70,70,5,5.0-2015
+205,299,1996,Mexico,Government of Mexico,,EPR,1629,,2,,37,37,70,3,Mexico,70,,,,70,70,5,5.0-2015
+206,348,1994,Russia (Soviet Union),Government of Russia (Soviet Union),,Chechen Republic of Ichkeria,1195,,1,Chechnya,229,229,338,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+206,348,1995,Russia (Soviet Union),Government of Russia (Soviet Union),,Chechen Republic of Ichkeria,1195,,1,Chechnya,1754,1754,3896,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+206,348,1996,Russia (Soviet Union),Government of Russia (Soviet Union),,Chechen Republic of Ichkeria,1195,,1,Chechnya,2721,2704,4027,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+206,348,1999,Russia (Soviet Union),Government of Russia (Soviet Union),,Chechen Republic of Ichkeria,1195,,1,Chechnya,5749,5699,12048,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+206,348,2000,Russia (Soviet Union),Government of Russia (Soviet Union),,Chechen Republic of Ichkeria,1195,,1,Chechnya,2907,2907,5329,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+206,348,2001,Russia (Soviet Union),Government of Russia (Soviet Union),,Chechen Republic of Ichkeria,1195,,1,Chechnya,784,783,1025,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+206,348,2002,Russia (Soviet Union),Government of Russia (Soviet Union),,Chechen Republic of Ichkeria,1195,,1,Chechnya,753,753,3509,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+206,348,2003,Russia (Soviet Union),Government of Russia (Soviet Union),,Chechen Republic of Ichkeria,1195,,1,Chechnya,480,476,643,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+206,348,2004,Russia (Soviet Union),Government of Russia (Soviet Union),,Chechen Republic of Ichkeria,1195,,1,Chechnya,1151,1134,1304,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+206,348,2005,Russia (Soviet Union),Government of Russia (Soviet Union),,Chechen Republic of Ichkeria,1195,,1,Chechnya,668,657,721,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+206,348,2006,Russia (Soviet Union),Government of Russia (Soviet Union),,Chechen Republic of Ichkeria,1195,,1,Chechnya,259,259,336,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+206,348,2007,Russia (Soviet Union),Government of Russia (Soviet Union),,Chechen Republic of Ichkeria,1195,,1,Chechnya,146,146,217,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+207,375,1994,Yemen (North Yemen),Government of Yemen (North Yemen),,Democratic Republic of Yemen,1196,,1,South Yemen,1489,1283,3253,3,Yemen (North Yemen),678,,,,678,678,2,5.0-2015
+208,227,1995,"Ecuador, Peru",Government of Ecuador,,Government of Peru,135,,1,Cordillera del Condor,92,92,176,2,"Ecuador, Peru",130,,135,,"130, 135","130, 135",5,5.0-2015
+209,340,1990,Pakistan,Government of Pakistan,,MQM,1197,,2,,70,70,70,3,Pakistan,770,,,,770,770,3,5.0-2015
+209,340,1994,Pakistan,Government of Pakistan,,MQM,1197,,2,,38,38,38,3,Pakistan,770,,,,770,770,3,5.0-2015
+209,340,1995,Pakistan,Government of Pakistan,,MQM,1197,,2,,52,52,55,3,Pakistan,770,,,,770,770,3,5.0-2015
+209,340,1996,Pakistan,Government of Pakistan,,MQM,1197,,2,,42,42,42,3,Pakistan,770,,,,770,770,3,5.0-2015
+209,768,2007,Pakistan,Government of Pakistan,,TTP,1199,,2,,598,598,740,3,Pakistan,770,,,,770,770,3,5.0-2015
+209,768,2008,Pakistan,Government of Pakistan,,TTP,1199,,2,,2997,2979,3698,3,Pakistan,770,,,,770,770,3,5.0-2015
+209,"768, 844",2009,Pakistan,Government of Pakistan,,"Lashkar-e-Islam, TTP","1199, 1244",,2,,6345,4809,6756,3,Pakistan,770,,,,770,770,3,5.0-2015
+209,"768, 844",2010,Pakistan,Government of Pakistan,,"Lashkar-e-Islam, TTP","1199, 1244",,2,,5577,5325,6421,3,Pakistan,770,,,,770,770,3,5.0-2015
+209,768,2011,Pakistan,Government of Pakistan,,TTP,1199,,2,,2599,2562,2910,3,"Afghanistan, Pakistan",770,,,,770,"700, 770",3,5.0-2015
+209,"768, 843, 844",2012,Pakistan,Government of Pakistan,,"Lashkar-e-Islam, TTP, TTP - TA","1199, 1244, 1986",,2,,2673,2673,2742,3,Pakistan,770,,,,770,770,3,5.0-2015
+209,"768, 844",2013,Pakistan,Government of Pakistan,,"Lashkar-e-Islam, TTP","1199, 1244",,2,,1729,1729,1758,3,Pakistan,770,,,,770,770,3,5.0-2015
+209,"768, 844, 10961, 14227",2014,Pakistan,Government of Pakistan,,"IMU, Jamaat-ul-Ahrar, Lashkar-e-Islam, TTP","1199, 1202, 1244, 5928",,2,,2951,2948,3019,3,Pakistan,770,,,,770,770,3,5.0-2015
+210,16,1996,"Cameroon, Nigeria",Government of Cameroon,,Government of Nigeria,475,,1,Bakassi,56,56,57,2,Cameroon,471,,475,,"471, 475",471,4,5.0-2015
+212,113,1995,Niger,Government of Niger,,FDR,1395,,1,Eastern Niger,34,34,34,3,Niger,436,,,,436,436,4,5.0-2015
+213,35,1997,Comoros,Government of Comoros,,MPA/Republic of Anjouan,1397,,1,Anjouan,56,56,78,3,Comoros,581,,,,581,581,4,5.0-2015
+214,36,1993,Congo,Government of Congo,,Ninjas,1399,,2,,53,53,53,3,Congo,484,,,,484,484,4,5.0-2015
+214,38,2002,Congo,Government of Congo,Government of Angola,Ntsiloulous,1401,,2,,167,167,171,4,Congo,484,540,,,484,484,4,5.0-2015
+214,"37, 189",1997,Congo,Government of Congo,"Government of Angola, Government of Chad","Cobras, Cocoyes","1398, 1400",", Government of Angola, Government of Chad",2,,10033,10033,20033,4,"Congo, Congo, DR Congo (Zaire)",484,"540, 483",,"540, 483",484,"484, 484, 490",4,5.0-2015
+214,"36, 37, 38",1998,Congo,Government of Congo,"Government of Angola, Government of Chad","Cocoyes, Ninjas, Ntsiloulous","1399, 1400, 1401",,2,,3272,3272,3476,4,Congo,484,"540, 483",,,484,484,4,5.0-2015
+214,"36, 37, 38",1999,Congo,Government of Congo,"Government of Angola, Government of Chad","Cocoyes, Ninjas, Ntsiloulous","1399, 1400, 1401",,2,,651,651,1541,4,Congo,484,"540, 483",,,484,484,4,5.0-2015
+215,45,2000,"Eritrea, Ethiopia",Government of Eritrea,,Government of Ethiopia,530,,1,Common border,50000,50000,50000,2,"Eritrea, Ethiopia",531,,530,,"530, 531","531, 530",4,5.0-2015
+215,45,1998,"Eritrea, Ethiopia",Government of Eritrea,,Government of Ethiopia,530,,1,Common border,1000,218,1980,2,"Eritrea, Ethiopia",531,,530,,"530, 531","531, 530",4,5.0-2015
+215,45,1999,"Eritrea, Ethiopia",Government of Eritrea,,Government of Ethiopia,530,,1,Common border,47192,47192,47192,2,"Eritrea, Ethiopia",531,,530,,"530, 531","531, 530",4,5.0-2015
+216,58,1998,Guinea-Bissau,Government of Guinea-Bissau,"Government of Guinea, Government of Senegal","Military Junta for the Consolidation of Democracy, Peace and Justice",1402,,2,,505,501,702,4,Guinea-Bissau,404,"438, 433",,,404,404,4,5.0-2015
+216,58,1999,Guinea-Bissau,Government of Guinea-Bissau,"Government of Guinea, Government of Senegal","Military Junta for the Consolidation of Democracy, Peace and Justice",1402,,2,,199,154,225,4,Guinea-Bissau,404,"438, 433",,,404,404,4,5.0-2015
+217,92,1998,Lesotho,Government of Lesotho,"Government of Botswana, Government of South Africa",Military faction,1403,,2,,68,35,69,4,Lesotho,570,"571, 560",,,570,570,4,5.0-2015
+218,295,1998,Serbia (Yugoslavia),Government of Serbia (Yugoslavia),,UCK,1200,,1,Kosovo,1235,379,1235,3,Serbia (Yugoslavia),345,,,,345,345,1,5.0-2015
+218,295,1999,Serbia (Yugoslavia),Government of Serbia (Yugoslavia),,UCK,1200,"Government of Belgium, Government of Canada, Government of Czech Republic, Government of Denmark, Government of France, Government of Germany, Government of Greece, Government of Hungary, Government of Iceland, Government of Italy, Government of Luxembourg, Government of Netherlands, Government of Norway, Government of Poland, Government of Portugal, Government of Spain, Government of Turkey, Government of United Kingdom, Government of United States of America",1,Kosovo,1386,1386,3055,4,"Serbia (Yugoslavia), Albania",345,,,"211, 20, 316, 390, 220, 260, 350, 310, 395, 325, 212, 210, 385, 290, 235, 230, 640, 200, 2",345,"345, 339",1,5.0-2015
+219,55,1989,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,150,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,1990,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,80,80,3036,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,1991,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,700,700,1330,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,1992,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,165,165,275,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,1994,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,42,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,1995,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,402,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,1998,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,25,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,1999,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,683,372,2914,3,"Ethiopia, Kenya",530,,,,530,"530, 501",4,5.0-2015
+219,55,2000,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,608,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,2001,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,876,3,"Ethiopia, Kenya",530,,,,530,"530, 501",4,5.0-2015
+219,55,2002,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,1434,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,2003,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,76,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,2004,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,167,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,2005,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,75,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,2006,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,202,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,2007,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,361,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,2008,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,175,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,2009,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,42,42,97,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,2010,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,128,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,2011,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,174,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,2012,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,162,3,Ethiopia,530,,,,530,530,4,5.0-2015
+219,55,2013,Ethiopia,Government of Ethiopia,,OLF,1404,,1,Oromiya,25,25,93,3,Ethiopia,530,,,,530,530,4,5.0-2015
+220,17,2001,Central African Republic,Government of Central African Republic,Government of Libya,Military faction (forces of Andre Kolingba),1406,,2,,234,234,334,4,Central African Republic,482,620,,,482,482,4,5.0-2015
+220,368,1999,Russia (Soviet Union),Government of Russia (Soviet Union),,Wahhabi movement of the Buinaksk district,1201,,1,Dagestan,83,83,123,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+221,363,2000,Uzbekistan,Government of Uzbekistan,Government of Kyrgyzstan,IMU,1202,,2,,471,410,482,4,"Kyrgyzstan, Uzbekistan",704,703,,,704,"703, 704",3,5.0-2015
+221,444,2004,Uzbekistan,Government of Uzbekistan,,JIG,1203,,2,,37,19,50,3,Uzbekistan,704,,,,704,704,3,5.0-2015
+221,363,1999,Uzbekistan,Government of Uzbekistan,,IMU,1202,,2,,67,64,76,3,"Kyrgyzstan, Tajikistan, Uzbekistan",704,,,,704,"703, 702, 704",3,5.0-2015
+222,287,2002,Central African Republic,Government of Central African Republic,,Forces of Francois Bozize,1407,,2,,132,130,185,3,"Central African Republic, Chad",482,,,,482,"482, 483",4,5.0-2015
+222,628,2006,Central African Republic,Government of Central African Republic,Government of France,UFDR,1408,,2,,45,43,168,4,Central African Republic,482,220,,,482,482,4,5.0-2015
+222,782,2009,Central African Republic,Government of Central African Republic,,CPJP,1937,,2,,26,26,69,3,Central African Republic,482,,,,482,482,4,5.0-2015
+222,782,2010,Central African Republic,Government of Central African Republic,,CPJP,1937,,2,,26,26,106,3,Central African Republic,482,,,,482,482,4,5.0-2015
+222,782,2011,Central African Republic,Government of Central African Republic,,CPJP,1937,,2,,44,44,79,3,Central African Republic,482,,,,482,482,4,5.0-2015
+222,832,2012,Central African Republic,Government of Central African Republic,Government of Chad,Seleka,2044,,2,,45,45,45,4,Central African Republic,482,483,,,482,482,4,5.0-2015
+222,"832, 12380",2013,Central African Republic,Government of Central African Republic,Government of South Africa,"Seleka, anti-Balaka","2044, 4201",,2,,315,291,403,"3, 4",Central African Republic,482,560,,,482,482,4,5.0-2015
+223,341,2001,"Macedonia, FYR","Government of Macedonia, FYR",,UCK,1204,,2,,72,70,250,3,"Macedonia, FYR",343,,,,343,343,1,5.0-2015
+224,360,2001,United States of America,Government of United States of America,"Government of Australia, Government of Canada, Government of France, Government of Germany, Government of Italy, Government of Poland, Government of Turkey, Government of United Kingdom",al-Qaida,1630,,2,,1585,1266,1862,4,"United States of America, Afghanistan, Pakistan",2,"900, 20, 220, 260, 325, 290, 640, 200",,,2,"2, 700, 770",5,5.0-2015
+224,360,2002,United States of America,Government of United States of America,"Government of Afghanistan, Government of Australia, Government of Canada, Government of Denmark, Government of France, Government of Germany, Government of Greece, Government of Italy, Government of Japan, Government of Jordan, Government of Lithuania, Government of Netherlands, Government of New Zealand, Government of Norway, Government of Pakistan, Government of Poland, Government of Rumania, Government of Spain, Government of Turkey, Government of United Kingdom",al-Qaida,1630,,2,,710,693,1224,4,"Pakistan, Afghanistan",2,"700, 900, 20, 390, 220, 260, 350, 325, 740, 663, 368, 210, 920, 385, 770, 290, 360, 230, 640, 200",,,2,"700, 770",5,5.0-2015
+224,360,2003,United States of America,Government of United States of America,"Government of Afghanistan, Government of Canada, Government of Denmark, Government of France, Government of Italy, Government of Lithuania, Government of Netherlands, Government of New Zealand, Government of Norway, Government of Pakistan, Government of Poland, Government of Rumania, Government of Slovakia, Government of Spain, Government of United Kingdom",al-Qaida,1630,,2,,42,42,90,4,"Pakistan, Afghanistan, Saudi Arabia",2,"700, 20, 390, 220, 325, 368, 210, 920, 385, 770, 290, 360, 317, 230, 200",,,2,"770, 700, 670",5,5.0-2015
+224,360,2004,United States of America,Government of United States of America,"Government of Afghanistan, Government of Belgium, Government of Canada, Government of Czech Republic, Government of France, Government of Germany, Government of Italy, Government of Pakistan, Government of Poland, Government of Portugal, Government of Rumania, Government of Saudi Arabia, Government of Slovakia, Government of Spain, Government of United Kingdom",al-Qaida,1630,,2,,320,59,684,4,"Pakistan, Afghanistan, Saudi Arabia",2,"700, 211, 20, 316, 220, 260, 325, 770, 290, 235, 360, 670, 317, 230, 200",,,2,"770, 700, 670",5,5.0-2015
+224,360,2005,United States of America,Government of United States of America,"Government of Belgium, Government of Canada, Government of Croatia, Government of Denmark, Government of Estonia, Government of France, Government of Italy, Government of Kuwait, Government of Netherlands, Government of Norway, Government of Pakistan, Government of Poland, Government of Rumania, Government of Saudi Arabia, Government of Slovakia, Government of Spain, Government of United Kingdom",al-Qaida,1630,,2,,100,99,281,4,"Pakistan, Afghanistan, Saudi Arabia",2,"211, 20, 344, 390, 366, 220, 325, 690, 210, 385, 770, 290, 360, 670, 317, 230, 200",,,2,"770, 700, 670",5,5.0-2015
+224,360,2006,United States of America,Government of United States of America,"Government of Afghanistan, Government of Pakistan, Government of Saudi Arabia, Government of United Kingdom",al-Qaida,1630,,2,,191,191,331,4,"Pakistan, Afghanistan, Saudi Arabia",2,"700, 770, 670, 200",,,2,"770, 700, 670",5,5.0-2015
+224,360,2007,United States of America,Government of United States of America,"Government of Afghanistan, Government of Pakistan, Government of Saudi Arabia, Government of United Kingdom",al-Qaida,1630,,2,,153,142,191,4,"Pakistan, Afghanistan, Saudi Arabia",2,"700, 770, 670, 200",,,2,"770, 700, 670",5,5.0-2015
+224,360,2008,United States of America,Government of United States of America,"Government of Afghanistan, Government of Czech Republic, Government of Pakistan, Government of Rumania",al-Qaida,1630,,2,,182,182,299,4,"Pakistan, Afghanistan, Yemen, Somalia",2,"700, 316, 770, 360",,,2,"770, 700, 678, 520",5,5.0-2015
+224,360,2009,United States of America,Government of United States of America,"Government of Afghanistan, Government of Canada, Government of Czech Republic, Government of France, Government of Jordan, Government of Netherlands, Government of Pakistan, Government of Rumania",al-Qaida,1630,,2,,391,384,467,4,"Pakistan, Afghanistan, Somalia",2,"700, 20, 316, 220, 663, 210, 770, 360",,,2,"770, 700, 520",5,5.0-2015
+224,360,2010,United States of America,Government of United States of America,"Government of Afghanistan, Government of Canada, Government of France, Government of Jordan, Government of Netherlands, Government of Pakistan, Government of Rumania",al-Qaida,1630,,2,,269,252,1055,4,"Afghanistan, Pakistan",2,"700, 20, 220, 663, 210, 770, 360",,,2,"700, 770",5,5.0-2015
+224,360,2011,United States of America,Government of United States of America,"Government of Afghanistan, Government of France, Government of Jordan, Government of Pakistan",al-Qaida,1630,,2,,190,190,237,4,"Afghanistan, Pakistan",2,"700, 220, 663, 770",,,2,"700, 770",5,5.0-2015
+224,360,2012,United States of America,Government of United States of America,"Government of Afghanistan, Government of France, Government of Jordan, Government of Pakistan",al-Qaida,1630,,2,,221,219,308,4,"Afghanistan, Pakistan, Somalia",2,"700, 220, 663, 770",,,2,"700, 770, 520",5,5.0-2015
+224,360,2013,United States of America,Government of United States of America,"Government of Afghanistan, Government of Jordan, Government of Pakistan",al-Qaida,1630,,2,,38,35,39,4,"Afghanistan, Pakistan, Somalia",2,"700, 663, 770",,,2,"700, 770, 520",5,5.0-2015
+224,360,2014,United States of America,Government of United States of America,"Government of Afghanistan, Government of Pakistan",al-Qaida,1630,,2,,103,103,104,4,"Afghanistan, Pakistan, Syria",2,"700, 770",,,2,"700, 770, 652",5,5.0-2015
+225,"89, 91",2002,Ivory Coast,Government of Ivory Coast,,"MPCI, MPIGO","1410, 1411",,2,,624,565,661,3,Ivory Coast,437,,,,437,437,4,5.0-2015
+225,"91, 245",2003,Ivory Coast,Government of Ivory Coast,,"MJP, MPIGO","1409, 1411",,2,,139,139,519,3,Ivory Coast,437,,,,437,437,4,5.0-2015
+225,439,2004,Ivory Coast,Government of Ivory Coast,,FRCI,1412,,2,,47,47,48,3,Ivory Coast,437,,,,437,437,4,5.0-2015
+225,820,2011,Ivory Coast,Government of Ivory Coast,,FDSI-CI,2010,,2,,35,33,35,3,Ivory Coast,437,,,,437,437,4,5.0-2015
+226,332,2003,"Australia, Iraq, United Kingdom, United States of America","Government of Australia, Government of United Kingdom, Government of United States of America",,Government of Iraq,645,,2,,7927,7927,13814,2,Iraq,"900, 200, 2",,645,,"900, 645, 200, 2",645,"1, 2, 3, 5",5.0-2015
+227,309,1989,India,Government of India,,ABSU,1205,,1,Bodoland,72,72,80,3,India,750,,,,750,750,3,5.0-2015
+227,309,1990,India,Government of India,,ABSU,1205,,1,Bodoland,25,25,25,3,India,750,,,,750,750,3,5.0-2015
+227,313,1994,India,Government of India,,NDFB,1206,,1,Bodoland,36,36,36,3,India,750,,,,750,750,3,5.0-2015
+227,313,1996,India,Government of India,,NDFB,1206,,1,Bodoland,25,25,27,3,India,750,,,,750,750,3,5.0-2015
+227,313,1997,India,Government of India,,NDFB,1206,,1,Bodoland,34,34,34,3,India,750,,,,750,750,3,5.0-2015
+227,313,1998,India,Government of India,,NDFB,1206,,1,Bodoland,31,31,31,3,India,750,,,,750,750,3,5.0-2015
+227,313,1999,India,Government of India,,NDFB,1206,,1,Bodoland,33,33,33,3,India,750,,,,750,750,3,5.0-2015
+227,313,2001,India,Government of India,,NDFB,1206,,1,Bodoland,77,77,77,3,India,750,,,,750,750,3,5.0-2015
+227,313,2002,India,Government of India,,NDFB,1206,,1,Bodoland,44,44,44,3,India,750,,,,750,750,3,5.0-2015
+227,313,2003,India,Government of India,,NDFB,1206,,1,Bodoland,109,109,122,3,India,750,,,,750,750,3,5.0-2015
+227,313,2004,India,Government of India,,NDFB,1206,,1,Bodoland,27,27,27,3,India,750,,,,750,750,3,5.0-2015
+227,785,2009,India,Government of India,,NDFB - RD,1950,,1,Bodoland,73,69,78,3,India,750,,,,750,750,3,5.0-2015
+227,785,2010,India,Government of India,,NDFB - RD,1950,,1,Bodoland,57,57,86,3,India,750,,,,750,750,3,5.0-2015
+227,14102,2013,India,Government of India,,NDFB-S,5826,,1,Bodoland,28,26,28,3,India,750,,,,750,750,3,5.0-2015
+227,14102,2014,India,Government of India,,NDFB-S,5826,,1,Bodoland,34,30,47,3,India,750,,,,750,750,3,5.0-2015
+228,321,1997,Myanmar (Burma),Government of Myanmar (Burma),,UWSA,1207,,1,Wa,130,130,130,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+248,472,2003,Thailand,Government of Thailand,,Patani insurgents,1208,,1,Patani,26,26,27,3,Thailand,800,,,,800,800,3,5.0-2015
+248,472,2004,Thailand,Government of Thailand,,Patani insurgents,1208,,1,Patani,164,162,170,3,Thailand,800,,,,800,800,3,5.0-2015
+248,472,2005,Thailand,Government of Thailand,,Patani insurgents,1208,,1,Patani,205,202,212,3,Thailand,800,,,,800,800,3,5.0-2015
+248,472,2006,Thailand,Government of Thailand,,Patani insurgents,1208,,1,Patani,212,212,217,3,Thailand,800,,,,800,800,3,5.0-2015
+248,472,2007,Thailand,Government of Thailand,,Patani insurgents,1208,,1,Patani,197,197,206,3,Thailand,800,,,,800,800,3,5.0-2015
+248,472,2008,Thailand,Government of Thailand,,Patani insurgents,1208,,1,Patani,130,130,133,3,Thailand,800,,,,800,800,3,5.0-2015
+248,472,2009,Thailand,Government of Thailand,,Patani insurgents,1208,,1,Patani,138,135,138,3,Thailand,800,,,,800,800,3,5.0-2015
+248,472,2010,Thailand,Government of Thailand,,Patani insurgents,1208,,1,Patani,75,73,78,3,Thailand,800,,,,800,800,3,5.0-2015
+248,472,2011,Thailand,Government of Thailand,,Patani insurgents,1208,,1,Patani,142,142,148,3,Thailand,800,,,,800,800,3,5.0-2015
+248,472,2012,Thailand,Government of Thailand,,Patani insurgents,1208,,1,Patani,131,131,132,3,Thailand,800,,,,800,800,3,5.0-2015
+248,472,2013,Thailand,Government of Thailand,,Patani insurgents,1208,,1,Patani,189,188,192,3,Thailand,800,,,,800,800,3,5.0-2015
+248,472,2014,Thailand,Government of Thailand,,Patani insurgents,1208,,1,Patani,68,61,72,3,Thailand,800,,,,800,800,3,5.0-2015
+249,446,2004,Nigeria,Government of Nigeria,,Ahlul Sunnah Jamaa,1413,,1,Northern Nigeria,61,61,68,3,Nigeria,475,,,,475,475,4,5.0-2015
+250,473,2004,Nigeria,Government of Nigeria,,NDPVF,1414,,1,Niger Delta,67,67,137,3,Nigeria,475,,,,475,475,4,5.0-2015
+251,643,1990,Israel,Government of Israel,,Hezbollah,1209,,1,Southern Lebanon,42,42,45,3,Lebanon,666,,,,666,660,2,5.0-2015
+251,643,1991,Israel,Government of Israel,,Hezbollah,1209,,1,Southern Lebanon,28,28,31,3,Lebanon,666,,,,666,660,2,5.0-2015
+251,643,1992,Israel,Government of Israel,,Hezbollah,1209,,1,Southern Lebanon,87,87,91,3,"Lebanon, Israel",666,,,,666,"660, 666",2,5.0-2015
+251,643,1993,Israel,Government of Israel,,Hezbollah,1209,,1,Southern Lebanon,124,124,186,3,Lebanon,666,,,,666,660,2,5.0-2015
+251,643,1994,Israel,Government of Israel,,Hezbollah,1209,,1,Southern Lebanon,82,71,120,3,Lebanon,666,,,,666,660,2,5.0-2015
+251,643,1995,Israel,Government of Israel,,Hezbollah,1209,,1,Southern Lebanon,74,71,85,3,"Lebanon, Israel",666,,,,666,"660, 666",2,5.0-2015
+251,643,1996,Israel,Government of Israel,,Hezbollah,1209,,1,Southern Lebanon,95,93,103,3,Lebanon,666,,,,666,660,2,5.0-2015
+251,643,1997,Israel,Government of Israel,,Hezbollah,1209,,1,Southern Lebanon,82,82,90,3,Lebanon,666,,,,666,660,2,5.0-2015
+251,643,1998,Israel,Government of Israel,,Hezbollah,1209,,1,Southern Lebanon,54,54,72,3,Lebanon,666,,,,666,660,2,5.0-2015
+251,643,1999,Israel,Government of Israel,,Hezbollah,1209,,1,Southern Lebanon,41,41,42,3,Lebanon,666,,,,666,660,2,5.0-2015
+251,643,2006,Israel,Government of Israel,,Hezbollah,1209,,1,Southern Lebanon,821,819,948,3,"Lebanon, Israel",666,,,,666,"660, 666",2,5.0-2015
+254,651,2008,DR Congo (Zaire),Government of DR Congo (Zaire),,BDK,1415,,1,Kongo Kingdom,250,250,293,3,DR Congo (Zaire),490,,,,490,490,4,5.0-2015
+254,651,2007,DR Congo (Zaire),Government of DR Congo (Zaire),,BDK,1415,,1,Kongo Kingdom,116,116,116,3,DR Congo (Zaire),490,,,,490,490,4,5.0-2015
+255,749,2008,Niger,Government of Niger,,MNJ,1416,,2,,47,47,104,3,Niger,436,,,,436,436,4,5.0-2015
+255,761,1992,Niger,Government of Niger,,FLAA,1376,,2,,29,29,29,3,Niger,436,,,,436,436,4,5.0-2015
+255,761,1991,Niger,Government of Niger,,FLAA,1376,,2,,40,40,150,3,Niger,436,,,,436,436,4,5.0-2015
+255,762,1997,Niger,Government of Niger,,UFRA,1378,,2,,62,62,62,3,Niger,436,,,,436,436,4,5.0-2015
+255,749,2007,Niger,Government of Niger,,MNJ,1416,,2,,81,81,97,3,Niger,436,,,,436,436,4,5.0-2015
+257,773,2007,Russia (Soviet Union),Government of Russia (Soviet Union),,Forces of the Caucasus Emirate,1210,,1,Caucasus Emirate,30,30,56,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+257,773,2008,Russia (Soviet Union),Government of Russia (Soviet Union),,Forces of the Caucasus Emirate,1210,,1,Caucasus Emirate,404,278,453,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+257,773,2009,Russia (Soviet Union),Government of Russia (Soviet Union),,Forces of the Caucasus Emirate,1210,,1,Caucasus Emirate,696,551,793,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+257,773,2010,Russia (Soviet Union),Government of Russia (Soviet Union),,Forces of the Caucasus Emirate,1210,,1,Caucasus Emirate,418,409,629,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+257,773,2011,Russia (Soviet Union),Government of Russia (Soviet Union),,Forces of the Caucasus Emirate,1210,,1,Caucasus Emirate,359,358,514,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+257,773,2012,Russia (Soviet Union),Government of Russia (Soviet Union),,Forces of the Caucasus Emirate,1210,,1,Caucasus Emirate,516,514,723,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+257,773,2013,Russia (Soviet Union),Government of Russia (Soviet Union),,Forces of the Caucasus Emirate,1210,,1,Caucasus Emirate,321,286,535,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+257,773,2014,Russia (Soviet Union),Government of Russia (Soviet Union),,Forces of the Caucasus Emirate,1210,,1,Caucasus Emirate,167,167,295,3,Russia (Soviet Union),365,,,,365,365,1,5.0-2015
+259,772,2008,India,Government of India,,PULF,1212,,1,Islamic State,25,25,25,3,India,750,,,,750,750,3,5.0-2015
+260,776,2008,"Djibouti, Eritrea",Government of Djibouti,,Government of Eritrea,531,,1,Common border,35,35,44,2,Djibouti,522,,531,,"522, 531",522,4,5.0-2015
+263,788,1997,India,Government of India,,KNF,1159,,1,Kukiland,63,41,63,3,India,750,,,,750,750,3,5.0-2015
+264,798,2009,Myanmar (Burma),Government of Myanmar (Burma),,MNDAA,1746,,1,Kokang,80,80,270,3,"China, Myanmar (Burma)",775,,,,775,"710, 775",3,5.0-2015
+264,798,2014,Myanmar (Burma),Government of Myanmar (Burma),,MNDAA,1746,,1,Kokang,67,7,107,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+267,806,2010,Mauritania,Government of Mauritania,Government of France,AQIM,1391,,2,,29,27,41,4,"Mali, Mauritania",435,220,,,435,"432, 435",4,5.0-2015
+267,806,2011,Mauritania,Government of Mauritania,,AQIM,1391,,2,,26,26,50,3,"Mali, Mauritania",435,,,,435,"432, 435",4,5.0-2015
+268,811,1991,Ethiopia,Government of Ethiopia,,IGLF,2000,,1,Hararghe,100,100,100,3,Ethiopia,530,,,,530,530,4,5.0-2015
+269,815,2011,Sudan,Government of Sudan,,Republic of South Sudan,2014,,1,Abyei,145,145,145,3,Sudan,625,,,,625,625,4,5.0-2015
+270,"818, 819",2011,South Sudan,Government of South Sudan,,"SSDM/A, SSLM/A","1993, 2009",,2,,210,210,320,3,South Sudan,626,,,,626,626,4,5.0-2015
+270,819,2012,South Sudan,Government of South Sudan,,SSLM/A,2009,,2,,137,137,137,3,South Sudan,626,,,,626,626,4,5.0-2015
+270,"859, 860",2013,South Sudan,Government of South Sudan,,"SPLM/A In Opposition, SSDM/A - Cobra Faction","3563, 4226",,2,,926,926,2318,3,South Sudan,626,,,,626,626,4,5.0-2015
+270,859,2014,South Sudan,Government of South Sudan,Government of Uganda,SPLM/A In Opposition,4226,,2,,1667,719,2993,4,South Sudan,626,500,,,626,626,4,5.0-2015
+271,"823, 825",2011,Libya,Government of Libya,,"Forces of Muammar Gaddafi, NTC","2011, 2012",,2,,1930,1912,3463,3,Libya,620,,,,620,620,4,5.0-2015
+271,"14059, 14249",2014,Libya,Government of Libya,,"Libyan National Army, Zintan Brigades","5802, 5940",,2,,322,322,322,3,Libya,620,,,,620,620,4,5.0-2015
+272,842,2012,India,Government of India,,GNLA,2048,,1,Garoland,27,23,27,3,India,750,,,,750,750,3,5.0-2015
+272,842,2014,India,Government of India,,GNLA,2048,,1,Garoland,26,23,32,3,India,750,,,,750,750,3,5.0-2015
+273,830,2008,China,Government of China,,ETIM,2041,,1,East Turkestan,36,36,39,3,China,710,,,,710,710,3,5.0-2015
+274,863,2009,Mali,Government of Mali,,AQIM,1391,,2,,87,54,93,3,Mali,432,,,,432,432,4,5.0-2015
+274,"835, 837",2012,Mali,Government of Mali,,"Ansar Dine, Military faction (Red Berets)","2042, 2050",,2,,87,83,270,3,Mali,432,,,,432,432,4,5.0-2015
+274,"835, 862, 863, 865",2013,Mali,Government of Mali,"Government of Bangladesh, Government of Belgium, Government of Benin, Government of Burkina Faso, Government of Burundi, Government of Cambodia (Kampuchea), Government of Chad, Government of China, Government of Egypt, Government of Estonia, Government of Finland, Government of France, Government of Germany, Government of Ghana, Government of Guinea, Government of Guinea-Bissau, Government of Italy, Government of Ivory Coast, Government of Jordan, Government of Liberia, Government of Mauritania, Government of Nepal, Government of Niger, Government of Nigeria, Government of Norway, Government of Rwanda, Government of Senegal, Government of Sierra Leone, Government of Sweden, Government of Tajikistan, Government of Togo, Government of United Kingdom, Government of United States of America, Government of Yemen (North Yemen)","AQIM, Ansar Dine, MUJAO, Signed-in-Blood Battalion","1391, 2042, 2046, 2120",,2,,834,834,1002,4,"Mali, Mali, Niger",432,"771, 211, 434, 439, 516, 811, 483, 710, 651, 366, 375, 220, 260, 452, 438, 404, 325, 437, 663, 450, 435, 790, 436, 475, 385, 517, 433, 451, 380, 702, 461, 200, 2, 678",,,432,"432, 432, 436",4,5.0-2015
+274,"863, 12582",2014,Mali,Government of Mali,"Government of Bangladesh, Government of Belgium, Government of Benin, Government of Burkina Faso, Government of Burundi, Government of Cambodia (Kampuchea), Government of Chad, Government of China, Government of Egypt, Government of Estonia, Government of Finland, Government of France, Government of Germany, Government of Ghana, Government of Guinea, Government of Guinea-Bissau, Government of Italy, Government of Ivory Coast, Government of Jordan, Government of Liberia, Government of Mauritania, Government of Nepal, Government of Niger, Government of Nigeria, Government of Norway, Government of Rwanda, Government of Senegal, Government of Sierra Leone, Government of Sweden, Government of Tajikistan, Government of Togo, Government of United Kingdom, Government of United States of America","AQIM, al-Murabitun","1391, 4376",,2,,95,95,129,4,Mali,432,"771, 211, 434, 439, 516, 811, 483, 710, 651, 366, 375, 220, 260, 452, 438, 404, 325, 437, 663, 450, 435, 790, 436, 475, 385, 517, 433, 451, 380, 702, 461, 200, 2",,,432,432,4,5.0-2015
+275,"838, 839",2005,Bangladesh,Government of Bangladesh,,"PBCP, PBCP-J","1666, 2051",,2,,62,61,68,3,Bangladesh,771,,,,771,771,3,5.0-2015
+275,839,2006,Bangladesh,Government of Bangladesh,,PBCP-J,2051,,2,,57,57,58,3,Bangladesh,771,,,,771,771,3,5.0-2015
+276,817,2012,"South Sudan, Sudan",Government of South Sudan,,Government of Sudan,625,,1,Common border,367,367,1099,2,"South Sudan, Sudan",626,,625,,"625, 626","626, 625",4,5.0-2015
+277,853,1995,Myanmar (Burma),Government of Myanmar (Burma),,NSCN-K,1066,,1,Nagaland,33,33,33,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+277,853,2000,Myanmar (Burma),Government of Myanmar (Burma),,NSCN-K,1066,,1,Nagaland,43,43,43,3,"India, Myanmar (Burma)",775,,,,775,"750, 775",3,5.0-2015
+277,853,2001,Myanmar (Burma),Government of Myanmar (Burma),,NSCN-K,1066,,1,Nagaland,62,62,62,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+277,853,2005,Myanmar (Burma),Government of Myanmar (Burma),,NSCN-K,1066,,1,Nagaland,38,23,38,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+277,853,2006,Myanmar (Burma),Government of Myanmar (Burma),,NSCN-K,1066,,1,Nagaland,92,92,97,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+277,853,2007,Myanmar (Burma),Government of Myanmar (Burma),,NSCN-K,1066,,1,Nagaland,215,215,215,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+278,861,2013,Malaysia,Government of Malaysia,,Sultanate of Sulu,4006,,1,Sabah,70,68,122,3,Malaysia,820,,,,820,820,3,5.0-2015
+279,14273,2013,Myanmar (Burma),Government of Myanmar (Burma),,PSLF,5965,,1,Palaung,29,29,30,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+279,14273,2014,Myanmar (Burma),Government of Myanmar (Burma),,PSLF,5965,,1,Palaung,37,37,203,3,Myanmar (Burma),775,,,,775,775,3,5.0-2015
+280,14085,2014,Ukraine,Government of Ukraine,,Maidan,5817,,2,,87,87,106,3,Ukraine,369,,,,369,369,1,5.0-2015
+281,14124,2014,Ukraine,Government of Ukraine,,Donetsk People's Republic,5840,Government of Russia (Soviet Union),1,Donetsk,1996,1456,2225,4,Ukraine,369,,,365,369,369,1,5.0-2015
+282,14184,2014,Ukraine,Government of Ukraine,,Lugansk People's Republic,5839,Government of Russia (Soviet Union),1,Lugansk,712,712,1027,4,"Russia (Soviet Union), Ukraine",369,,,365,369,"365, 369",1,5.0-2015
+283,14210,2014,Ukraine,Government of Ukraine,,United Armed Forces of Novorossiya,5914,Government of Russia (Soviet Union),1,Novorossiya,1558,1558,1635,4,Ukraine,369,,,365,369,369,1,5.0-2015
