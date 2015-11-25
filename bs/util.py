@@ -1,5 +1,8 @@
 class HiddenDeterministicMDP:
 
+    def hiddenState(self): raise NotImplementedError("Override me")
+
+    def restart(self): raise NotImplementedError("Override me")
     # Return the start state.
     def startState(self): raise NotImplementedError("Override me")
 
@@ -15,20 +18,32 @@ class HiddenDeterministicMDP:
 
     def discount(self): raise NotImplementedError("Override me")
 
-    # Compute set of states reachable from startState.  Helper function for
-    # MDPAlgorithms to know which states to compute values and policies for.
-    # This function sets |self.states| to be the set of all states.
-    def computeStates(self):
-        self.states = set()
-        queue = []
-        self.states.add(self.startState())
-        queue.append(self.startState())
-        while len(queue) > 0:
-            state = queue.pop()
-            for action in self.actions(state):
-                newState, prob, reward = self.succAndReward(state, action)
-                if newState not in self.states:
-                    self.states.add(newState)
-                    queue.append(newState)
+    #I've commented this out, as I'm not sure it makes sense with a hidden determinism.
+
+    #def computeStates(self):
+    #    self.restart()
+    #    self.states = set()
+    #    queue = []
+    #    self.states.add(self.startState())
+    #    queue.append(self.startState())
+    #    while len(queue) > 0:
+    #        state = queue.pop()
+    #        for action in self.actions(state):
+    #            newState, prob, reward = self.succAndReward(state, action)
+    #            if newState not in self.states:
+    #                self.states.add(newState)
+    #                queue.append(newState)
         # print "%d states" % len(self.states)
         # print self.states
+
+class RLAlgorithm:
+    # Your algorithm will be asked to produce an action given a state.
+    def getAction(self, state): raise NotImplementedError("Override me")
+
+    # We will call this function when simulating an MDP, and you should update
+    # parameters.
+    # If |state| is a terminal state, this function will be called with (s, a,
+    # 0, None). When this function is called, it indicates that taking action
+    # |action| in state |state| resulted in reward |reward| and a transition to state
+    # |newState|.
+    def incorporateFeedback(self, state, action, reward, newState): raise NotImplementedError("Override me")

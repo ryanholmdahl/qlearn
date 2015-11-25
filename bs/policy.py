@@ -5,38 +5,43 @@ from util import HiddenDeterministicMDP
 #   plays all valid/truthful cards each time if possible
 #   plays some minimal number of invalid cards otherwise
 class NaivePolicy():
-    def solve(self, mdp, epsilon=0.01):
-        mdp.computeStates()
-        print mdp.states
+    def __init__(self,hdmdp):
+        self.hdmdp = hdmdp
 
-        # generation
-        pi = {}
-        for state in mdp.states:
-            if state[0] == 'bs':
-                pi[state] = 'pass'
-            else: # 'play' state
-                truthful = [a for a in mdp.actions(state) if a[0] > 0]
-                if truthful:
-                    pi[state] = max(truthful, key=lambda t: t[0] - sum(t[1:]))
-                else:
-                    pi[state] = min(mdp.actions(state), key=sum)
+    def decision(self,state):
+        if state[0] == 'bs':
+            return 'pass'
+        else: # 'play' state
+            truthful = [a for a in self.hdmdp.actions(state) if a[0] > 0 and sum(a) == a[0]]
+            if truthful: #we have cards to play
+                return max(truthful, key = sum)
+            else:
+                return min(self.hdmdp.actions(state), key=sum)
 
-        # evaluation
-        V = {}
-        numIters = 0
-        while True:
-            newV = {}
-            for state, action in pi:
-                newstate, reward = mdp.succAndReward(state, action)
-                newV[state] = reward + mdp.discount() * V.get(newstate, 0)
-            numIters += 1
-            if max(abs(V.get(state, 0) - newV[state]) for state in pi) < epsilon:
-                V = newV
-                break
-            V = newV
-
-        self.pi = pi
-        self.V = V
+    # def solve(self, hdmdp, epsilon=0.01):
+    #     hdmdp.computeStates()
+    #     print hdmdp.states
+    #
+    #     # generation
+    #     pi = {}
+    #     for state in hdmdp.states:
+    #
+    #     # evaluation
+    #     V = {}
+    #     numIters = 0
+    #     while True:
+    #         newV = {}
+    #         for state, action in pi:
+    #             newstate, reward = mdp.succAndReward(state, action)
+    #             newV[state] = reward + mdp.discount() * V.get(newstate, 0)
+    #         numIters += 1
+    #         if max(abs(V.get(state, 0) - newV[state]) for state in pi) < epsilon:
+    #             V = newV
+    #             break
+    #         V = newV
+    #
+    #     self.pi = pi
+    #     self.V = V
 
 
 
