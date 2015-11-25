@@ -36,6 +36,9 @@ class HiddenDeterministicMDP:
         # print "%d states" % len(self.states)
         # print self.states
 
+class PolicyGenerator:
+    def decision(self, state): raise NotImplementedError("Override me")
+
 class RLAlgorithm:
     # Your algorithm will be asked to produce an action given a state.
     def getAction(self, state): raise NotImplementedError("Override me")

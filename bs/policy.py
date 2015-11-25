@@ -1,10 +1,10 @@
-from util import HiddenDeterministicMDP
+import random, util
 
 # naive policy:
 #   always passes on bs opportunities
 #   plays all valid/truthful cards each time if possible
 #   plays some minimal number of invalid cards otherwise
-class NaivePolicy():
+class NaivePolicy(util.PolicyGenerator):
     def __init__(self,hdmdp):
         self.hdmdp = hdmdp
 
@@ -16,8 +16,21 @@ class NaivePolicy():
             if truthful: #we have cards to play
                 return max(truthful, key = sum)
             else:
-                return min(self.hdmdp.actions(state), key=sum)
+                return min(self.hdmdp.actions(state), key = sum)
 
+class LessStupidPolicy(util.PolicyGenerator):
+    def __init__(self,hdmdp):
+        self.hdmdp = hdmdp
+
+    def decision(self,state):
+        if state[0] == 'bs':
+            return 'bs' if random.random() < (1 / self.hdmdp.nplayers) else 'pass'
+        else: # 'play' state
+            truthful = [a for a in self.hdmdp.actions(state) if a[0] > 0 and sum(a) == a[0]]
+            if truthful: #we have cards to play
+                return max(truthful, key = sum)
+            else:
+                return random.choice(self.hdmdp.actions(state))
     # def solve(self, hdmdp, epsilon=0.01):
     #     hdmdp.computeStates()
     #     print hdmdp.states

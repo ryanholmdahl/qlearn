@@ -24,6 +24,7 @@ class QLearningAlgorithm(util.RLAlgorithm):
     # This algorithm will produce an action given a state.
     # Here we use the epsilon-greedy algorithm: with probability
     # |explorationProb|, take a random action.
+
     def getAction(self, state):
         self.numIters += 1
         if random.random() < self.explorationProb:
