@@ -74,12 +74,14 @@ class GameState():
 
 class BSGame(HiddenDeterministicMDP):
     # (nplayers: 3, card_counts: (2, 6, 1), policies: list of state:action maps,agent_index: 0)
-    def __init__(self,nplayers,card_counts,agent_index):
+    def __init__(self,nplayers,card_counts,agent_index,verbose=False):
         self.nplayers = nplayers
         self.card_counts = card_counts
         self.gameState = GameState(nplayers, list(card_counts))
         self.agent_index = agent_index
         self.policies = None
+        self.verbose = verbose
+        self.wins = [0 for _ in range(nplayers)]
 
     def setPolicies(self,policies):
         self.policies = policies
@@ -99,6 +101,9 @@ class BSGame(HiddenDeterministicMDP):
     def getMaxPlayable(self):
         return self.card_counts[self.gameState.rotation_offset%len(self.card_counts)]
 
+    def resetWins(self):
+        self.wins = [0 for _ in range(self.nplayers)]
+
     def lastPlayIsHonest(self):
         for count in self.gameState.last_play[1:]:
             if count != 0:
@@ -113,6 +118,13 @@ class BSGame(HiddenDeterministicMDP):
 
     def hiddenState(self):
         return self.gameState
+
+    def getWinner(self,hands):
+        for player in range(len(hands)):
+            if hands[player] == 0:
+                self.wins[player] += 1
+                return player
+        return None
 
     # player 0, pile/hand sizes globally known
     def startState(self):
@@ -131,8 +143,7 @@ class BSGame(HiddenDeterministicMDP):
 
     # Return set of actions possible from |state|.
     def actions(self, state):
-        if state[0] == "over": return []
-        if state[0] == "someone_wins": return ["end_game"]
+        if state[0] == "someone_wins": return ["end_game"] #if someone has won the game, this is our only action
         deck_range = len(self.card_counts)
         if(state[0] == "play"):
             hand = state[1]
@@ -152,23 +163,28 @@ class BSGame(HiddenDeterministicMDP):
     # Return a (newState, reward) tuple corresponding to edge
     # coming out of |state|.
     def succAndReward(self, state, action):
-        print "(agent) player:",self.agent_index,"| action:",action
+        if self.verbose: print "(agent) player:",self.agent_index,"| action:",action
+
         nextState = None
         if action == "end_game":
-            return (("over"),100 if state[1] == self.agent_index else -100)
-        elif action == "bs":
-            self.resolveBust(0, state[6][0]) # state[6][0] = player who last played
+            return (None,0) #send us into the none state with no utility. Game over
+        if action == "bs":
+            self.resolveBust(self.agent_index, state[6][0]) # state[6][0] = player who last played
             nextState = self.playAdvTurn(self.getnext(state[6][0]))
         elif action == "pass":
             if state[6][0] != self.getnext(self.agent_index):
                 nextState = self.playAdvBS(self.getnext(self.agent_index),state[6])
             else:
-                nextState = self.playAdvTurn(self.getnext(self.agent_index))
+                nextState = self.playAdvTurn(self.getnext(state[6][0]))
         else:                             # play cards
             self.gameState.playCards(self.agent_index, action) # action: (0, 1, 0)
             #we sum the action because the actual cards played aren't exposed
             nextState = self.playAdvBS(self.getnext(self.agent_index), (self.agent_index, sum(action)))
-        return (nextState, 0) #need actual utility here
+        utility = 0
+        if nextState[0] == "someone_wins":
+            utility = 100 if nextState[1] == self.agent_index else -100
+            if self.verbose: print "Game over. Utility:", utility
+        return (nextState, utility)
 
     def playAdvTurn(self,current_player):
         if self.gameState.turn_number > 0: # we don't want to rotate before the first turn
@@ -176,14 +192,13 @@ class BSGame(HiddenDeterministicMDP):
         self.gameState.turn_number+=1
         state = ("play", tuple(self.gameState.hands[current_player]), tuple(self.gameState.pile[current_player]),
             self.getPileSize(), self.gameState.knowledge[current_player], self.getHandSizes())
-        self.pprint(state,current_player)
-        for player in range(len(state[5])):
-            if state[5][player] == 0:
-                return ("someone_wins",player)
+        if self.verbose: self.pprint(state,current_player)
+        winner = self.getWinner(state[5])
+        if winner != None: return ("someone_wins",winner) #if there's a winner, the agent will end the game immediately
         if current_player == self.agent_index:
             return state
         action = self.policies[current_player](state)
-        print "player:",current_player,"| action:",action
+        if self.verbose: print "player:",current_player,"| action:",action
         self.gameState.playCards(current_player,action)
         return self.playAdvBS(self.getnext(current_player), (current_player, sum(action)))
 
@@ -191,16 +206,16 @@ class BSGame(HiddenDeterministicMDP):
     def playAdvBS(self,current_player,last_play):
         state = ("bs", tuple(self.gameState.hands[current_player]), tuple(self.gameState.pile[current_player]),
             self.getPileSize(), self.gameState.knowledge[current_player], self.getHandSizes(), last_play)
-        self.pprint(state,current_player)
+        if self.verbose: self.pprint(state,current_player)
         if current_player == self.agent_index:
             return state
         action = self.policies[current_player](state)
-        print "player:",current_player,"| action:",action
+        if self.verbose: print "player:",current_player,"| action:",action
         if action == "pass":
             if self.getnext(current_player) != last_play[0]:
                 return self.playAdvBS(self.getnext(current_player),last_play)
             else:
-                return self.playAdvTurn(current_player)
+                return self.playAdvTurn(self.getnext(last_play[0]))
         else:
             self.resolveBust(current_player,last_play[0])
             return self.playAdvTurn(self.getnext(last_play[0]))
@@ -208,21 +223,4 @@ class BSGame(HiddenDeterministicMDP):
     def discount(self):
         return 1
 
-
-#This will only work if we draw [[1,1],[1,1]]
-game = BSGame(2,[2,2],0) # (nplayers, card_counts, policies)
-print 'hands', game.gameState.hands
-policy = LessStupidPolicy(game)
-game.setPolicies([None,policy.decision])
-startState = game.startState()
-newState, reward = game.succAndReward(startState,game.actions(startState)[0])
-newState, reward = game.succAndReward(newState,"bs")
-newState, reward = game.succAndReward(newState,game.actions(newState)[0])
-newState, reward = game.succAndReward(newState,"pass")
-newState, reward = game.succAndReward(newState, "end_game")
-print reward
-
-#print 'after play 1'
-#game.gameState.rotateCards()
-#print 'hands', game.gameState.hands
 

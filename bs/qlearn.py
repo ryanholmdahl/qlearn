@@ -2,6 +2,8 @@ import math
 import random
 import util
 import collections
+import policy
+from play_game import BSGame
 
 #All of this is untested; I'll do that next
 
@@ -67,6 +69,8 @@ def snazzyFeatureExtractor(state,action):
     identityFeature = (state,action)
     features.append((identityFeature,1))
 
+    if state[0] == "someone_wins": return features
+
     #the hand
     features.append(("cards_"+str(state[1]),1)) #indicator
     features.append(("ncards",sum(state[1])))
@@ -91,9 +95,10 @@ def snazzyFeatureExtractor(state,action):
     features.append(("pilehascards_"+str(hasCardList),1))
 
     #knowledge
-    features.append(("knowledge_"+str(state[4]),1))
-    features.append(("nknowledge",sum(state[4][1])))
-    features.append(("knowledge_cur",state[4][1][0]))
+    if state[4] is not None:
+        features.append(("knowledge_"+str(state[4]),1))
+        features.append(("nknowledge",sum(state[4][1])))
+        features.append(("knowledge_cur",state[4][1][0]))
 
     #opponent cards
     features.append(("opphands_"+str(state[5]),1))
@@ -120,32 +125,3 @@ def snazzyFeatureExtractor(state,action):
 
     return features
 
-
-def hdsimulate(hdmdp, rl, numTrials=10, maxIterations=1000, verbose=False):
-    totalRewards = []  # The rewards we get on each trial
-    for trial in range(numTrials):
-        hdmdp.restart()
-        state = hdmdp.startState()
-        sequence = [state]
-        totalDiscount = 1
-        totalReward = 0
-        for _ in range(maxIterations):
-            action = rl.getAction(state)
-            transition = hdmdp.succReward(state, action)
-            if transition == None:
-                rl.incorporateFeedback(state, action, 0, None)
-                break
-
-            newState, prob, reward = transition
-            sequence.append(action)
-            sequence.append(reward)
-            sequence.append(newState)
-
-            rl.incorporateFeedback(state, action, reward, newState)
-            totalReward += totalDiscount * reward
-            totalDiscount *= hdmdp.discount()
-            state = newState
-        if verbose:
-            print "Trial %d (totalReward = %s): %s" % (trial, totalReward, sequence)
-        totalRewards.append(totalReward)
-    return totalRewards

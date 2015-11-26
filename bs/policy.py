@@ -32,7 +32,7 @@ class LessStupidPolicy(util.PolicyGenerator):
             else:
                 return random.choice(self.hdmdp.actions(state))
 
-
+#("play",tuple(self.gameState.hands[0]),tuple(self.gameState.pile[0]),self.getPileSize(),self.gameState.knowledge[0],self.getHandSizes())
 # where sketch is on a scale from 0 to 1 inclusive
 class SketchyPolicy(util.PolicyGenerator):
     def __init__(self, hdmdp, sketch):
@@ -43,7 +43,7 @@ class SketchyPolicy(util.PolicyGenerator):
         if self.sketch == 0:
             np = NaivePolicy(self.hdmdp)
             return np.decision(state)
-        nplayers = len(state[1])
+        nplayers = self.hdmdp.nplayers
         if state[0] == 'bs':
             if state[4] and state[6][0] == state[4][0]: # last play is someone we have knowledge of
                 if state[6][1] > state[4][1][0]: # if we don't know that that player has all the cards in question
@@ -60,15 +60,6 @@ class SketchyPolicy(util.PolicyGenerator):
                 elif random.random() < self.sketch: # adds semitruthful hands with some probability
                     toplay += [a]
             return random.choice(toplay)
-
-
-
-
-
-
-
-
-
 
 
 # def solve(self, hdmdp, epsilon=0.01):
