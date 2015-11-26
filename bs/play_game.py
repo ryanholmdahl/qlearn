@@ -1,6 +1,6 @@
 import random, itertools
 from util import HiddenDeterministicMDP
-from policy import NaivePolicy#, ValueIteration
+from policy import *
 from copy import deepcopy
 
 class GameState():
@@ -212,7 +212,7 @@ class BSGame(HiddenDeterministicMDP):
 #This will only work if we draw [[1,1],[1,1]]
 game = BSGame(2,[2,2],0) # (nplayers, card_counts, policies)
 print 'hands', game.gameState.hands
-policy = NaivePolicy(game)
+policy = LessStupidPolicy(game)
 game.setPolicies([None,policy.decision])
 startState = game.startState()
 newState, reward = game.succAndReward(startState,game.actions(startState)[0])
