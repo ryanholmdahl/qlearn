@@ -1,3 +1,5 @@
+import math
+
 class HiddenDeterministicMDP:
 
     def hiddenState(self): raise NotImplementedError("Override me")
@@ -50,3 +52,7 @@ class RLAlgorithm:
     # |action| in state |state| resulted in reward |reward| and a transition to state
     # |newState|.
     def incorporateFeedback(self, state, action, reward, newState): raise NotImplementedError("Override me")
+
+#combinations of n bodies into groups of size r
+def cmb(n,r):
+    return math.factorial(n)/(math.factorial(r)*math.factorial(n-r))
