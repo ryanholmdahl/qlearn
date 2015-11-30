@@ -50,6 +50,7 @@ class QLearningAlgorithm(util.RLAlgorithm):
         target = reward + self.discount * max(self.getQ(newState,newAction) for newAction in self.actions(newState))
         featureMultiplier = -eta * (prediction - target)
         features = self.featureExtractor(state,action)
+        #print self.weights
         for entry in features:
             if entry[0] in self.weights:
                 self.weights[entry[0]] = self.weights[entry[0]] + entry[1] * featureMultiplier
@@ -72,7 +73,7 @@ def snazzyFeatureExtractor(state,action):
     if state[0] == "someone_wins": return features
 
     #the hand
-    # features.append(("cards_"+str(state[1]),1)) #indicator
+    features.append(("cards_"+str(state[1]),1)) #indicator
     # features.append(("ncards",sum(state[1])))
     hasCardList = []
     for card in range(len(state[1])):
@@ -85,7 +86,7 @@ def snazzyFeatureExtractor(state,action):
     #the pile
     features.append(("pile_"+str(state[2]),1)) #indicator
     # features.append(("pilesize",state[3]))
-    features.append(("npileknowledge",sum(state[2])))
+    # features.append(("npileknowledge",sum(state[2])))
     hasCardList = []
     for card in range(len(state[2])):
         if state[2][card] == 0:
@@ -98,7 +99,7 @@ def snazzyFeatureExtractor(state,action):
     if state[4] is not None:
         features.append(("knowledge_"+str(state[4]),1))
     #    features.append(("nknowledge",sum(state[4][1])))
-        features.append(("knowledge_cur",state[4][1][0]))
+    #    features.append(("knowledge_cur",state[4][1][0]))
 
     #opponent cards
     features.append(("opphands_"+str(state[5]),1))
@@ -120,8 +121,8 @@ def snazzyFeatureExtractor(state,action):
     if len(state) == 7:
         features.append(("play_"+str(state[6]),1))
     #    features.append(("nplayed",state[6][1]))
-        features.append(("player_cards",state[5][state[6][0]]))
-        features.append(("played_cards_owned",state[1][0]))
+    #    features.append(("player_cards",state[5][state[6][0]]))
+    #    features.append(("played_cards_owned",state[1][0]))
 
     return features
 

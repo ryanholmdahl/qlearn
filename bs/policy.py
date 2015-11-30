@@ -43,7 +43,7 @@ class SketchyPolicy(util.PolicyGenerator):
     def decision(self, state_tup):
         if self.sketch == 0:
             np = NaivePolicy(self.hdmdp)
-            return np.decision(state)
+            return np.decision(state_tup)
 
         state = self.hdmdp.todict(state_tup)
 
