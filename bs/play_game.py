@@ -1,9 +1,9 @@
 import random, itertools
-from util import HiddenDeterministicMDP
+from util import HiddenStateMDP
 from policy import *
 from copy import deepcopy
 
-class GameState():
+class BSGameState():
     # (nplayers: 3, card_counts: [2, 6, 1])
     def __init__(self, nplayers, card_counts):
         self.nplayers = nplayers
@@ -64,7 +64,7 @@ class GameState():
         self.rotation_offset += 1
 
     def duplicateGameState(self):
-        saved = GameState(self.nplayers,[])
+        saved = BSGameState(self.nplayers,[])
         saved.hands = deepcopy(self.hands)
         saved.pile = deepcopy(self.pile)
         saved.knowledge = deepcopy(self.knowledge)
@@ -72,78 +72,32 @@ class GameState():
         saved.rotation_offset = self.rotation_offset
         return saved
 
-class BSGame(HiddenDeterministicMDP):
+class BSGame(HiddenStateMDP):
     # (nplayers: 3, card_counts: (2, 6, 1), policies: list of state:action maps,agent_index: 0)
     def __init__(self,nplayers,card_counts,agent_index,verbose=False):
         self.nplayers = nplayers
         self.card_counts = card_counts
-        self.gameState = GameState(nplayers, list(card_counts))
+        self.gameState = BSGameState(nplayers, list(card_counts))
         self.agent_index = agent_index
         self.policies = None
         self.verbose = verbose
         self.wins = [0 for _ in range(nplayers)]
 
-    def setPolicies(self,policies):
-        self.policies = policies
-
-    def restart(self):
-        self.gameState = GameState(self.nplayers,list(self.card_counts))
-
-    def getnext(self,cur):
-        return cur + 1 if cur + 1 < self.nplayers else 0
-
-    def getHandSizes(self):
-        return tuple([sum(hand) for hand in self.gameState.hands])
-
-    def getPileSize(self):
-        return sum([sum(cards_contributed) for cards_contributed in self.gameState.pile])
-
-    def getMaxPlayable(self):
-        return self.card_counts[self.gameState.rotation_offset%len(self.card_counts)]
-
-    def resetWins(self):
-        self.wins = [0 for _ in range(self.nplayers)]
-
-    def lastPlayIsHonest(self):
-        for count in self.gameState.last_play[1:]:
-            if count != 0:
-                return False
-        return True
-
-    def resolveBust(self,bs_caller,last_player):
-        if self.lastPlayIsHonest():
-            self.gameState.bust(bs_caller)
-        else:
-            self.gameState.bust(last_player)
-
+    # Returns a copy of the game state.
     def hiddenState(self):
-        return self.gameState
+        return self.gameState.duplicateGameState()
 
-    def getWinner(self,hands):
-        for player in range(len(hands)):
-            if hands[player] == 0:
-                self.wins[player] += 1
-                return player
-        return None
+    # Resets the game state with the same cards and number of players.
+    def restart(self):
+        self.gameState = BSGameState(self.nplayers,list(self.card_counts))
 
-    # player 0, pile/hand sizes globally known
+    # Returns the state for the agent's first turn.
     def startState(self):
-        return self.playAdvTurn(0) #we cycle through turns until we get to the player's first turn
+        return self.playAdvTurn(0) #we cycle through turns until we get to the agent's first turn
 
-    def pprint(self, state, player):
-        print 'state:', state[0], "| turn:", self.gameState.turn_number
-        print "\tplayer's hand:", state[1], "| player:", player
-        print '\tpile knowledge:', state[2]
-        print '\tpile size:', state[3]
-        print '\tbust knowledge:', state[4]
-        print '\tplayer hand sizes:', state[5]
-        if state[0] == 'bs':
-            print '\tplay to bs:', state[6]
-        print '\tpossible actions:', self.actions(state)
-
-    # Return set of actions possible from |state|.
+    # Return set of actions legal from |state|.
     def actions(self, state):
-        if state[0] == "someone_wins": return ["end_game"] #if someone has won the game, this is our only action
+        if state[0] == "someone_wins": return ["end_game"]
         deck_range = len(self.card_counts)
         if(state[0] == "play"):
             hand = state[1]
@@ -160,14 +114,11 @@ class BSGame(HiddenDeterministicMDP):
         else:
             return ["bs","pass"] # reaction options to other player
 
-    # Return a (newState, reward) tuple corresponding to edge
-    # coming out of |state|.
+    # Performs |action| from |state|, then plays all of the adversarial turns until the agent plays again.
     def succAndReward(self, state, action):
         if self.verbose: print "(agent) player:",self.agent_index,"| action:",action
-
+        if action == "end_game": return (None,0)
         nextState = None
-        if action == "end_game":
-            return (None,0) #send us into the none state with no utility. Game over
         if action == "bs":
             self.resolveBust(self.agent_index, state[6][0]) # state[6][0] = player who last played
             nextState = self.playAdvTurn(self.getnext(state[6][0]))
@@ -181,11 +132,75 @@ class BSGame(HiddenDeterministicMDP):
             #we sum the action because the actual cards played aren't exposed
             nextState = self.playAdvBS(self.getnext(self.agent_index), (self.agent_index, sum(action)))
         utility = 0
-        if nextState[0] == "someone_wins":
+        if nextState[0] == "someone_wins": #this is only returned when a play turn begins and a player has no cards in hand
+            if self.verbose: print "Game over. Winner:", nextState[1]
             utility = 100 if nextState[1] == self.agent_index else -100
-            if self.verbose: print "Game over. Utility:", utility
         return (nextState, utility)
 
+    # It's a game, so points count no matter where they are earned.
+    def discount(self):
+        return 1
+
+    # Sets our adversary policies to those given.
+    def setPolicies(self,policies):
+        self.policies = policies
+
+    # Gets the index of the player after |cur|.
+    def getnext(self,cur):
+        return cur + 1 if cur + 1 < self.nplayers else 0
+
+    # Returns a tuple listing the hands size of each player.
+    def getHandSizes(self):
+        return tuple([sum(hand) for hand in self.gameState.hands])
+
+    # Returns the size of the pile as an integer.
+    def getPileSize(self):
+        return sum([sum(cards_contributed) for cards_contributed in self.gameState.pile])
+
+    # Returns the number of cards playable for the current "at-bat" card.
+    def getMaxPlayable(self):
+        return self.card_counts[self.gameState.rotation_offset%len(self.card_counts)]
+
+    # Resets the number of wins for each player.
+    def resetWins(self):
+        self.wins = [0 for _ in range(self.nplayers)]
+
+    # Returns true if the last play, stored in the game state, was honest.
+    def lastPlayIsHonest(self):
+        for count in self.gameState.last_play[1:]:
+            if count != 0:
+                return False
+        return True
+
+    # Busts the proper player in a BS call.
+    def resolveBust(self,bs_caller,last_player):
+        if self.lastPlayIsHonest():
+            self.gameState.bust(bs_caller)
+        else:
+            self.gameState.bust(last_player)
+
+    # Returns the winner of the game if one exists, or None otherwise.
+    def getWinner(self,hands):
+        for player in range(len(hands)):
+            if hands[player] == 0:
+                self.wins[player] += 1
+                return player
+        return None
+
+    # Prints the current status of the game.
+    def pprint(self, state, player):
+        print 'state:', state[0], "| turn:", self.gameState.turn_number
+        print "\tplayer's hand:", state[1], "| player:", player
+        print '\tpile knowledge:', state[2]
+        print '\tpile size:', state[3]
+        print '\tbust knowledge:', state[4]
+        print '\tplayer hand sizes:', state[5]
+        if state[0] == 'bs':
+            print '\tplay to bs:', state[6]
+        print '\tpossible actions:', self.actions(state)
+
+    # Plays the turn of |current_player|. If that player is the agent, then we return the state and wait for a command.
+    # Otherwise, we play based on the player's policy and then move on to the BS round.
     def playAdvTurn(self,current_player):
         if self.gameState.turn_number > 0: # we don't want to rotate before the first turn
             self.gameState.rotateCards()
@@ -202,7 +217,8 @@ class BSGame(HiddenDeterministicMDP):
         self.gameState.playCards(current_player,action)
         return self.playAdvBS(self.getnext(current_player), (current_player, sum(action)))
 
-    # playAdvBS(current_player: 1, last_play: (0, 2)); last_play[1] only exposes the number of cards played
+    # Runs the BS round turn of |current_player|. If that player is the agent, then we return the state and wait for
+    # a command. Otherwise, we call based on the player's policy and proceed accordingly.
     def playAdvBS(self,current_player,last_play):
         state = ("bs", tuple(self.gameState.hands[current_player]), tuple(self.gameState.pile[current_player]),
             self.getPileSize(), self.gameState.knowledge[current_player], self.getHandSizes(), last_play)
@@ -219,8 +235,5 @@ class BSGame(HiddenDeterministicMDP):
         else:
             self.resolveBust(current_player,last_play[0])
             return self.playAdvTurn(self.getnext(last_play[0]))
-
-    def discount(self):
-        return 1
 
 
