@@ -40,30 +40,33 @@ class SketchyPolicy(util.PolicyGenerator):
         self.hdmdp = hdmdp
         self.sketch = sketch
 
-    def decision(self, state):
+    def decision(self, state_tup):
         if self.sketch == 0:
             np = NaivePolicy(self.hdmdp)
             return np.decision(state)
 
+        state = self.hdmdp.todict(state_tup)
+
         nplayers = self.hdmdp.nplayers
-        if state[0] == 'bs':
+        if state['state'] == 'bs':
             cardsRemoved = 0
-            if state[4] and state[6][0] != state[4][0]: cardsRemoved += state[4][1][0]
-            cardsRemoved += state[1][0] + state[2][0]
+            if state['bust_know'] and state['bs_play'][0] != state['bust_know'][0]: cardsRemoved += state['bust_know'][1][0]
+            cardsRemoved += state['hand'][0] + state['knowledge'][0]
             totalInCirculation = self.hdmdp.getMaxPlayable()
-            if totalInCirculation < cardsRemoved + state[6][1]:
+            if totalInCirculation < cardsRemoved + state['bs_play'][1]:
                 return 'bs'
-            N = sum(state[5])+state[3] #total number of cards
+            N = sum(state['hand_sizes'])+state['pile_size'] #total number of cards
             k = totalInCirculation - cardsRemoved #number of cards the player MIGHT have
-            n = state[5][state[6][0]] + state[6][1] #cards the player had in hand
-            x = state[6][1] #number of cards played
+            n = state['hand_sizes'][state['bs_play'][0]] + state['bs_play'][1] #cards the player had in hand
+            x = state['bs_play'][1] #number of cards played
             if (N-k)-(n-x) < 0: #if this is true, then the player had to have had these cards
                 return 'pass'
 
             #the relative change in hand size for the BS caller if he fails
-            changeForCaller = float(state[5][state[6][0]] + state[3] + state[6][1]) / (state[5][state[6][0]] + state[6][1])
+            changeForCaller = float(state['hand_sizes'][state['bs_play'][0]] + state['pile_size']
+                + state['bs_play'][1]) / (state['hand_sizes'][state['bs_play'][0]] + state['bs_play'][1])
             #the relative change in hand size for the player if he is caught
-            changeForPlayer = float(sum(state[1]) + state[3]) / (sum(state[1]))
+            changeForPlayer = float(sum(state['hand']) + state['pile_size']) / (sum(state['hand']))
             #hypergeometric probability that the player had x of the card
             prob = float(cmb(k,x)) * cmb(N-k,n-x) / cmb(N,n)
             #we decrease the likelihood of calling based on the number of players, as we can just let someone else do it
@@ -72,9 +75,9 @@ class SketchyPolicy(util.PolicyGenerator):
             call = random.random() / self.hdmdp.nplayers * changeForCaller / changeForPlayer > prob
             return 'bs' if call else 'pass'
         else:
-            truthful = [a for a in self.hdmdp.actions(state) if a[0] > 0 and sum(a) == a[0]] #entirely honest plays
-            semitruthful = [a for a in self.hdmdp.actions(state) if a[0] == state[1][0] and a[0] > 0 and sum(a) > a[0]] #play all of the required card and more
-            full_lies = [a for a in self.hdmdp.actions(state) if a[0] == 0] #play none of the required card
+            truthful = [a for a in self.hdmdp.actions(state_tup) if a[0] > 0 and sum(a) == a[0]] #entirely honest plays
+            semitruthful = [a for a in self.hdmdp.actions(state_tup) if a[0] == state['hand'][0] and a[0] > 0 and sum(a) > a[0]] #play all of the required card and more
+            full_lies = [a for a in self.hdmdp.actions(state_tup) if a[0] == 0] #play none of the required card
             if not truthful and not semitruthful:
                 return random.choice(full_lies) #pick a lie at random if we don't have the card
             if random.random() < self.sketch and semitruthful:
