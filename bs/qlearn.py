@@ -72,8 +72,8 @@ def snazzyFeatureExtractor(state,action):
     if state[0] == "someone_wins": return features
 
     #the hand
-    features.append(("cards_"+str(state[1]),1)) #indicator
-    features.append(("ncards",sum(state[1])))
+    # features.append(("cards_"+str(state[1]),1)) #indicator
+    # features.append(("ncards",sum(state[1])))
     hasCardList = []
     for card in range(len(state[1])):
         if state[1][card] == 0:
@@ -84,7 +84,7 @@ def snazzyFeatureExtractor(state,action):
 
     #the pile
     features.append(("pile_"+str(state[2]),1)) #indicator
-    features.append(("pilesize",state[3]))
+    # features.append(("pilesize",state[3]))
     features.append(("npileknowledge",sum(state[2])))
     hasCardList = []
     for card in range(len(state[2])):
@@ -97,7 +97,7 @@ def snazzyFeatureExtractor(state,action):
     #knowledge
     if state[4] is not None:
         features.append(("knowledge_"+str(state[4]),1))
-        features.append(("nknowledge",sum(state[4][1])))
+    #    features.append(("nknowledge",sum(state[4][1])))
         features.append(("knowledge_cur",state[4][1][0]))
 
     #opponent cards
@@ -114,12 +114,12 @@ def snazzyFeatureExtractor(state,action):
             nHandsSame += 1
 
     features.append(("smallesthand",1 if nHandsSmaller == 0 else 0))
-    features.append(("handsizerank",nHandsSmaller+1))
+    # features.append(("handsizerank",nHandsSmaller+1))
 
     #bs
     if len(state) == 7:
         features.append(("play_"+str(state[6]),1))
-        features.append(("nplayed",state[6][1]))
+    #    features.append(("nplayed",state[6][1]))
         features.append(("player_cards",state[5][state[6][0]]))
         features.append(("played_cards_owned",state[1][0]))
 

@@ -32,17 +32,17 @@ def qlsimulate(hsmdp, rl, numTrials=10, maxIterations=1000, verbose=False):
     return totalRewards
 
 #Uncomment to test qlearning
-# game = play_game.BSGame(3,[4,4],1,verbose=False)
-# apolicy1 = policy.SketchyPolicy(game,0.5)
-# apolicy2 = policy.SketchyPolicy(game,0.5)
-# game.setPolicies([apolicy1.decision,None,apolicy2.decision])
-# qlearning = qlearn.QLearningAlgorithm(game.actions,game.discount(),qlearn.identityFeatureExtractor)
-# qlsimulate(game,qlearning,numTrials=20000,verbose=False)
-# qlearning.explorationProb = 0
-# game.resetWins()
-# qlsimulate(game,qlearning,numTrials=1000,verbose=False)
-# print qlearning.weights
-# print game.wins
+game = play_game.BSGame(3,[4,4],1,verbose=False)
+apolicy1 = policy.SketchyPolicy(game,0.5)
+apolicy2 = policy.SketchyPolicy(game,0.5)
+game.setPolicies([apolicy1.decision,None,apolicy2.decision])
+qlearning = qlearn.QLearningAlgorithm(game.actions,game.discount(),qlearn.snazzyFeatureExtractor)
+qlsimulate(game,qlearning,numTrials=10000,verbose=False)
+qlearning.explorationProb = 0
+game.resetWins()
+qlsimulate(game,qlearning,numTrials=1000,verbose=False)
+print qlearning.weights
+print game.wins
 
 #Tests an hdmdp with the agent following the agent_decision policy.
 def allsetsimulate(hsmdp, agent_decision, numTrials=10, maxIterations=1000, verbose=False):
@@ -75,7 +75,7 @@ def allsetsimulate(hsmdp, agent_decision, numTrials=10, maxIterations=1000, verb
     return totalRewards
 
 # Uncomment to test strict policy following for the agent
-# game = play_game.BSGame(3,[4,4],1,verbose=False)
+# game = play_game.BSGame(3,[4,4,4,4],1,verbose=False)
 # ppolicy = policy.SketchyPolicy(game,0.5)
 # apolicy1 = policy.SketchyPolicy(game,0.5)
 # apolicy2 = policy.SketchyPolicy(game,0.5)
