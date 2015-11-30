@@ -72,56 +72,56 @@ def snazzyFeatureExtractor(state,action):
     if state[0] == "someone_wins": return features
 
     #the hand
-    features.append(("cards_"+str(state[1]),1)) #indicator
-    features.append(("ncards",sum(state[1])))
-    hasCardList = []
-    for card in range(len(state[1])):
-        if state[1][card] == 0:
-            hasCardList.append(0)
-        else:
-            hasCardList.append(1)
-    features.append(("hascards_"+str(hasCardList),1))
+    # features.append(("cards_"+str(state[1]),1)) #indicator
+    # features.append(("ncards",sum(state[1])))
+    # hasCardList = []
+    # for card in range(len(state[1])):
+    #     if state[1][card] == 0:
+    #         hasCardList.append(0)
+    #     else:
+    #         hasCardList.append(1)
+    # features.append(("hascards_"+str(hasCardList),1))
 
     #the pile
-    features.append(("pile_"+str(state[2]),1)) #indicator
-    features.append(("pilesize",state[3]))
-    features.append(("npileknowledge",sum(state[2])))
-    hasCardList = []
-    for card in range(len(state[2])):
-        if state[2][card] == 0:
-            hasCardList.append(0)
-        else:
-            hasCardList.append(1)
-    features.append(("pilehascards_"+str(hasCardList),1))
+    # features.append(("pile_"+str(state[2]),1)) #indicator
+    # features.append(("pilesize",state[3]))
+    # features.append(("npileknowledge",sum(state[2])))
+    # hasCardList = []
+    # for card in range(len(state[2])):
+    #     if state[2][card] == 0:
+    #         hasCardList.append(0)
+    #     else:
+    #         hasCardList.append(1)
+    # features.append(("pilehascards_"+str(hasCardList),1))
 
     #knowledge
-    if state[4] is not None:
-        features.append(("knowledge_"+str(state[4]),1))
-        features.append(("nknowledge",sum(state[4][1])))
-        features.append(("knowledge_cur",state[4][1][0]))
+    # if state[4] is not None:
+    #     features.append(("knowledge_"+str(state[4]),1))
+    #     features.append(("nknowledge",sum(state[4][1])))
+    #     features.append(("knowledge_cur",state[4][1][0]))
 
     #opponent cards
-    features.append(("opphands_"+str(state[5]),1))
-    nHandsLarger = 0
-    nHandsSmaller = 0
-    nHandsSame = -1 #compensate for the one whose hand this is
-    for player in range(len(state[5])):
-        if state[5][player] < sum(state[1]):
-            nHandsSmaller += 1
-        elif state[5][player] > sum(state[1]):
-            nHandsLarger += 1
-        else:
-            nHandsSame += 1
+    # features.append(("opphands_"+str(state[5]),1))
+    # nHandsLarger = 0
+    # nHandsSmaller = 0
+    # nHandsSame = -1 #compensate for the one whose hand this is
+    # for player in range(len(state[5])):
+    #     if state[5][player] < sum(state[1]):
+    #         nHandsSmaller += 1
+    #     elif state[5][player] > sum(state[1]):
+    #         nHandsLarger += 1
+    #     else:
+    #         nHandsSame += 1
 
-    features.append(("smallesthand",1 if nHandsSmaller == 0 else 0))
-    features.append(("handsizerank",nHandsSmaller+1))
+    # features.append(("smallesthand",1 if nHandsSmaller == 0 else 0))
+    # features.append(("handsizerank",nHandsSmaller+1))
 
     #bs
-    if len(state) == 7:
-        features.append(("play_"+str(state[6]),1))
-        features.append(("nplayed",state[6][1]))
-        features.append(("player_cards",state[5][state[6][0]]))
-        features.append(("played_cards_owned",state[1][0]))
+    # if len(state) == 7:
+    #     features.append(("play_"+str(state[6]),1))
+    #     features.append(("nplayed",state[6][1]))
+    #     features.append(("player_cards",state[5][state[6][0]]))
+    #     features.append(("played_cards_owned",state[1][0]))
 
     return features
 

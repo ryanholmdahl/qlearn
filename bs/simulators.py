@@ -32,12 +32,12 @@ def qlsimulate(hsmdp, rl, numTrials=10, maxIterations=1000, verbose=False):
     return totalRewards
 
 
-game = play_game.BSGame(3, [2,2], 0, verbose=False)
+game = play_game.BSGame(3, [5, 5], 0, verbose=False)
 apolicy1 = policy.SketchyPolicy(game,0.5)
 apolicy2 = policy.SketchyPolicy(game,0.25)
 game.setPolicies([None, apolicy1.decision, apolicy2.decision])
-qlearning = qlearn.QLearningAlgorithm(game.actions, game.discount(), qlearn.identityFeatureExtractor)
-qlsimulate(game, qlearning, numTrials=10000, verbose=True)
+qlearning = qlearn.QLearningAlgorithm(game.actions, game.discount(), qlearn.snazzyFeatureExtractor)
+qlsimulate(game, qlearning, numTrials=10000, verbose=False)
 qlearning.explorationProb = 0
 game.resetWins()
 qlsimulate(game, qlearning, numTrials=1000, verbose=True)
