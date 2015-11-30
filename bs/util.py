@@ -1,42 +1,25 @@
 import math
 
-class HiddenDeterministicMDP:
+class HiddenStateMDP:
 
+    #Returns a copy of the hidden game state.
     def hiddenState(self): raise NotImplementedError("Override me")
 
+    #Reset the hidden state.
     def restart(self): raise NotImplementedError("Override me")
+
     # Return the start state.
     def startState(self): raise NotImplementedError("Override me")
 
     # Return set of actions possible from |state|.
     def actions(self, state): raise NotImplementedError("Override me")
 
-    # Return a list of (newState, prob, reward) tuples corresponding to edges
-    # coming out of |state|.
-    # Mapping to notation from class:
-    #   state = s, action = a, newState = s', prob = T(s, a, s'), reward = Reward(s, a, s')
-    # If IsEnd(state), return the empty list.
+    # Return a (newState, reward) tuple corresponding to the action taken in the state.
+    # Note that this function is nondeterministic and uses the hidden game state in addition
+    # to whatever other concealed determinants the implementation uses.
     def succAndReward(self, state, action): raise NotImplementedError("Override me")
 
     def discount(self): raise NotImplementedError("Override me")
-
-    #I've commented this out, as I'm not sure it makes sense with a hidden determinism.
-
-    #def computeStates(self):
-    #    self.restart()
-    #    self.states = set()
-    #    queue = []
-    #    self.states.add(self.startState())
-    #    queue.append(self.startState())
-    #    while len(queue) > 0:
-    #        state = queue.pop()
-    #        for action in self.actions(state):
-    #            newState, prob, reward = self.succAndReward(state, action)
-    #            if newState not in self.states:
-    #                self.states.add(newState)
-    #                queue.append(newState)
-        # print "%d states" % len(self.states)
-        # print self.states
 
 class PolicyGenerator:
     def decision(self, state): raise NotImplementedError("Override me")
