@@ -82,6 +82,7 @@ class BSGame(HiddenStateMDP):
         self.policies = None
         self.verbose = verbose
         self.wins = [0 for _ in range(nplayers)]
+        self.action_history = [{} for _ in range(nplayers)]
 
     # Returns a copy of the game state.
     def hiddenState(self):
@@ -90,6 +91,7 @@ class BSGame(HiddenStateMDP):
     # Resets the game state with the same cards and number of players.
     def restart(self):
         self.gameState = BSGameState(self.nplayers,list(self.card_counts))
+        self.action_history = [{} for _ in range(self.nplayers)]
 
     # Returns the state for the agent's first turn.
     def startState(self):
@@ -120,7 +122,7 @@ class BSGame(HiddenStateMDP):
         if action == "end_game": return (None,0)
         nextState = None
         if action == "bs":
-            self.resolveBust(self.agent_index, state[6][0]) # state[6][0] = player who last played
+            self.resolveBust(state, self.agent_index, state[6][0]) # state[6][0] = player who last played
             nextState = self.playAdvTurn(self.getnext(state[6][0]))
         elif action == "pass":
             if state[6][0] != self.getnext(self.agent_index):
@@ -140,6 +142,22 @@ class BSGame(HiddenStateMDP):
     # It's a game, so points count no matter where they are earned.
     def discount(self):
         return 1
+
+    # When a bust occurs for any player, this function is called to store the event in the action_history.
+    # A tuple key of ("honesty",changeForPlayer,cardsPlayed) is used and the outcome of the call (who busted)
+    # is recorded. This way, all plays an opponent makes of the same number of cards and with the same risk to
+    # itself will be treated as one.
+    def advLearnCall(self,caller,state_tup,action,outcome):
+        state = self.todict(state_tup)
+        #the relative change in hand size for the BS caller if he fails
+        changeForPlayer = util.changeForPlayer(state)
+        #the relative change in hand size for the player if he is caught
+        player = state['bs_play'][0]
+        playerKey = ("honesty",changeForPlayer,state['bs_play'][1])
+        if playerKey in self.action_history[player]:
+            self.action_history[player][playerKey].append(outcome)
+        else:
+            self.action_history[player][playerKey] = [outcome]
 
     # Sets our adversary policies to those given.
     def setPolicies(self,policies):
@@ -173,10 +191,12 @@ class BSGame(HiddenStateMDP):
         return True
 
     # Busts the proper player in a BS call.
-    def resolveBust(self,bs_caller,last_player):
+    def resolveBust(self,state,bs_caller,last_player):
         if self.lastPlayIsHonest():
+            self.advLearnCall(bs_caller,state,"bs","true")
             self.gameState.bust(bs_caller)
         else:
+            self.advLearnCall(bs_caller,state,"bs","lie")
             self.gameState.bust(last_player)
 
     # Returns the winner of the game if one exists, or None otherwise.
@@ -219,7 +239,7 @@ class BSGame(HiddenStateMDP):
         if winner != None: return ("someone_wins",winner) #if there's a winner, the agent will end the game immediately
         if current_player == self.agent_index:
             return state
-        action = self.policies[current_player](state)
+        action = self.policies[current_player](state,current_player)
         if self.verbose: print "player:",current_player,"| action:",action
         self.gameState.playCards(current_player,action)
         return self.playAdvBS(self.getnext(current_player), (current_player, sum(action)))
@@ -240,7 +260,7 @@ class BSGame(HiddenStateMDP):
             else:
                 return self.playAdvTurn(self.getnext(last_play[0]))
         else:
-            self.resolveBust(current_player,last_play[0])
+            self.resolveBust(state,current_player,last_play[0])
             return self.playAdvTurn(self.getnext(last_play[0]))
 
 

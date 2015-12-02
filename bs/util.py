@@ -1,4 +1,4 @@
-import math
+import math, random
 
 class HiddenStateMDP:
 
@@ -39,3 +39,25 @@ class RLAlgorithm:
 #combinations of n bodies into groups of size r
 def cmb(n,r):
     return math.factorial(n)/(math.factorial(r)*math.factorial(n-r))
+
+def changeForPlayer(state):
+    return (float(state['hand_sizes'][state['bs_play'][0]]) + state['pile_size']) / (state['hand_sizes'][state['bs_play'][0]] + state['bs_play'][1])
+
+def changeForCaller(state):
+    return (float(sum(state['hand'])) + state['pile_size']) / (sum(state['hand']))
+
+def changeForPlayerAction(state,action):
+    return (float(sum(state['hand'])) + state['pile_size']) / (sum(state['hand']))
+
+def changeForCallerAction(state,action,caller):
+    return (float(sum(action) + state['pile_size']) / state['hand_sizes'][caller])
+
+def weightedChoice(weights):
+    total = sum(weights.values())
+    r = random.uniform(0,total)
+    ssf = 0
+    for action in weights:
+        if ssf + weights[action] >= r:
+            return action
+        ssf += weights[action]
+    assert False, "problem with weightedChoice"
