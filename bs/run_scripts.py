@@ -1,6 +1,9 @@
 from tests import *
 
-#baseline(5,4,4,1000)
-#oracle(3,4,4,5000)
-#qlearn_test(5,4,4,2,20000,1000,sketch_list=[0.5,0.5,0.5,0.5,0.5],confidence_list=[1,1,1,1,1])
+sketch_list = [random.random(), random.random(), random.random()]
+agent = 0
+baseline(3,4,4,5000,agent=agent,sketch_list=sketch_list)
+oracle(3,4,4,5000,agent=agent,sketch_list=sketch_list)
+qlearning = qlearn_learn(3,4,4,agent,15000,5000,sketch_list=sketch_list)
+qlearn_test(3,4,4,agent,5000,qlearning,sketch_list=sketch_list)
 #allsketchy_test(3,4,4,1000)

@@ -8,12 +8,15 @@ from play_game import BSGame
 #All of this is untested; I'll do that next
 
 class QLearningAlgorithm(util.RLAlgorithm):
-    def __init__(self, actions, discount, featureExtractor, explorationProb=0.2):
+    def __init__(self, actions, discount, featureExtractor, explorationProb=0.2, warmStart = None):
         self.actions = actions
         self.discount = discount
         self.featureExtractor = featureExtractor
         self.explorationProb = explorationProb
-        self.weights = collections.Counter()
+        if warmStart == None:
+            self.weights = collections.Counter()
+        else:
+            self.weights = warmStart()
         self.numIters = 0
 
     # Return the Q function associated with the weights and features
@@ -64,6 +67,13 @@ def identityFeatureExtractor(state, action):
     featureValue = 1
     return [(featureKey, featureValue)]
 
+def snazzyWarmStart():
+    weights = collections.Counter()
+    weights["hasnextcard"] = 1
+    weights["smallesthand"] = 1
+    return weights
+
+
 #("play",tuple(self.gameState.hands[0]),tuple(self.gameState.pile[0]),self.getPileSize(),self.gameState.knowledge[0],self.getHandSizes())
 def snazzyFeatureExtractor(state,action):
     features = []
@@ -72,9 +82,10 @@ def snazzyFeatureExtractor(state,action):
 
     if state[0] == "someone_wins": return features
 
+    nplayers = len(state[5])
+
     #the hand
     features.append(("cards_"+str(state[1]),1)) #indicator
-    # features.append(("ncards",sum(state[1])))
     hasCardList = []
     for card in range(len(state[1])):
         if state[1][card] == 0:
@@ -82,6 +93,10 @@ def snazzyFeatureExtractor(state,action):
         else:
             hasCardList.append(1)
     features.append(("hascards_"+str(hasCardList),1))
+
+    if len(state[1]) > nplayers:
+        if hasCardList[nplayers] > 0:
+            features.append(("hasnextcard",1))
 
     #the pile
     features.append(("pile_"+str(state[2]),1)) #indicator
