@@ -64,3 +64,34 @@ def allsetsimulate(hsmdp, agent_decision, numTrials=10, maxIterations=1000, orac
             print "Trial %d (totalReward = %s): %s" % (trial, totalReward, sequence)
         totalRewards.append(totalReward)
     return totalRewards
+
+
+def humansimulate(hsmdp, maxIterations=1000):
+    hsmdp.verbose = True
+    hsmdp.restart()
+    state = hsmdp.startState()
+    sequence = [state]
+    totalDiscount = 1
+    totalReward = 0
+    for _ in range(maxIterations):
+        if state == None:
+            break
+        if state[0] == "someone_wins":
+            action = "end_game"
+        else:
+            print "Current state:",state
+            action = None
+            while action not in hsmdp.actions(state):
+                action = input("Enter an action: ")
+            print "Action interpreted as",action
+
+        newState, reward = hsmdp.succAndReward(state, action)
+
+        sequence.append(action)
+        sequence.append(reward)
+        sequence.append(newState)
+
+        totalReward += totalDiscount * reward
+        totalDiscount *= hsmdp.discount()
+        state = newState
+    print "Game complete (totalReward = %s): %s" % (totalReward, sequence)

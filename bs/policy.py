@@ -52,6 +52,8 @@ class SketchyPolicy(util.PolicyGenerator):
             totalInCirculation = self.hsmdp.getMaxPlayable()
             if totalInCirculation < cardsRemoved + state['bs_play'][1]:
                 return 'bs'
+            if state['bs_play'][1] == totalInCirculation and state['hand'][0] == 0:
+                return 'pass'
             N = sum(state['hand_sizes'])+state['pile_size'] #total number of cards
             k = totalInCirculation - cardsRemoved #number of cards the player MIGHT have
             n = state['hand_sizes'][state['bs_play'][0]] + state['bs_play'][1] #cards the player had in hand

@@ -86,6 +86,7 @@ def snazzyFeatureExtractor(state,action):
 
     #the hand
     features.append(("cards_"+str(state[1]),1)) #indicator
+    features.append(("has_card",1 if state[1][0] >0 else 0))
     hasCardList = []
     for card in range(len(state[1])):
         if state[1][card] == 0:

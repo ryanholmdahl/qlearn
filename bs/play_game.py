@@ -74,7 +74,7 @@ class BSGameState():
 
 class BSGame(HiddenStateMDP):
     # (nplayers: 3, card_counts: (2, 6, 1), policies: list of state:action maps,agent_index: 0)
-    def __init__(self,nplayers,card_counts,agent_index,verbose=False):
+    def __init__(self,nplayers,card_counts,agent_index,verbose=0):
         self.nplayers = nplayers
         self.card_counts = card_counts
         self.gameState = BSGameState(nplayers, list(card_counts))
@@ -193,9 +193,11 @@ class BSGame(HiddenStateMDP):
     # Busts the proper player in a BS call.
     def resolveBust(self,state,bs_caller,last_player):
         if self.lastPlayIsHonest():
+            if self.verbose: print "player",bs_caller,"takes the pile."
             self.advLearnCall(bs_caller,state,"bs","true")
             self.gameState.bust(bs_caller)
         else:
+            if self.verbose: print "player",last_player,"takes the pile."
             self.advLearnCall(bs_caller,state,"bs","lie")
             self.gameState.bust(last_player)
 
@@ -234,13 +236,14 @@ class BSGame(HiddenStateMDP):
         self.gameState.turn_number+=1
         state = ("play", tuple(self.gameState.hands[current_player]), tuple(self.gameState.pile[current_player]),
             self.getPileSize(), self.gameState.knowledge[current_player], self.getHandSizes())
-        if self.verbose: self.pprint(state,current_player)
+        if self.verbose == 2: self.pprint(state,current_player)
         winner = self.getWinner(state[5])
         if winner != None: return ("someone_wins",winner) #if there's a winner, the agent will end the game immediately
         if current_player == self.agent_index:
             return state
         action = self.policies[current_player](state,current_player)
-        if self.verbose: print "player:",current_player,"| action:",action
+        if self.verbose == 1: print "player:",current_player,"| action:",sum(action)
+        if self.verbose == 2: print "player:",current_player,"| action:",action
         self.gameState.playCards(current_player,action)
         return self.playAdvBS(self.getnext(current_player), (current_player, sum(action)))
 
@@ -249,7 +252,7 @@ class BSGame(HiddenStateMDP):
     def playAdvBS(self,current_player,last_play):
         state = ("bs", tuple(self.gameState.hands[current_player]), tuple(self.gameState.pile[current_player]),
             self.getPileSize(), self.gameState.knowledge[current_player], self.getHandSizes(), last_play)
-        if self.verbose: self.pprint(state,current_player)
+        if self.verbose == 2: self.pprint(state,current_player)
         if current_player == self.agent_index:
             return state
         action = self.policies[current_player](state)
