@@ -84,9 +84,12 @@ def snazzyFeatureExtractor(state,action):
 
     nplayers = len(state[5])
 
+    # if len(state)<7: prefix = "playturn_"
+    # else: prefix = "bsturn_"
+
     #the hand
     features.append(("cards_"+str(state[1]),1)) #indicator
-    features.append(("has_card",1 if state[1][0] >0 else 0))
+    features.append(("has_card",1 if state[1][0] > 0 else 0))
     hasCardList = []
     for card in range(len(state[1])):
         if state[1][card] == 0:
@@ -113,12 +116,14 @@ def snazzyFeatureExtractor(state,action):
 
     #knowledge
     if state[4] is not None:
+        for i in range(5):
+            features.append(("know_"+str(i),1 if state[4][0]>=i else 0))
         features.append(("knowledge_"+str(state[4]),1))
     #    features.append(("nknowledge",sum(state[4][1])))
     #    features.append(("knowledge_cur",state[4][1][0]))
 
     #opponent cards
-    features.append(("opphands_"+str(state[5]),1))
+    # features.append(("opphands_"+str(state[5]),1))
     nHandsLarger = 0
     nHandsSmaller = 0
     nHandsSame = -1 #compensate for the one whose hand this is
@@ -136,9 +141,21 @@ def snazzyFeatureExtractor(state,action):
     #bs
     if len(state) == 7:
         features.append(("play_"+str(state[6]),1))
+    #    features.append(("played_all",1 if state[6][1] == 3 else 0)) #we need to get the actual max somehow
     #    features.append(("nplayed",state[6][1]))
     #    features.append(("player_cards",state[5][state[6][0]]))
     #    features.append(("played_cards_owned",state[1][0]))
+    #
 
+    features.append(("action_"+str(action),1))
+    if action != "bs" and action !="pass":
+        if sum(action) == action[0]:
+            features.append(("honest",1))
+        else:
+            features.append(("lie",1))
+        features.append(("nplayed_action_"+str(sum(action)),1))
+
+    # for i in range(1,len(features)):
+    #     features[i] = (prefix+features[i][0],features[i][1])
     return features
 

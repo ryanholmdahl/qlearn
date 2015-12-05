@@ -1,7 +1,7 @@
-import play_game,qlearn,policy,util
+import random
 
 #Does some q learning on the hdmdp.
-def qlsimulate(hsmdp, rl, numTrials=10, maxIterations=1000, verbose=False):
+def rlsimulate(hsmdp, rl, numTrials=10, maxIterations=1000, verbose=False):
     totalRewards = []  # The rewards we get on each trial
     for trial in range(numTrials):
         hsmdp.restart()
