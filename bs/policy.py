@@ -105,7 +105,7 @@ class SketchyPolicy(util.PolicyGenerator):
             weights = {}
             for action in semitruthful:
                 weight = 1
-                for i in range(0,len(action),self.hsmdp.nplayers):
+                for i in range(self.hsmdp.nplayers,len(action),self.hsmdp.nplayers):
                     weight *= 1/(1+action[i])
                 weights[action] = weight
             weights[max(truthful)] = len(weights)*(1-self.sketch)

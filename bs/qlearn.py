@@ -161,6 +161,7 @@ def snazzyFeatureExtractor(state,action):
             features.append(("lie",1))
             features.append(("extra_cards_"+str(sum(action)-action[0]),1))
         features.append(("nplayed_action_"+str(sum(action)),1))
+        features.append(("nnextcards_played_"+str(action[nplayers]),1))
 
     # for i in range(1,len(features)):
     #     features[i] = (prefix+features[i][0],features[i][1])
