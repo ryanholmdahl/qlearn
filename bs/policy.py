@@ -42,9 +42,8 @@ class SketchyPolicy(util.PolicyGenerator):
         self.learn = learn
 
     def decision(self, state_tup, id = None):
-        state = self.hsmdp.todict(state_tup)
+        state = util.todict(state_tup)
 
-        nplayers = self.hsmdp.nplayers
         if state['state'] == 'bs':
             cardsRemoved = 0
             if state['bust_know'] and state['bs_play'][0] != state['bust_know'][0]: cardsRemoved += state['bust_know'][1][0]
@@ -96,7 +95,7 @@ class SketchyPolicy(util.PolicyGenerator):
                 weights = {}
                 for action in full_lies:
                     weight = 1
-                    for i in range(0,len(action),self.hsmdp.nplayers):
+                    for i in range(self.hsmdp.nplayers,len(action),self.hsmdp.nplayers):
                         weight *= 1/(1+action[i])
                     weights[action] = weight
                 return util.weightedChoice(weights)
@@ -111,7 +110,7 @@ class SketchyPolicy(util.PolicyGenerator):
             if random.random()>self.sketch or not semitruthful:
                 return max(truthful)
             else:
-                return util.weightedChoice(weights) #exaggerate if we can and are feeling sketchy\
+                return util.weightedChoice(weights) #exaggerate if we can and are feeling sketchy
 
             #note that we do not have an option to play only some of the required card, as I can't think of a situation where we'd want to
 

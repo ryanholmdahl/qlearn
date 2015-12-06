@@ -148,7 +148,7 @@ class BSGame(HiddenStateMDP):
     # is recorded. This way, all plays an opponent makes of the same number of cards and with the same risk to
     # itself will be treated as one.
     def advLearnCall(self,caller,state_tup,action,outcome):
-        state = self.todict(state_tup)
+        state = util.todict(state_tup)
         #the relative change in hand size for the BS caller if he fails
         changeForPlayer = util.changeForPlayer(state)
         #the relative change in hand size for the player if he is caught
@@ -220,13 +220,6 @@ class BSGame(HiddenStateMDP):
         if state[0] == 'bs':
             print '\tplay to bs:', state[6]
         print '\tpossible actions:', self.actions(state)
-
-    def todict(self, state):
-        keys = ['state', 'hand', 'knowledge', 'pile_size', 'bust_know', 'hand_sizes']
-        res = {key: state[i] for i, key in enumerate(keys)}
-        if state[0] == 'bs':
-            res['bs_play'] = state[6]
-        return res
 
     # Plays the turn of |current_player|. If that player is the agent, then we return the state and wait for a command.
     # Otherwise, we play based on the player's policy and then move on to the BS round.

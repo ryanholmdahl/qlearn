@@ -40,6 +40,13 @@ class RLAlgorithm:
 def cmb(n,r):
     return math.factorial(n)/(math.factorial(r)*math.factorial(n-r))
 
+def todict(state):
+    keys = ['state', 'hand', 'knowledge', 'pile_size', 'bust_know', 'hand_sizes']
+    res = {key: state[i] for i, key in enumerate(keys)}
+    if state[0] == 'bs':
+        res['bs_play'] = state[6]
+    return res
+
 def changeForPlayer(state):
     return (float(state['hand_sizes'][state['bs_play'][0]]) + state['pile_size']) / (state['hand_sizes'][state['bs_play'][0]] + state['bs_play'][1])
 
