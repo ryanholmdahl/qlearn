@@ -108,8 +108,10 @@ class SketchyPolicy(util.PolicyGenerator):
                 for i in range(self.hsmdp.nplayers,len(action),self.hsmdp.nplayers):
                     weight *= 1/(1+action[i])
                 weights[action] = weight
-            weights[max(truthful)] = len(weights)*(1-self.sketch)
-            return util.weightedChoice(weights) #exaggerate if we can and are feeling sketchy\
+            if random.random()>self.sketch or not semitruthful:
+                return max(truthful)
+            else:
+                return util.weightedChoice(weights) #exaggerate if we can and are feeling sketchy\
 
             #note that we do not have an option to play only some of the required card, as I can't think of a situation where we'd want to
 
