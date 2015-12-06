@@ -30,7 +30,7 @@ class QLearningAlgorithm(util.RLAlgorithm):
     # Here we use the epsilon-greedy algorithm: with probability
     # |explorationProb|, take a random action.
 
-    def getAction(self, state):
+    def getAction(self, state, id=None):
         self.numIters += 1
         if random.random() < self.explorationProb:
             return random.choice(self.actions(state))
@@ -83,12 +83,14 @@ def snazzyFeatureExtractor(state,action):
     if state[0] == "someone_wins": return features
 
     nplayers = len(state[5])
+    cardsRemoved = state[1][0] + state[2][0]
 
     # if len(state)<7: prefix = "playturn_"
     # else: prefix = "bsturn_"
 
     #the hand
     features.append(("cards_"+str(state[1]),1)) #indicator
+    features.append(("nofcard_"+str(state[1][0]),1))
     features.append(("has_card",1 if state[1][0] > 0 else 0))
     hasCardList = []
     for card in range(len(state[1])):
@@ -119,8 +121,11 @@ def snazzyFeatureExtractor(state,action):
         for i in range(5):
             features.append(("know_"+str(i),1 if state[4][0]>=i else 0))
         features.append(("knowledge_"+str(state[4]),1))
+        cardsRemoved += state[4][0]
     #    features.append(("nknowledge",sum(state[4][1])))
     #    features.append(("knowledge_cur",state[4][1][0]))
+
+    # features.append(("cardsremoved_"+str(cardsRemoved),1))
 
     #opponent cards
     # features.append(("opphands_"+str(state[5]),1))
@@ -135,12 +140,13 @@ def snazzyFeatureExtractor(state,action):
         else:
             nHandsSame += 1
 
-    features.append(("smallesthand",1 if nHandsSmaller == 0 else 0))
+    features.append(("handsizerank_"+str(nHandsSmaller),1))
     # features.append(("handsizerank",nHandsSmaller+1))
 
     #bs
     if len(state) == 7:
         features.append(("play_"+str(state[6]),1))
+    #   features.append(("playispossible",1 if cardsRemoved+state[6][1] <= 3 else 0))
     #    features.append(("played_all",1 if state[6][1] == 3 else 0)) #we need to get the actual max somehow
     #    features.append(("nplayed",state[6][1]))
     #    features.append(("player_cards",state[5][state[6][0]]))
@@ -153,6 +159,7 @@ def snazzyFeatureExtractor(state,action):
             features.append(("honest",1))
         else:
             features.append(("lie",1))
+            features.append(("extra_cards_"+str(sum(action)-action[0]),1))
         features.append(("nplayed_action_"+str(sum(action)),1))
 
     # for i in range(1,len(features)):
