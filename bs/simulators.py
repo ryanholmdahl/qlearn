@@ -17,6 +17,7 @@ def rlsimulate(hsmdp, rl, numTrials=10, maxIterations=1000, verbose=False):
             if newState == None:
                 rl.incorporateFeedback(state, action, 0, None)
                 break
+            print action
 
             sequence.append(action)
             sequence.append(reward)
@@ -27,7 +28,8 @@ def rlsimulate(hsmdp, rl, numTrials=10, maxIterations=1000, verbose=False):
             totalDiscount *= hsmdp.discount()
             state = newState
         if verbose:
-            print "Trial %d (totalReward = %s): %s" % (trial, totalReward, sequence)
+            print "\ntrial", trial, "reward", totalReward
+            # print "Trial %d (totalReward = %s): %s" % (trial, totalReward, sequence)
         totalRewards.append(totalReward)
     return totalRewards
 
