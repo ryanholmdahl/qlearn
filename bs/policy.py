@@ -45,15 +45,16 @@ class SketchyPolicy(util.PolicyGenerator):
         state = util.todict(state_tup)
 
         if state['state'] == 'bs':
+            if self.sketch == 0:
+                return "pass"
+
             cardsRemoved = 0
             if state['bust_know'] and state['bs_play'][0] != state['bust_know'][0]: cardsRemoved += state['bust_know'][1][0]
             cardsRemoved += state['hand'][0] + state['knowledge'][0]
             totalInCirculation = self.hsmdp.getMaxPlayable()
-            if self.sketch == 0:
-                return "pass"
-
             if totalInCirculation < cardsRemoved + state['bs_play'][1]:
                 return 'bs'
+
             if state['bs_play'][1] == totalInCirculation and state['hand'][0] == 0:
                 return 'pass'
             N = sum(state['hand_sizes'])+state['pile_size'] #total number of cards

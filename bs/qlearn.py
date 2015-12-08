@@ -79,20 +79,17 @@ def snazzyWarmStart():
 def snazzyFeatureExtractor(state,action):
     features = []
     identityFeature = (state,action)
-    features.append((identityFeature,1))
+    #features.append((identityFeature,1))
 
-    if state[0] == "someone_wins": return features
+    if state[0] == "someone_wins": return [(identityFeature,1)]
 
     nplayers = len(state[5])
 
     #features.append((state[0],1))
 
-    # if len(state)<7: prefix = "playturn_"
-    # else: prefix = "bsturn_"
-
     #the hand
     #features.append(("cards_"+str(state[1]),1)) #indicator
-    features.append(("handsize_"+str(sum(state[1])),1))
+    #features.append(("handsize_"+str(sum(state[1])),1))
     features.append(("nofcard_"+str(state[1][0]),1)) #how many of the current card do we own?
     features.append(("have_card",1 if state[1][0] > 0 else 0)) #do we have the current card at all?
     # hasCardList = []
@@ -122,13 +119,6 @@ def snazzyFeatureExtractor(state,action):
     # features.append(("ncardinpile"+str(state[2][0]),1)) #how many of the current card is in the pile?
 
     #knowledge
-    if state[4] is not None and len(state) == 7:
-        if state[6][0] != state[4][0]:
-            know_nothave = state[2][0] + state[4][1][0]
-            features.append((action+"know_nothave_"+str(know_nothave),1)) #how many cards do we know they don't have?
-            features.append((action+"diff_know_nothave_nplayed"+str(know_nothave - state[6][1]),1)) #what's the difference between the number we know they don't have and the number they played?
-        else:
-            features.append((action+"know_have_"+str(state[4][1][0]),1)) #how many cards do we know they have?
     #   features.append(("knowledge_"+str(state[4]),1))
     #    features.append(("nknowledge",sum(state[4][1])))
     #    features.append(("knowledge_cur",state[4][1][0]))
@@ -150,18 +140,26 @@ def snazzyFeatureExtractor(state,action):
 
     features.append(("handsizerank_"+str(nHandsSmaller),1)) #what's our relative hand size?
     # features.append(("handsizerank",nHandsSmaller+1))
-
     #bs
     if len(state) == 7:
         #features.append(("play_"+str(state[6]),1))
-        features.append((action+"nplayed_"+str(state[6][1]),1)) #how many did they play?
-        features.append((action+"player_"+str(state[6][0]),1)) #who played it?
+        features.append((action+"_nplayed_"+str(state[6][1]),1)) #how many did they play?
+        features.append((action+"_player_"+str(state[6][0]),1)) #who played it?
+        know_nothave = state[2][0] + state[1][0]
+        if state[4]:
+            if state[6][0] != state[4][0]:
+                know_nothave += state[4][1][0]
+            else:
+                features.append((action+"_know_have_"+str(state[4][1][0]),1)) #how many cards do we know they have?
+                features.append((action+"_has_card",1 if state[4][1][0] > 0 else 0))
+        features.append((action+"_know_nothave_"+str(know_nothave),1)) #how many cards do we know they don't have?
+        features.append((action+"_sum_know_nothave_nplayed"+str(know_nothave + state[6][1]),1)) #what's the sum of the number we know they don't have and the number they played?
         # features.append(("played_all",1 if state[6][1] == 3 else 0)) #we need to get the actual max somehow
     #    features.append(("nplayed",state[6][1]))
     #    features.append(("player_cards",state[5][state[6][0]]))
     #    features.append(("played_cards_owned",state[1][0]))
 
-    # features.append(("action_"+str(action),1))
+    features.append(("action_"+str(action),1))
     if action != "bs" and action !="pass":
         features.append(("played_all",1 if action[0] == state[1][0] else 0)) #did we play all we had?
         if sum(action) == action[0]:
@@ -173,7 +171,10 @@ def snazzyFeatureExtractor(state,action):
             features.append(("forced_lie",1 if state[1][0] == 0 else 0)) #did we have to lie?
             features.append(("extra_cards_"+str(sum(action)-action[0]),1)) #how many fib cards did we play?
         features.append(("nplayed_action_"+str(sum(action)),1)) #how many did we play in total?
-        features.append(("nnextcards_played_"+str(action[i] for i in range(nplayers,len(state[1]),nplayers)),1)) #how many of the next card did we play?
+
+        nextCardsPlayed = sum(action[i] for i in range(nplayers,len(state[1]),nplayers))
+        features.append(("nextcard_played",1 if nextCardsPlayed > 0 else 0))
+        features.append(("nnextcards_played_"+str(nextCardsPlayed),1)) #how many of the next card did we play?
 
     # prefix = str(action)
     # for i in range(1,len(features)):
