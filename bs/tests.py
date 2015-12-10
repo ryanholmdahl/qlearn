@@ -79,7 +79,7 @@ def qlearn_learn(nplayers,num_card_values,num_cards,agent,learn_trials,test_tria
     qlearning.explorationProb = 0
     game.resetWins()
     print "Learning complete. Now simulating tests..."
-    simulators.rlsimulate(game,qlearning,numTrials=test_trials,verbose=verbose)
+    simulators.rlsimulate(game,qlearning,numTrials=test_trials,verbose=verbose,maxIterations = maxIters)
     print "Wins observed:",game.wins
     print "Agent in position",agent,"has a win rate of",str(float(game.wins[agent])/sum(game.wins))
     return qlearning
