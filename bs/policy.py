@@ -23,7 +23,7 @@ class LessStupidPolicy(util.PolicyGenerator):
     def __init__(self,hdmdp):
         self.hsmdp = hdmdp
 
-    def decision(self,state):
+    def decision(self,state,id=None):
         if state[0] == 'bs':
             return 'bs' if random.random() < (1 / self.hsmdp.nplayers) else 'pass'
         else: # 'play' state
@@ -45,8 +45,8 @@ class SketchyPolicy(util.PolicyGenerator):
         state = util.todict(state_tup)
 
         if state['state'] == 'bs':
-            if self.sketch == 0:
-                return "pass"
+            # if self.sketch == 0:
+            #     return "pass"
 
             cardsRemoved = 0
             if state['bust_know'] and state['bs_play'][0] != state['bust_know'][0]: cardsRemoved += state['bust_know'][1][0]
@@ -57,7 +57,7 @@ class SketchyPolicy(util.PolicyGenerator):
 
             if state['bs_play'][1] == totalInCirculation and state['hand'][0] == 0:
                 return 'pass'
-            N = sum(state['hand_sizes'])+state['pile_size'] #total number of cards
+            N = sum(state['hand_sizes'])+state['pile_size']-sum(state['hand']) #total number of cards
             k = totalInCirculation - cardsRemoved #number of cards the player MIGHT have
             n = state['hand_sizes'][state['bs_play'][0]] + state['bs_play'][1] #cards the player had in hand
             x = state['bs_play'][1] #number of cards played
@@ -86,7 +86,7 @@ class SketchyPolicy(util.PolicyGenerator):
             #we decrease the likelihood of calling based on the number of players, as we can just let someone else do it
             #we increase the likelihood of calling based on how badly a loss hurts the player
             #we decrease the likelihood of calling based on how badly a loss hurts the caller
-            call = random.random() / self.hsmdp.nplayers * changeForCaller / changeForPlayer * learnMul > prob
+            call = random.random() < (1 - prob) / self.hsmdp.nplayers * changeForPlayer / changeForCaller * learnMul
             return 'bs' if call else 'pass'
         else:
             truthful = [a for a in self.hsmdp.actions(state_tup) if a[0] > 0 and sum(a) == a[0]] #entirely honest plays
@@ -105,10 +105,12 @@ class SketchyPolicy(util.PolicyGenerator):
             weights = {}
             for action in semitruthful:
                 weight = 1
-                for i in range(self.hsmdp.nplayers,len(action),self.hsmdp.nplayers):
-                    weight *= 1/(1+action[i])
+                for i in range(len(action)/2):
+                    cardOnTurnI = i * self.hsmdp.nplayers
+                    if cardOnTurnI >= len(action): cardOnTurnI -= len(action)
+                    weight *= 1/(1+action[cardOnTurnI])
                 weights[action] = weight
-            if random.random()>self.sketch or not semitruthful:
+            if random.random()<(1-self.sketch) or not semitruthful:
                 return max(truthful)
             else:
                 return util.weightedChoice(weights) #exaggerate if we can and are feeling sketchy

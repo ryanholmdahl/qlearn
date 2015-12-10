@@ -23,11 +23,13 @@ class BSGameState():
 
         if oracle != -1:
             handSize = sum(card_counts) / nplayers
-            ranksForOracle = sum(1 for i in range(oracle,len(card_counts),nplayers))
-            for i in range(oracle,len(card_counts),nplayers):
-                cards = min(card_counts[i],handSize/ranksForOracle)
-                self.hands[oracle][i] += cards
-                card_counts[i] -= cards
+            ranksForOracle = len(card_counts) / 2 #the oracle is dealt cards only from the first len(cards)/2 cards it will play
+            for i in range(ranksForOracle):
+                cardAtI = oracle + i * nplayers
+                if cardAtI >= len(card_counts): cardAtI -= len(card_counts)
+                cards = min(card_counts[cardAtI],handSize/ranksForOracle)
+                self.hands[oracle][cardAtI] += cards
+                card_counts[cardAtI] -= cards
 
         cards = [n for n, count in enumerate(card_counts) if count > 0] # card indexes w nonzero counts
         while cards:

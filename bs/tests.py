@@ -58,7 +58,7 @@ def oracle(nplayers, num_card_values, num_cards, trials, agent=None, sketch_list
 # Uses qlearning to create an agent against some adversaries. The adversaries will have random sketchiness and confidence
 # unless lists are passed to the respective parameters. The algorithm learns for |learn_trials| iterations before being
 # evaluated for |test_trials| iterations.
-def qlearn_learn(nplayers,num_card_values,num_cards,agent,learn_trials,test_trials, featureExtractor = qlearn.snazzyFeatureExtractor, explorationProb = 0.2, sketch_list = None, confidence_list = None, learn_list = None, verbose=False):
+def qlearn_learn(nplayers,num_card_values,num_cards,agent,learn_trials,test_trials, featureExtractor = qlearn.snazzyFeatureExtractor, explorationProb = 0.2, maxIters = 1000, sketch_list = None, confidence_list = None, learn_list = None, verbose=False):
     print "Running qlearning as agent",agent,"."
     game = play_game.BSGame(nplayers,[num_cards for _ in range(num_card_values)],agent,verbose=0)
     if sketch_list is None:
@@ -75,7 +75,7 @@ def qlearn_learn(nplayers,num_card_values,num_cards,agent,learn_trials,test_tria
     game.setPolicies(apolicies)
     qlearning = qlearn.QLearningAlgorithm(game.actions,game.discount(),featureExtractor,explorationProb=explorationProb)
     print "Learning..."
-    simulators.rlsimulate(game,qlearning,numTrials=learn_trials,verbose=verbose)
+    simulators.rlsimulate(game,qlearning,numTrials=learn_trials,verbose=verbose,maxIterations = maxIters)
     qlearning.explorationProb = 0
     game.resetWins()
     print "Learning complete. Now simulating tests..."
