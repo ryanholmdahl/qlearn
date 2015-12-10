@@ -1,24 +1,24 @@
 import play_game, policy, simulators, qlearn, random, model_based
 
-# Acquires the win rate of a learning DishonestPolicy agent with sketchiness 0.5 and confidence 1
+# Acquires the win rate of a learning DishonestPolicy agent with dishonesty 0.5 and confidence 1
 # in each of the nplayers positions. A properly formatted call might look like:
 #   baseline(3, 5, 4, 5000),
 # in which case the deck would be [4, 4, 4, 4, 4]. Generally, the wins should be fairly evenly distributed,
 # favoring earlier players.
 def baseline(nplayers, num_card_values, num_cards, trials, agent=None, dishonesty_list = None, confidence_list = None, learn_list = None, verbose=False):
-    print "Determining baseline using learning DishonestPolicy agents."
+    print "Determining baseline using learning SketchyPolicy agents."
     if dishonesty_list is None:
-        dishonesty_list = [0.5 for _ in range(nplayers)]
+        dishonesty_list = [0.1 for _ in range(nplayers)]
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
-        learn_list = [True for _ in range(nplayers)]
+        learn_list = [False for _ in range(nplayers)]
     for i in range(nplayers):
         if agent is not None:
             if agent != i: continue
         print "Simulating agent", i, "..."
         game = play_game.BSGame(nplayers, [num_cards for _ in range(num_card_values)], i, verbose=0)
-        ppolicy = policy.DishonestPolicy(game, dishonesty_list[i], confidence=confidence_list[i], learn=learn_list[i])
+        ppolicy = policy.LessStupidPolicy(game)
         apolicies = []
         for t in range(nplayers):
             apolicies.append(policy.DishonestPolicy(game, dishonesty_list[t], confidence=confidence_list[t], learn=learn_list[t]).decision)
@@ -28,24 +28,24 @@ def baseline(nplayers, num_card_values, num_cards, trials, agent=None, dishonest
         print "Agent in position", i, "has a win rate of ", str(float(game.wins[i])/sum(game.wins)), '\n'
         game.resetWins()
 
-# Acquires the win rate of a learning DishonestPolicy agent with sketchiness 0.5 and confidence 1
+# Acquires the win rate of a learning DishonestPolicy agent with dishonesty 0.5 and confidence 1
 # in each of the nplayers positions. This agent can see the last play and will perfectly call BS
 # on it. Formatting is the same as a call to baseline. Generally, the win rate for the oracle is above
 # 90%.
 def oracle(nplayers, num_card_values, num_cards, trials, agent=None, dishonesty_list = None, confidence_list = None, learn_list = None, verbose=False):
-    print "Determining oracle using learning DishonestPolicy agents."
+    print "Determining oracle using learning SketchyPolicy agents."
     if dishonesty_list is None:
-        dishonesty_list = [0.5 for _ in range(nplayers)]
+        dishonesty_list = [0.1 for _ in range(nplayers)]
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
-        learn_list = [True for _ in range(nplayers)]
+        learn_list = [False for _ in range(nplayers)]
     for i in range(nplayers):
         if agent is not None:
             if agent != i: continue
         print "Simulating agent", i, "..."
-        game = play_game.BSGame(nplayers, [num_cards for _ in range(num_card_values)], i, verbose=0)
-        ppolicy = policy.DishonestPolicy(game, dishonesty_list[i], confidence=confidence_list[i], learn=learn_list[i])
+        game = play_game.BSGame(nplayers, [num_cards for _ in range(num_card_values)], i, verbose=0, oracle=True)
+        ppolicy = policy.LessStupidPolicy(game)
         apolicies = []
         for t in range(nplayers):
             apolicies.append(policy.DishonestPolicy(game, dishonesty_list[t], confidence=confidence_list[t], learn=learn_list[t]).decision)
@@ -55,10 +55,10 @@ def oracle(nplayers, num_card_values, num_cards, trials, agent=None, dishonesty_
         print "Agent in position", i, "has a win rate of ", str(float(game.wins[i])/sum(game.wins)), '\n'
         game.resetWins()
 
-# Uses qlearning to create an agent against some adversaries. The adversaries will have random sketchiness and confidence
+# Uses qlearning to create an agent against some adversaries. The adversaries will have random dishonesty and confidence
 # unless lists are passed to the respective parameters. The algorithm learns for |learn_trials| iterations before being
 # evaluated for |test_trials| iterations.
-def qlearn_learn(nplayers, num_card_values, num_cards, agent, learn_trials, test_trials, featureExtractor = qlearn.snazzyFeatureExtractor, explorationProb = 0.2, dishonesty_list = None, confidence_list = None, learn_list = None, verbose=False):
+def qlearn_learn(nplayers, num_card_values, num_cards, agent, learn_trials, test_trials, featureExtractor = qlearn.snazzyFeatureExtractor, explorationProb = 0.2, maxIters = 1000, dishonesty_list = None, confidence_list = None, learn_list = None, verbose=False):
     print "Running qlearning as agent", agent, "."
     game = play_game.BSGame(nplayers, [num_cards for _ in range(num_card_values)], agent, verbose=0)
     if dishonesty_list is None:
@@ -66,8 +66,8 @@ def qlearn_learn(nplayers, num_card_values, num_cards, agent, learn_trials, test
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
-        learn_list = [True for _ in range(nplayers)]
-    print "Players have sketchiness", dishonesty_list
+        learn_list = [False for _ in range(nplayers)]
+    print "Players have dishonesty", dishonesty_list
     print "Players have confidence", confidence_list
     apolicies = []
     for t in range(nplayers):
@@ -75,7 +75,7 @@ def qlearn_learn(nplayers, num_card_values, num_cards, agent, learn_trials, test
     game.setPolicies(apolicies)
     qlearning = qlearn.QLearningAlgorithm(game.actions, game.discount(), featureExtractor, explorationProb=explorationProb)
     print "Learning..."
-    simulators.rlsimulate(game, qlearning, numTrials=learn_trials, verbose=verbose)
+    simulators.rlsimulate(game, qlearning, numTrials=learn_trials, verbose=verbose, maxIterations = maxIters)
     qlearning.explorationProb = 0
     game.resetWins()
     print "Learning complete. Now simulating tests..."
@@ -92,8 +92,8 @@ def mb_learn(nplayers, num_card_values, num_cards, agent, learn_trials, test_tri
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
-        learn_list = [True for _ in range(nplayers)]
-    print "Players have sketchiness", dishonesty_list
+        learn_list = [False for _ in range(nplayers)]
+    print "Players have dishonesty", dishonesty_list
     print "Players have confidence", confidence_list
     apolicies = []
     for t in range(nplayers):
@@ -120,8 +120,8 @@ def qlearn_test(nplayers, num_card_values, num_cards, agent, trials, qlearning, 
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
-        learn_list = [True for _ in range(nplayers)]
-    print "Players have sketchiness", dishonesty_list
+        learn_list = [False for _ in range(nplayers)]
+    print "Players have dishonesty", dishonesty_list
     print "Players have confidence", confidence_list
     apolicies = []
     for t in range(nplayers):
@@ -143,8 +143,8 @@ def allsketchy_test(nplayers, num_card_values, num_cards, trials, agent = 0, dis
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
-        learn_list = [True for _ in range(nplayers)]
-    print "Players have sketchiness", dishonesty_list
+        learn_list = [False for _ in range(nplayers)]
+    print "Players have dishonesty", dishonesty_list
     print "Players have confidence", confidence_list
     apolicies = []
     for t in range(nplayers):
@@ -163,8 +163,8 @@ def human_test(nplayers, num_card_values, num_cards, agent, qlearnings = None, d
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
-        learn_list = [True for _ in range(nplayers)]
-    print "Players have sketchiness", dishonesty_list
+        learn_list = [False for _ in range(nplayers)]
+    print "Players have dishonesty", dishonesty_list
     print "Players have confidence", confidence_list
     apolicies = []
     for t in range(nplayers):
