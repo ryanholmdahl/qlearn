@@ -17,7 +17,7 @@ def rlsimulate(hsmdp, rl, numTrials=10, maxIterations=1000, verbose=False):
             if newState == None:
                 rl.incorporateFeedback(state, action, 0, None)
                 break
-            print action
+            # print action
 
             sequence.append(action)
             sequence.append(reward)
@@ -49,7 +49,7 @@ def allsetsimulate(hsmdp, agent_decision, numTrials=10, maxIterations=1000, orac
                 action = "end_game"
             else:
                 if not oracle or len(state) == 6:
-                    action = agent_decision(state,hsmdp.agent_index)
+                    action = agent_decision(state, hsmdp.agent_index)
                 else:
                     action = "pass" if hsmdp.lastPlayIsHonest() else "bs"
 
@@ -81,11 +81,11 @@ def humansimulate(hsmdp, maxIterations=1000):
         if state[0] == "someone_wins":
             action = "end_game"
         else:
-            print "Current state:",state
+            print "Current state:", state
             action = None
             while action not in hsmdp.actions(state):
                 action = input("Enter an action: ")
-            print "Action interpreted as",action
+            print "Action interpreted as", action
 
         newState, reward = hsmdp.succAndReward(state, action)
 

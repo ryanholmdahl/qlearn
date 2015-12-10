@@ -6,10 +6,10 @@ from util import cmb
 #   plays all valid/truthful cards each time if possible
 #   plays some minimal number of invalid cards otherwise
 class NaivePolicy(util.PolicyGenerator):
-    def __init__(self,hdmdp):
+    def __init__(self, hdmdp):
         self.hsmdp = hdmdp
 
-    def decision(self,state):
+    def decision(self, state):
         if state[0] == 'bs':
             return 'pass'
         else: # 'play' state
@@ -19,11 +19,11 @@ class NaivePolicy(util.PolicyGenerator):
             else:
                 return min(self.hsmdp.actions(state), key = sum)
 
-class LessStupidPolicy(util.PolicyGenerator):
-    def __init__(self,hdmdp):
+class LessNaivePolicy(util.PolicyGenerator):
+    def __init__(self, hdmdp):
         self.hsmdp = hdmdp
 
-    def decision(self,state):
+    def decision(self, state):
         if state[0] == 'bs':
             return 'bs' if random.random() < (1 / self.hsmdp.nplayers) else 'pass'
         else: # 'play' state
@@ -34,7 +34,7 @@ class LessStupidPolicy(util.PolicyGenerator):
                 return random.choice(self.hsmdp.actions(state))
 
 # where sketch and confidence are on a scale from 0 to 1 inclusive
-class SketchyPolicy(util.PolicyGenerator):
+class DishonestPolicy(util.PolicyGenerator):
     def __init__(self, hdmdp, sketch, confidence = 1, learn = False):
         self.hsmdp = hdmdp
         self.sketch = sketch
@@ -69,20 +69,20 @@ class SketchyPolicy(util.PolicyGenerator):
             #the relative change in hand size for the player if he is caught
             changeForCaller = util.changeForCaller(state)
             #hypergeometric probability that the player had x of the card
-            prob = float(cmb(k,x)) * cmb(N-k,n-x) / cmb(N,n)
+            prob = float(cmb(k, x)) * cmb(N-k, n-x) / cmb(N, n)
             #the ai takes into account the likelihood that the opponent is lying based on previous, similar moves.
             #check advLearnCall in play_game.py for details on what exactly is stored
             learnMul = 1
             if self.learn:
                 #we check if this kind of play has happened before
-                if ("honesty",changeForPlayer,state['bs_play'][1]) in self.hsmdp.action_history[state['bs_play'][0]]:
+                if ("honesty", changeForPlayer, state['bs_play'][1]) in self.hsmdp.action_history[state['bs_play'][0]]:
                     #count up all the actions
-                    actionList = self.hsmdp.action_history[state['bs_play'][0]][("honesty",changeForPlayer,state['bs_play'][1])]
+                    actionList = self.hsmdp.action_history[state['bs_play'][0]][("honesty", changeForPlayer, state['bs_play'][1])]
                     counter = collections.Counter(actionList)
                     nActions = counter["lie"] + counter["true"]
                     lieChance = counter["lie"] / nActions
                     #we modify the multiplier based on how likely they are to BS and our confidence score
-                    learnMul = 1 + (lieChance-1)*min(1,(nActions)*self.confidence)
+                    learnMul = 1 + (lieChance-1)*min(1, (nActions)*self.confidence)
             #we decrease the likelihood of calling based on the number of players, as we can just let someone else do it
             #we increase the likelihood of calling based on how badly a loss hurts the player
             #we decrease the likelihood of calling based on how badly a loss hurts the caller
@@ -96,7 +96,7 @@ class SketchyPolicy(util.PolicyGenerator):
                 weights = {}
                 for action in full_lies:
                     weight = 1
-                    for i in range(self.hsmdp.nplayers,len(action),self.hsmdp.nplayers):
+                    for i in range(self.hsmdp.nplayers, len(action), self.hsmdp.nplayers):
                         weight *= 1/(1+action[i])
                     weights[action] = weight
                 return util.weightedChoice(weights)
@@ -105,7 +105,7 @@ class SketchyPolicy(util.PolicyGenerator):
             weights = {}
             for action in semitruthful:
                 weight = 1
-                for i in range(self.hsmdp.nplayers,len(action),self.hsmdp.nplayers):
+                for i in range(self.hsmdp.nplayers, len(action), self.hsmdp.nplayers):
                     weight *= 1/(1+action[i])
                 weights[action] = weight
             if random.random()>self.sketch or not semitruthful:

@@ -33,15 +33,15 @@ class BSGameState():
                     break
 
     # bust(busted: 3)
-    def bust(self,busted):
+    def bust(self, busted):
         for player in range(self.nplayers):
-            self.knowledge[player] = (busted,tuple(self.pile[player])) # updates each player's knowledge of card transfer
+            self.knowledge[player] = (busted, tuple(self.pile[player])) # updates each player's knowledge of card transfer
             for card in range(len(self.pile[player])):
                 self.hands[busted][card] += self.pile[player][card]
                 self.pile[player][card] = 0
 
     # playCards(player: 3, cards_played: [0, 1, 0])
-    def playCards(self,player,cards_played):
+    def playCards(self, player, cards_played):
         self.last_play = cards_played
         for card, count in enumerate(cards_played):
             self.pile[player][card] += count
@@ -50,7 +50,7 @@ class BSGameState():
     def rotate(self, list):
         list.append(list.pop(0)) # really should use a deque to avoid shifting but yeah
 
-    def rotateTuple(self,to_rotate):
+    def rotateTuple(self, to_rotate):
         to_rotate_list = list(to_rotate)
         self.rotate(to_rotate_list)
         return tuple(to_rotate_list)
@@ -60,11 +60,11 @@ class BSGameState():
             self.rotate(self.hands[player])
             self.rotate(self.pile[player])
             if self.knowledge[player] is not None:
-                self.knowledge[player] = (self.knowledge[player][0],self.rotateTuple(self.knowledge[player][1]))
+                self.knowledge[player] = (self.knowledge[player][0], self.rotateTuple(self.knowledge[player][1]))
         self.rotation_offset += 1
 
     def duplicateGameState(self):
-        saved = BSGameState(self.nplayers,[])
+        saved = BSGameState(self.nplayers, [])
         saved.hands = deepcopy(self.hands)
         saved.pile = deepcopy(self.pile)
         saved.knowledge = deepcopy(self.knowledge)
@@ -73,8 +73,8 @@ class BSGameState():
         return saved
 
 class BSGame(HiddenStateMDP):
-    # (nplayers: 3, card_counts: (2, 6, 1), policies: list of state:action maps,agent_index: 0)
-    def __init__(self,nplayers,card_counts,agent_index,verbose=0):
+    # (nplayers: 3, card_counts: (2, 6, 1), policies: list of state:action maps, agent_index: 0)
+    def __init__(self, nplayers, card_counts, agent_index, verbose=0):
         self.nplayers = nplayers
         self.card_counts = card_counts
         self.gameState = BSGameState(nplayers, list(card_counts))
@@ -90,7 +90,7 @@ class BSGame(HiddenStateMDP):
 
     # Resets the game state with the same cards and number of players.
     def restart(self):
-        self.gameState = BSGameState(self.nplayers,list(self.card_counts))
+        self.gameState = BSGameState(self.nplayers, list(self.card_counts))
         self.action_history = [{} for _ in range(self.nplayers)]
 
     # Returns the state for the agent's first turn.
@@ -114,19 +114,19 @@ class BSGame(HiddenStateMDP):
                     plays.append(tuple(play))
             return plays
         else:
-            return ["bs","pass"] # reaction options to other player
+            return ["bs", "pass"] # reaction options to other player
 
     # Performs |action| from |state|, then plays all of the adversarial turns until the agent plays again.
     def succAndReward(self, state, action):
-        if self.verbose: print "(agent) player:",self.agent_index,"| action:",action
-        if action == "end_game": return (None,0)
+        if self.verbose: print "(agent) player:", self.agent_index, "| action:", action
+        if action == "end_game": return (None, 0)
         nextState = None
         if action == "bs":
             self.resolveBust(state, self.agent_index, state[6][0]) # state[6][0] = player who last played
             nextState = self.playAdvTurn(self.getnext(state[6][0]))
         elif action == "pass":
             if state[6][0] != self.getnext(self.agent_index):
-                nextState = self.playAdvBS(self.getnext(self.agent_index),state[6])
+                nextState = self.playAdvBS(self.getnext(self.agent_index), state[6])
             else:
                 nextState = self.playAdvTurn(self.getnext(state[6][0]))
         else:                             # play cards
@@ -144,27 +144,27 @@ class BSGame(HiddenStateMDP):
         return 1
 
     # When a bust occurs for any player, this function is called to store the event in the action_history.
-    # A tuple key of ("honesty",changeForPlayer,cardsPlayed) is used and the outcome of the call (who busted)
+    # A tuple key of ("honesty", changeForPlayer, cardsPlayed) is used and the outcome of the call (who busted)
     # is recorded. This way, all plays an opponent makes of the same number of cards and with the same risk to
     # itself will be treated as one.
-    def advLearnCall(self,caller,state_tup,action,outcome):
+    def advLearnCall(self, caller, state_tup, action, outcome):
         state = util.todict(state_tup)
         #the relative change in hand size for the BS caller if he fails
         changeForPlayer = util.changeForPlayer(state)
         #the relative change in hand size for the player if he is caught
         player = state['bs_play'][0]
-        playerKey = ("honesty",changeForPlayer,state['bs_play'][1])
+        playerKey = ("honesty", changeForPlayer, state['bs_play'][1])
         if playerKey in self.action_history[player]:
             self.action_history[player][playerKey].append(outcome)
         else:
             self.action_history[player][playerKey] = [outcome]
 
     # Sets our adversary policies to those given.
-    def setPolicies(self,policies):
+    def setPolicies(self, policies):
         self.policies = policies
 
     # Gets the index of the player after |cur|.
-    def getnext(self,cur):
+    def getnext(self, cur):
         return cur + 1 if cur + 1 < self.nplayers else 0
 
     # Returns a tuple listing the hands size of each player.
@@ -191,18 +191,18 @@ class BSGame(HiddenStateMDP):
         return True
 
     # Busts the proper player in a BS call.
-    def resolveBust(self,state,bs_caller,last_player):
+    def resolveBust(self, state, bs_caller, last_player):
         if self.lastPlayIsHonest():
-            if self.verbose: print "player",bs_caller,"takes the pile."
-            self.advLearnCall(bs_caller,state,"bs","true")
+            if self.verbose: print "player", bs_caller, "takes the pile."
+            self.advLearnCall(bs_caller, state, "bs", "true")
             self.gameState.bust(bs_caller)
         else:
-            if self.verbose: print "player",last_player,"takes the pile."
-            self.advLearnCall(bs_caller,state,"bs","lie")
+            if self.verbose: print "player", last_player, "takes the pile."
+            self.advLearnCall(bs_caller, state, "bs", "lie")
             self.gameState.bust(last_player)
 
     # Returns the winner of the game if one exists, or None otherwise.
-    def getWinner(self,hands):
+    def getWinner(self, hands):
         for player in range(len(hands)):
             if hands[player] == 0:
                 self.wins[player] += 1
@@ -223,40 +223,40 @@ class BSGame(HiddenStateMDP):
 
     # Plays the turn of |current_player|. If that player is the agent, then we return the state and wait for a command.
     # Otherwise, we play based on the player's policy and then move on to the BS round.
-    def playAdvTurn(self,current_player):
+    def playAdvTurn(self, current_player):
         if self.gameState.turn_number > 0: # we don't want to rotate before the first turn
             self.gameState.rotateCards()
         self.gameState.turn_number+=1
         state = ("play", tuple(self.gameState.hands[current_player]), tuple(self.gameState.pile[current_player]),
             self.getPileSize(), self.gameState.knowledge[current_player], self.getHandSizes())
-        if self.verbose == 2: self.pprint(state,current_player)
+        if self.verbose == 2: self.pprint(state, current_player)
         winner = self.getWinner(state[5])
-        if winner != None: return ("someone_wins",winner) #if there's a winner, the agent will end the game immediately
+        if winner != None: return ("someone_wins", winner) #if there's a winner, the agent will end the game immediately
         if current_player == self.agent_index:
             return state
-        action = self.policies[current_player](state,current_player)
-        if self.verbose == 1: print "player:",current_player,"| action:",sum(action)
-        if self.verbose == 2: print "player:",current_player,"| action:",action
-        self.gameState.playCards(current_player,action)
+        action = self.policies[current_player](state, current_player)
+        if self.verbose == 1: print "player:", current_player, "| action:", sum(action)
+        if self.verbose == 2: print "player:", current_player, "| action:", action
+        self.gameState.playCards(current_player, action)
         return self.playAdvBS(self.getnext(current_player), (current_player, sum(action)))
 
     # Runs the BS round turn of |current_player|. If that player is the agent, then we return the state and wait for
     # a command. Otherwise, we call based on the player's policy and proceed accordingly.
-    def playAdvBS(self,current_player,last_play):
+    def playAdvBS(self, current_player, last_play):
         state = ("bs", tuple(self.gameState.hands[current_player]), tuple(self.gameState.pile[current_player]),
             self.getPileSize(), self.gameState.knowledge[current_player], self.getHandSizes(), last_play)
-        if self.verbose == 2: self.pprint(state,current_player)
+        if self.verbose == 2: self.pprint(state, current_player)
         if current_player == self.agent_index:
             return state
         action = self.policies[current_player](state)
-        if self.verbose: print "player:",current_player,"| action:",action
+        if self.verbose: print "player:", current_player, "| action:", action
         if action == "pass":
             if self.getnext(current_player) != last_play[0]:
-                return self.playAdvBS(self.getnext(current_player),last_play)
+                return self.playAdvBS(self.getnext(current_player), last_play)
             else:
                 return self.playAdvTurn(self.getnext(last_play[0]))
         else:
-            self.resolveBust(state,current_player,last_play[0])
+            self.resolveBust(state, current_player, last_play[0])
             return self.playAdvTurn(self.getnext(last_play[0]))
 
 

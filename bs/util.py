@@ -37,7 +37,7 @@ class RLAlgorithm:
     def incorporateFeedback(self, state, action, reward, newState): raise NotImplementedError("Override me")
 
 #combinations of n bodies into groups of size r
-def cmb(n,r):
+def cmb(n, r):
     return math.factorial(n)/(math.factorial(r)*math.factorial(n-r))
 
 def todict(state):
@@ -53,15 +53,15 @@ def changeForPlayer(state):
 def changeForCaller(state):
     return (float(sum(state['hand'])) + state['pile_size']) / (sum(state['hand']))
 
-def changeForPlayerAction(state,action):
+def changeForPlayerAction(state, action):
     return (float(sum(state['hand'])) + state['pile_size']) / (sum(state['hand']))
 
-def changeForCallerAction(state,action,caller):
+def changeForCallerAction(state, action, caller):
     return (float(sum(action) + state['pile_size']) / state['hand_sizes'][caller])
 
 def weightedChoice(weights):
     total = sum(weights.values())
-    r = random.uniform(0,total)
+    r = random.uniform(0, total)
     ssf = 0
     for action in weights:
         if ssf + weights[action] >= r:
