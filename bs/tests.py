@@ -8,7 +8,7 @@ import play_game,policy,simulators,qlearn,random,model_based
 def baseline(nplayers, num_card_values, num_cards, trials, agent=None, sketch_list = None, confidence_list = None, learn_list = None, verbose=False):
     print "Determining baseline using learning SketchyPolicy agents."
     if sketch_list is None:
-        sketch_list = [0.5 for _ in range(nplayers)]
+        sketch_list = [0.1 for _ in range(nplayers)]
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
@@ -21,7 +21,8 @@ def baseline(nplayers, num_card_values, num_cards, trials, agent=None, sketch_li
         ppolicy = policy.SketchyPolicy(game,sketch_list[i],confidence=confidence_list[i],learn=learn_list[i])
         apolicies = []
         for t in range(nplayers):
-            apolicies.append(policy.SketchyPolicy(game,sketch_list[t],confidence=confidence_list[t],learn=learn_list[t]).decision)
+            if t != i: apolicies.append(policy.SketchyPolicy(game,sketch_list[t],confidence=confidence_list[t],learn=learn_list[t]).decision)
+            else: apolicies.append(policy.LessStupidPolicy(game).decision)
         game.setPolicies(apolicies)
         simulators.allsetsimulate(game,ppolicy.decision,numTrials=trials,verbose=verbose)
         print "Wins observed:",game.wins
@@ -35,7 +36,7 @@ def baseline(nplayers, num_card_values, num_cards, trials, agent=None, sketch_li
 def oracle(nplayers, num_card_values, num_cards, trials, agent=None, sketch_list = None, confidence_list = None, learn_list = None, verbose=False):
     print "Determining oracle using learning SketchyPolicy agents."
     if sketch_list is None:
-        sketch_list = [0.5 for _ in range(nplayers)]
+        sketch_list = [0.1 for _ in range(nplayers)]
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
@@ -44,11 +45,12 @@ def oracle(nplayers, num_card_values, num_cards, trials, agent=None, sketch_list
         if agent is not None:
             if agent != i: continue
         print "Simulating agent",i,"..."
-        game = play_game.BSGame(nplayers,[num_cards for _ in range(num_card_values)],i,verbose=0)
+        game = play_game.BSGame(nplayers,[num_cards for _ in range(num_card_values)],i,verbose=0,oracle=True)
         ppolicy = policy.SketchyPolicy(game,sketch_list[i],confidence=confidence_list[i],learn=learn_list[i])
         apolicies = []
         for t in range(nplayers):
-            apolicies.append(policy.SketchyPolicy(game,sketch_list[t],confidence=confidence_list[t],learn=learn_list[t]).decision)
+            if t != i: apolicies.append(policy.SketchyPolicy(game,sketch_list[t],confidence=confidence_list[t],learn=learn_list[t]).decision)
+            else: apolicies.append(policy.LessStupidPolicy(game).decision)
         game.setPolicies(apolicies)
         simulators.allsetsimulate(game,ppolicy.decision,numTrials=trials,oracle=True,verbose=False)
         print "Wins observed:",game.wins

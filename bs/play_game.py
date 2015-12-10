@@ -5,7 +5,7 @@ from copy import deepcopy
 
 class BSGameState():
     # (nplayers: 3, card_counts: [2, 6, 1])
-    def __init__(self, nplayers, card_counts):
+    def __init__(self, nplayers, card_counts, oracle=-1):
         self.nplayers = nplayers
         self.hands = [] # hands, pile, knowledge all indexed by player: [[0, 1, 0], [2, 0, 0]]
         self.pile = [] # contribution per player to pile
@@ -21,9 +21,19 @@ class BSGameState():
                 self.pile[player].append(0)
                 self.hands[player].append(0)
 
+        if oracle != -1:
+            handSize = sum(card_counts) / nplayers
+            ranksForOracle = sum(i for i in range(oracle,len(card_counts),nplayers))
+            for i in range(oracle,len(card_counts),nplayers):
+                cards = min(card_counts[i],handSize/ranksForOracle)
+                self.hands[oracle][i] += cards
+                card_counts[i] -= cards
+
         cards = [n for n, count in enumerate(card_counts) if count > 0] # card indexes w nonzero counts
         while cards:
             for player in range(nplayers):
+                if oracle != -1:
+                    if player == oracle: continue
                 chosen_card = random.choice(cards)
                 self.hands[player][chosen_card] += 1
                 card_counts[chosen_card] -= 1
@@ -74,10 +84,11 @@ class BSGameState():
 
 class BSGame(HiddenStateMDP):
     # (nplayers: 3, card_counts: (2, 6, 1), policies: list of state:action maps,agent_index: 0)
-    def __init__(self,nplayers,card_counts,agent_index,verbose=0):
+    def __init__(self,nplayers,card_counts,agent_index,verbose=0,oracle=False):
         self.nplayers = nplayers
         self.card_counts = card_counts
-        self.gameState = BSGameState(nplayers, list(card_counts))
+        self.oracle=oracle
+        self.gameState = BSGameState(nplayers, list(card_counts), agent_index if self.oracle else -1)
         self.agent_index = agent_index
         self.policies = None
         self.verbose = verbose
@@ -90,7 +101,7 @@ class BSGame(HiddenStateMDP):
 
     # Resets the game state with the same cards and number of players.
     def restart(self):
-        self.gameState = BSGameState(self.nplayers,list(self.card_counts))
+        self.gameState = BSGameState(self.nplayers,list(self.card_counts),self.agent_index if self.oracle else -1)
         self.action_history = [{} for _ in range(self.nplayers)]
 
     # Returns the state for the agent's first turn.
