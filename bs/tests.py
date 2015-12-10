@@ -12,17 +12,16 @@ def baseline(nplayers, num_card_values, num_cards, trials, agent=None, sketch_li
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
-        learn_list = [True for _ in range(nplayers)]
+        learn_list = [False for _ in range(nplayers)]
     for i in range(nplayers):
         if agent is not None:
             if agent != i: continue
         print "Simulating agent",i,"..."
         game = play_game.BSGame(nplayers,[num_cards for _ in range(num_card_values)],i,verbose=0)
-        ppolicy = policy.SketchyPolicy(game,sketch_list[i],confidence=confidence_list[i],learn=learn_list[i])
+        ppolicy = policy.LessStupidPolicy(game)
         apolicies = []
         for t in range(nplayers):
-            if t != i: apolicies.append(policy.SketchyPolicy(game,sketch_list[t],confidence=confidence_list[t],learn=learn_list[t]).decision)
-            else: apolicies.append(policy.LessStupidPolicy(game).decision)
+            apolicies.append(policy.SketchyPolicy(game,sketch_list[t],confidence=confidence_list[t],learn=learn_list[t]).decision)
         game.setPolicies(apolicies)
         simulators.allsetsimulate(game,ppolicy.decision,numTrials=trials,verbose=verbose)
         print "Wins observed:",game.wins
@@ -40,17 +39,16 @@ def oracle(nplayers, num_card_values, num_cards, trials, agent=None, sketch_list
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
-        learn_list = [True for _ in range(nplayers)]
+        learn_list = [False for _ in range(nplayers)]
     for i in range(nplayers):
         if agent is not None:
             if agent != i: continue
         print "Simulating agent",i,"..."
         game = play_game.BSGame(nplayers,[num_cards for _ in range(num_card_values)],i,verbose=0,oracle=True)
-        ppolicy = policy.SketchyPolicy(game,sketch_list[i],confidence=confidence_list[i],learn=learn_list[i])
+        ppolicy = policy.LessStupidPolicy(game)
         apolicies = []
         for t in range(nplayers):
-            if t != i: apolicies.append(policy.SketchyPolicy(game,sketch_list[t],confidence=confidence_list[t],learn=learn_list[t]).decision)
-            else: apolicies.append(policy.LessStupidPolicy(game).decision)
+            apolicies.append(policy.SketchyPolicy(game,sketch_list[t],confidence=confidence_list[t],learn=learn_list[t]).decision)
         game.setPolicies(apolicies)
         simulators.allsetsimulate(game,ppolicy.decision,numTrials=trials,oracle=True,verbose=False)
         print "Wins observed:",game.wins
@@ -68,7 +66,7 @@ def qlearn_learn(nplayers,num_card_values,num_cards,agent,learn_trials,test_tria
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
-        learn_list = [True for _ in range(nplayers)]
+        learn_list = [False for _ in range(nplayers)]
     print "Players have sketchiness",sketch_list
     print "Players have confidence",confidence_list
     apolicies = []
@@ -94,7 +92,7 @@ def mb_learn(nplayers,num_card_values,num_cards,agent,learn_trials,test_trials, 
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
-        learn_list = [True for _ in range(nplayers)]
+        learn_list = [False for _ in range(nplayers)]
     print "Players have sketchiness",sketch_list
     print "Players have confidence",confidence_list
     apolicies = []
@@ -122,7 +120,7 @@ def qlearn_test(nplayers,num_card_values,num_cards,agent,trials,qlearning, sketc
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
-        learn_list = [True for _ in range(nplayers)]
+        learn_list = [False for _ in range(nplayers)]
     print "Players have sketchiness",sketch_list
     print "Players have confidence",confidence_list
     apolicies = []
@@ -145,7 +143,7 @@ def allsketchy_test(nplayers, num_card_values, num_cards, trials, agent = 0, ske
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
-        learn_list = [True for _ in range(nplayers)]
+        learn_list = [False for _ in range(nplayers)]
     print "Players have sketchiness",sketch_list
     print "Players have confidence",confidence_list
     apolicies = []
@@ -165,7 +163,7 @@ def human_test(nplayers, num_card_values, num_cards, agent, qlearnings = None, s
     if confidence_list is None:
         confidence_list = [1 for _ in range(nplayers)]
     if learn_list is None:
-        learn_list = [True for _ in range(nplayers)]
+        learn_list = [False for _ in range(nplayers)]
     print "Players have sketchiness",sketch_list
     print "Players have confidence",confidence_list
     apolicies = []

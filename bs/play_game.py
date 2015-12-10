@@ -23,7 +23,7 @@ class BSGameState():
 
         if oracle != -1:
             handSize = sum(card_counts) / nplayers
-            ranksForOracle = sum(i for i in range(oracle,len(card_counts),nplayers))
+            ranksForOracle = sum(1 for i in range(oracle,len(card_counts),nplayers))
             for i in range(oracle,len(card_counts),nplayers):
                 cards = min(card_counts[i],handSize/ranksForOracle)
                 self.hands[oracle][i] += cards
