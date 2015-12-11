@@ -1,0 +1,39 @@
+Determining baseline using DishonestPolicy agents.
+Simulating agent 0 ...
+Wins observed: [186, 367, 133, 314]
+Agent in position 0 has a win rate of  0.186
+Simulating agent 1 ...
+Wins observed: [263, 190, 445, 102]
+Agent in position 1 has a win rate of  0.19
+Simulating agent 2 ...
+Wins observed: [95, 216, 286, 403]
+Agent in position 2 has a win rate of  0.286
+Simulating agent 3 ...
+Wins observed: [372, 71, 296, 261]
+Agent in position 3 has a win rate of  0.261
+Determining baseline using DishonestPolicy agents.
+Simulating agent 0 ...
+Wins observed: [209, 354, 118, 319]
+Agent in position 0 has a win rate of  0.209
+Simulating agent 1 ...
+Wins observed: [296, 197, 427, 80]
+Agent in position 1 has a win rate of  0.197
+Simulating agent 2 ...
+Wins observed: [93, 227, 290, 390]
+Agent in position 2 has a win rate of  0.29
+Simulating agent 3 ...
+Wins observed: [332, 76, 312, 280]
+Agent in position 3 has a win rate of  0.28
+Determining baseline using DishonestPolicy agents.
+Simulating agent 0 ...
+Wins observed: [252, 312, 97, 339]
+Agent in position 0 has a win rate of  0.252
+Simulating agent 1 ...
+Wins observed: [276, 213, 413, 98]
+Agent in position 1 has a win rate of  0.213
+Simulating agent 2 ...
+Wins observed: [105, 225, 302, 368]
+Agent in position 2 has a win rate of  0.302
+Simulating agent 3 ...
+Wins observed: [315, 93, 295, 297]
+Agent in position 3 has a win rate of  0.297

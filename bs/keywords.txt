@@ -1,0 +1,6 @@
+q-learning
+reinforcement learning
+BS
+cheat
+imperfect information
+game
