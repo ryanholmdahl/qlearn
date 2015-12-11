@@ -1,4 +1,4 @@
-import random, itertools
+import itertools
 from util import HiddenStateMDP
 from policy import *
 from copy import deepcopy
