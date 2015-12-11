@@ -6,7 +6,7 @@ import play_game, policy, simulators, qlearn, random
 # in which case the deck would be [4, 4, 4, 4, 4]. Generally, the wins should be fairly evenly distributed, slightly
 # favoring earlier players.
 def baseline(nplayers, num_card_values, num_cards, trials, agent=None, dishonesty_list=None, confidence_list=None, learn_list=None, verbose=False):
-    print "Determining baseline using learning SketchyPolicy agents."
+    print "Determining baseline using learning DishonestPolicy agents."
     if not dishonesty_list:
         dishonesty_list = [0.1] * nplayers
     if not confidence_list:
@@ -32,7 +32,7 @@ def baseline(nplayers, num_card_values, num_cards, trials, agent=None, dishonest
 # on it. Formatting is the same as a call to baseline. Generally, the win rate for the oracle is above
 # 90%.
 def oracle(nplayers, num_card_values, num_cards, trials, agent=None, dishonesty_list=None, confidence_list=None, learn_list=None, verbose=False):
-    print "Determining oracle using learning SketchyPolicy agents."
+    print "Determining oracle using learning DishonestPolicy agents."
     if not dishonesty_list:
         dishonesty_list = [0.1] * nplayers
     if not confidence_list:
@@ -56,7 +56,7 @@ def oracle(nplayers, num_card_values, num_cards, trials, agent=None, dishonesty_
 # Uses qlearning to create an agent against some adversaries. The adversaries will have random dishonesty and confidence
 # unless lists are passed to the respective parameters. The algorithm learns for |learn_trials| iterations before being
 # evaluated for |test_trials| iterations.
-def qlearn_learn(nplayers, num_card_values, num_cards, agent, learn_trials, test_trials, featureExtractor=qlearn.snazzyFeatureExtractor, explorationProb=0.2, maxIters=1000, dishonesty_list=None, confidence_list=None, learn_list=None, verbose=False):
+def qlearn_learn(nplayers, num_card_values, num_cards, agent, learn_trials, test_trials, featureExtractor=qlearn.FeatureExtractor, explorationProb=0.2, maxIters=1000, dishonesty_list=None, confidence_list=None, learn_list=None, verbose=False):
     print "Running qlearning as agent", agent, "."
     game = play_game.BSGame(nplayers, [num_cards for _ in range(num_card_values)], agent, verbose=0)
     if not dishonesty_list:
@@ -105,10 +105,10 @@ def qlearn_test(nplayers, num_card_values, num_cards, agent, trials, qlearning, 
     print "Wins observed:", game.wins
     print "Agent in position", agent, "has a win rate of", str(float(game.wins[agent])/sum(game.wins)), '\n'
 
-# Runs |trials| games of sketchy policies playing against one another. Ideally, the agent parameter should make no difference,
+# Runs |trials| games of dishonest policies playing against one another. Ideally, the agent parameter should make no difference,
 # but it is available for testing purposes (to ensure that it has no effect).
-def allsketchy_test(nplayers, num_card_values, num_cards, trials, agent=0, dishonesty_list=None, confidence_list=None, learn_list=None, verbose=False):
-    print "Running an all-sketchy simulation."
+def alldishonest_test(nplayers, num_card_values, num_cards, trials, agent=0, dishonesty_list=None, confidence_list=None, learn_list=None, verbose=False):
+    print "Running an all-dishonest simulation."
     game = play_game.BSGame(nplayers, [num_cards for _ in range(num_card_values)], agent, verbose=0)
     if not dishonesty_list:
         dishonesty_list = [random.random() for _ in range(nplayers)]

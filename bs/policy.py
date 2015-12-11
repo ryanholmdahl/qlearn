@@ -15,11 +15,11 @@ class SimplePolicy(util.PolicyGenerator):
             else:
                 return random.choice(self.hsmdp.actions(state)) # plays random action if can't be truthful
 
-# where sketch and confidence are on a scale from 0 to 1 inclusive
+# where dishonesty and confidence are on a scale from 0 to 1 inclusive
 class DishonestPolicy(util.PolicyGenerator):
-    def __init__(self, hdmdp, sketch, confidence=1, learn=False):
+    def __init__(self, hdmdp, dishonesty, confidence=1, learn=False):
         self.hsmdp = hdmdp
-        self.sketch = sketch
+        self.dishonesty = dishonesty
         self.confidence = confidence
         self.learn = learn
 
@@ -86,7 +86,7 @@ class DishonestPolicy(util.PolicyGenerator):
                     weights[action] = weight
                 return util.weightedChoice(weights)
 
-            #if we have a play, weight against lies that use future cards and weight the truth based on sketchiness
+            #if we have a play, weight against lies that use future cards and weight the truth based on dishonestyiness
             weights = {}
             for action in semitruthful:
                 weight = 1
@@ -96,10 +96,10 @@ class DishonestPolicy(util.PolicyGenerator):
                         cardOnTurnI -= len(action)
                     weight *= 1/(1+action[cardOnTurnI])
                 weights[action] = weight
-            if random.random()<(1-self.sketch) or not semitruthful:
+            if random.random()<(1-self.dishonesty) or not semitruthful:
                 return max(truthful)
             else:
-                return util.weightedChoice(weights) #exaggerate if we can and are feeling sketchy
+                return util.weightedChoice(weights) #exaggerate if we can and are feeling dishonestyy
 
             #note that we do not have an option to play only some of the required card, as I can't think of a situation where we'd want to
 

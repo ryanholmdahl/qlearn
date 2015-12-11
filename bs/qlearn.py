@@ -47,81 +47,39 @@ class QLearningAlgorithm(util.RLAlgorithm):
         features = self.featureExtractor(state, action)
         for entry in features:
             self.weights[entry[0]] = self.weights.get(entry[0], 0) + entry[1] * featureMultiplier
-            # if entry[0] in self.weights:
-            #     self.weights[entry[0]] += entry[1] * featureMultiplier
-            # else:
-            #     self.weights[entry[0]] = entry[1] * featureMultiplier
 
 # Return a singleton list containing indicator feature for the (state, action)
 # pair.  Provides no generalization.
-def snazzyWarmStart():
+def WarmStart():
     weights = collections.Counter()
     weights["hasnextcard"] = 1
     weights["smallesthand"] = 1
     return weights
 
-
-def snazzyFeatureExtractor(state, action):
+def FeatureExtractor(state, action):
     identityFeature = (state, action)
     if state[0] == "someone_wins": return [((identityFeature), 1)]
+
+    features = []
 
     if state[0] == 'play':
         state_status, hand, knowledge, pilesize, bust_know, handsizes = state
     else:
         state_status, hand, knowledge, pilesize, bust_know, handsizes, bs_play = state
 
-    features = []
-    #features.append((identityFeature, 1))
-
     nplayers = len(handsizes)
-
-    #features.append((state_status, 1))
+    nranks = len(hand)
 
     #the hand
-    nranks = len(hand)
-    #features.append(("cards_"+str(hand), 1)) #indicator
-    #features.append(("handsize_"+str(sum(hand)), 1))
     features.append(("have_card", 1 if hand[0] > 0 else 0)) #do we have the current card at all?
     features.append(("nofcard_"+str(hand[0]), 1)) #how many of the current card do we own?
     
-    # hasCardList = []
-    # for card in range(len(hand)):
-    #     if hand[card] == 0:
-    #         hasCardList.append(0)
-    #     else:
-    #         hasCardList.append(1)
-   #features.append(("hascards_"+str(hasCardList), 1))
 
     nextind = nplayers if nranks > nplayers else nplayers % nranks
-    features.append(('hasnextcard', 1 if hand[nextind] > 0 else 0)) # do we have the next card to play
-    features.append(("nnextcard_"+str(hand[nextind]), 1))
-
-    # if nranks > nplayers:
-    #     features.append(('hasnextcard', 1 if hand[nplayers] > 0 else 0)) # do we have the next card to play
-    #     features.append(("nnextcard_"+str(hand[nplayers]), 1)) #how many of the next card do we own?
-
-    #the pile
-    # features.append(("pile_"+str(knowledge), 1)) #indicator
-    # features.append(("pilesize", pilesize))
-    # features.append(("npileknowledge", sum(knowledge)))
-    # hasCardList = []
-    # for card in range(len(knowledge)):
-    #     if knowledge[card] == 0:
-    #         hasCardList.append(0)
-    #     else:
-    #         hasCardList.append(1)
-    #.append(("pilehascards_"+str(hasCardList), 1))
-    # features.append(("ncardinpile"+str(knowledge[0]), 1)) #how many of the current card is in the pile?
-
-    #knowledge
-    #   features.append(("knowledge_"+str(bust_know), 1))
-    #    features.append(("nknowledge", sum(bust_know[1])))
-    #    features.append(("knowledge_cur", bust_know[1][0]))
-
-    # features.append(("cardsremoved_"+str(cardsRemoved), 1))
+    features.append(('hasnextcard', 1 if hand[nextind] > 0 else 0)) # do we have the next card to play?
+    features.append(("nnextcard_"+str(hand[nextind]), 1)) # how many of the next card do we own?
 
     #opponent cards
-    # features.append(("opphands_"+str(handsizes), 1))
     nHandsLarger = 0
     nHandsSmaller = 0
     nHandsSame = -1 #compensate for the one whose hand this is
@@ -134,10 +92,8 @@ def snazzyFeatureExtractor(state, action):
             nHandsSame += 1
 
     features.append(("handsizerank_"+str(nHandsSmaller), 1)) #what's our relative hand size?
-    # features.append(("handsizerank", nHandsSmaller+1))
     #bs
     if len(state) == 7:
-        #features.append(("play_"+str(bs_play), 1))
         features.append((action+"_nplayed_"+str(bs_play[1]), 1)) #how many did they play?
         features.append((action+"_player_"+str(bs_play[0]), 1)) #who played it?
         know_nothave = knowledge[0] + hand[0]
@@ -149,10 +105,6 @@ def snazzyFeatureExtractor(state, action):
                 features.append((action+"_has_card", 1 if bust_know[1][0] > 0 else 0))
         features.append((action+"_know_nothave_"+str(know_nothave), 1)) #how many cards do we know they don't have?
         features.append((action+"_sum_know_nothave_nplayed"+str(know_nothave + bs_play[1]), 1)) #what's the sum of the number we know they don't have and the number they played?
-        # features.append(("played_all", 1 if bs_play[1] == 3 else 0)) #we need to get the actual max somehow
-    #    features.append(("nplayed", bs_play[1]))
-    #    features.append(("player_cards", handsizes[bs_play[0]]))
-    #    features.append(("played_cards_owned", hand[0]))
 
     features.append(("action_"+str(action), 1))
     if action != "bs" and action !="pass":
@@ -171,8 +123,5 @@ def snazzyFeatureExtractor(state, action):
         features.append(("nextcard_played", 1 if nextCardsPlayed > 0 else 0))
         features.append(("nnextcards_played_"+str(nextCardsPlayed), 1)) #how many of the next card did we play?
 
-    # prefix = str(action)
-    # for i in range(1, len(features)):
-    #     features[i] = (prefix+features[i][0], features[i][1])
     return features
 
