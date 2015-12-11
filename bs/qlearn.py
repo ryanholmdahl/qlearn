@@ -4,12 +4,12 @@ import util
 import collections
 
 class QLearningAlgorithm(util.RLAlgorithm):
-    def __init__(self, actions, discount, featureExtractor, explorationProb=0.2, warmStart=None):
+    def __init__(self, actions, discount, featureExtractor, explorationProb=0.2):
         self.actions = actions
         self.discount = discount
         self.featureExtractor = featureExtractor
         self.explorationProb = explorationProb
-        self.weights = warmStart() if warmStart else collections.Counter()
+        self.weights = collections.Counter()
         self.numIters = 0
 
     # Return the Q function associated with the weights and features
@@ -48,15 +48,7 @@ class QLearningAlgorithm(util.RLAlgorithm):
         for entry in features:
             self.weights[entry[0]] = self.weights.get(entry[0], 0) + entry[1] * featureMultiplier
 
-# Return a singleton list containing indicator feature for the (state, action)
-# pair.  Provides no generalization.
-def WarmStart():
-    weights = collections.Counter()
-    weights["hasnextcard"] = 1
-    weights["smallesthand"] = 1
-    return weights
-
-def FeatureExtractor(state, action):
+def bsFeatureExtractor(state, action):
     identityFeature = (state, action)
     if state[0] == "someone_wins": return [((identityFeature), 1)]
 
@@ -93,7 +85,7 @@ def FeatureExtractor(state, action):
 
     features.append(("handsizerank_"+str(nHandsSmaller), 1)) #what's our relative hand size?
     #bs
-    if len(state) == 7:
+    if state_status == "bs":
         features.append((action+"_nplayed_"+str(bs_play[1]), 1)) #how many did they play?
         features.append((action+"_player_"+str(bs_play[0]), 1)) #who played it?
         know_nothave = knowledge[0] + hand[0]

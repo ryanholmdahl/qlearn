@@ -1,1 +1,1 @@
-Q-Learning on Games of Imperfect Information
+Q-learning on Games of Imperfect Information

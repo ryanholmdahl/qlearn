@@ -1,4 +1,4 @@
-Determining oracle using DishonestPolicy agents.
+Determining oracle using DishonestPolicy adversaries.
 Simulating agent 0 ...
 Wins observed: [4986, 7, 0, 7]
 Agent in position 0 has a win rate of  0.9972
@@ -11,7 +11,7 @@ Agent in position 2 has a win rate of  0.9818
 Simulating agent 3 ...
 Wins observed: [78, 0, 102, 4820]
 Agent in position 3 has a win rate of  0.964
-Determining oracle using DishonestPolicy agents.
+Determining oracle using DishonestPolicy adversaries.
 Simulating agent 0 ...
 Wins observed: [4996, 4, 0, 0]
 Agent in position 0 has a win rate of  0.9992
@@ -24,7 +24,7 @@ Agent in position 2 has a win rate of  0.9912
 Simulating agent 3 ...
 Wins observed: [30, 0, 46, 4924]
 Agent in position 3 has a win rate of  0.9848
-Determining oracle using DishonestPolicy agents.
+Determining oracle using DishonestPolicy adversaries.
 Simulating agent 0 ...
 Wins observed: [4994, 3, 0, 3]
 Agent in position 0 has a win rate of  0.9988

@@ -7,7 +7,7 @@ class BSGameState():
         self.nplayers = nplayers
         self.hands = [] # hands, pile, knowledge all indexed by player: [[0, 1, 0], [2, 0, 0]]
         self.pile = [] # contribution per player to pile
-        self.knowledge = [] # player's knowledge of opponents' hands
+        self.knowledge = [] # player's knowledge of opponents' hands acquired by busts
         self.last_play = None
         self.rotation_offset = 0
         self.turn_number = 0
@@ -82,7 +82,7 @@ class BSGame(HiddenStateMDP):
         self.policies = None
         self.verbose = verbose
         self.wins = [0] * nplayers
-        self.action_history = [{}] * nplayers
+        self.action_history = [{}] * nplayers # records each player's shown honest; not used in this experiment
 
     # Resets the game state with the same cards and number of players.
     def restart(self):

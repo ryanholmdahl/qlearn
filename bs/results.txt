@@ -1,27 +1,23 @@
 Running qlearning as agent 0 .
 Players have dishonesty [0.1, 0.1, 0.1, 0.1]
-Players have confidence [1, 1, 1, 1]
 Learning...
 Learning complete. Now simulating tests...
 Wins observed: [747, 13, 33, 18]
 Agent in position 0 has a win rate of 0.921085080148
 Running qlearning as agent 1 .
 Players have dishonesty [0.1, 0.1, 0.1, 0.1]
-Players have confidence [1, 1, 1, 1]
 Learning...
 Learning complete. Now simulating tests...
 Wins observed: [8, 676, 27, 31]
 Agent in position 1 has a win rate of 0.911051212938
 Running qlearning as agent 2 .
 Players have dishonesty [0.1, 0.1, 0.1, 0.1]
-Players have confidence [1, 1, 1, 1]
 Learning...
 Learning complete. Now simulating tests...
 Wins observed: [14, 8, 797, 34]
 Agent in position 2 has a win rate of 0.934349355217
 Running qlearning as agent 3 .
 Players have dishonesty [0.1, 0.1, 0.1, 0.1]
-Players have confidence [1, 1, 1, 1]
 Learning...
 Learning complete. Now simulating tests...
 Wins observed: [17, 11, 36, 693]
@@ -29,28 +25,24 @@ Agent in position 3 has a win rate of 0.915455746367
 
 Running qlearning as agent 0 .
 Players have dishonesty [0.5, 0.5, 0.5, 0.5]
-Players have confidence [1, 1, 1, 1]
 Learning...
 Learning complete. Now simulating tests...
 Wins observed: [728, 4, 24, 17]
 Agent in position 0 has a win rate of 0.941785252264
 Running qlearning as agent 1 .
 Players have dishonesty [0.5, 0.5, 0.5, 0.5]
-Players have confidence [1, 1, 1, 1]
 Learning...
 Learning complete. Now simulating tests...
 Wins observed: [8, 771, 10, 34]
 Agent in position 1 has a win rate of 0.936816524909
 Running qlearning as agent 2 .
 Players have dishonesty [0.5, 0.5, 0.5, 0.5]
-Players have confidence [1, 1, 1, 1]
 Learning...
 Learning complete. Now simulating tests...
 Wins observed: [5, 8, 831, 7]
 Agent in position 2 has a win rate of 0.976498237368
 Running qlearning as agent 3 .
 Players have dishonesty [0.5, 0.5, 0.5, 0.5]
-Players have confidence [1, 1, 1, 1]
 Learning...
 Learning complete. Now simulating tests...
 Wins observed: [3, 12, 25, 655]
@@ -58,28 +50,24 @@ Agent in position 3 has a win rate of 0.942446043165
 
 Running qlearning as agent 0 .
 Players have dishonesty [0.75, 0.75, 0.75, 0.75]
-Players have confidence [1, 1, 1, 1]
 Learning...
 Learning complete. Now simulating tests...
 Wins observed: [780, 2, 24, 13]
 Agent in position 0 has a win rate of 0.952380952381
 Running qlearning as agent 1 .
 Players have dishonesty [0.75, 0.75, 0.75, 0.75]
-Players have confidence [1, 1, 1, 1]
 Learning...
 Learning complete. Now simulating tests...
 Wins observed: [6, 835, 6, 23]
 Agent in position 1 has a win rate of 0.959770114943
 Running qlearning as agent 2 .
 Players have dishonesty [0.75, 0.75, 0.75, 0.75]
-Players have confidence [1, 1, 1, 1]
 Learning...
 Learning complete. Now simulating tests...
 Wins observed: [9, 4, 903, 6]
 Agent in position 2 has a win rate of 0.979392624729
 Running qlearning as agent 3 .
 Players have dishonesty [0.75, 0.75, 0.75, 0.75]
-Players have confidence [1, 1, 1, 1]
 Learning...
 Learning complete. Now simulating tests...
 Wins observed: [3, 3, 23, 855]

@@ -1,4 +1,4 @@
-Determining baseline using DishonestPolicy agents.
+Determining baseline using SimplePolicy agent and DishonestPolicy adversaries.
 Simulating agent 0 ...
 Wins observed: [186, 367, 133, 314]
 Agent in position 0 has a win rate of  0.186
@@ -11,7 +11,7 @@ Agent in position 2 has a win rate of  0.286
 Simulating agent 3 ...
 Wins observed: [372, 71, 296, 261]
 Agent in position 3 has a win rate of  0.261
-Determining baseline using DishonestPolicy agents.
+Determining baseline using SimplePolicy agent and DishonestPolicy adversaries.
 Simulating agent 0 ...
 Wins observed: [209, 354, 118, 319]
 Agent in position 0 has a win rate of  0.209
@@ -24,7 +24,7 @@ Agent in position 2 has a win rate of  0.29
 Simulating agent 3 ...
 Wins observed: [332, 76, 312, 280]
 Agent in position 3 has a win rate of  0.28
-Determining baseline using DishonestPolicy agents.
+Determining baseline using SimplePolicy agent and DishonestPolicy adversaries.
 Simulating agent 0 ...
 Wins observed: [252, 312, 97, 339]
 Agent in position 0 has a win rate of  0.252

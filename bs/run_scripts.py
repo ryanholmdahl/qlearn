@@ -38,7 +38,7 @@ except:
     ntest = 1000
 
 ntrials_nonlearning = 1000
-exp_prob = 0.8
+exp_prob = 0.2
 
 # baseline(nplayers, deckrange, cards_pernum, ntrials_nonlearning)
 # oracle(nplayers, deckrange, cards_pernum, ntrials_nonlearning)

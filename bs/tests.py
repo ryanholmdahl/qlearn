@@ -6,7 +6,7 @@ import play_game, policy, simulators, qlearn, random
 # in which case the deck would be [4, 4, 4, 4, 4]. Generally, the wins should be fairly evenly distributed, slightly
 # favoring earlier players.
 def baseline(nplayers, num_card_values, num_cards, trials, agent=None, dishonesty_list=None, confidence_list=None, learn_list=None, verbose=False):
-    print "Determining baseline using learning DishonestPolicy agents."
+    print "Determining baseline using SimplePolicy agent and DishonestPolicy adversaries."
     if not dishonesty_list:
         dishonesty_list = [0.1] * nplayers
     if not confidence_list:
@@ -32,7 +32,7 @@ def baseline(nplayers, num_card_values, num_cards, trials, agent=None, dishonest
 # on it. Formatting is the same as a call to baseline. Generally, the win rate for the oracle is above
 # 90%.
 def oracle(nplayers, num_card_values, num_cards, trials, agent=None, dishonesty_list=None, confidence_list=None, learn_list=None, verbose=False):
-    print "Determining oracle using learning DishonestPolicy agents."
+    print "Determining oracle using DishonestPolicy adversaries."
     if not dishonesty_list:
         dishonesty_list = [0.1] * nplayers
     if not confidence_list:
@@ -56,7 +56,7 @@ def oracle(nplayers, num_card_values, num_cards, trials, agent=None, dishonesty_
 # Uses qlearning to create an agent against some adversaries. The adversaries will have random dishonesty and confidence
 # unless lists are passed to the respective parameters. The algorithm learns for |learn_trials| iterations before being
 # evaluated for |test_trials| iterations.
-def qlearn_learn(nplayers, num_card_values, num_cards, agent, learn_trials, test_trials, featureExtractor=qlearn.FeatureExtractor, explorationProb=0.2, maxIters=1000, dishonesty_list=None, confidence_list=None, learn_list=None, verbose=False):
+def qlearn_learn(nplayers, num_card_values, num_cards, agent, learn_trials, test_trials, featureExtractor=qlearn.bsFeatureExtractor, explorationProb=0.2, maxIters=1000, dishonesty_list=None, confidence_list=None, learn_list=None, verbose=False):
     print "Running qlearning as agent", agent, "."
     game = play_game.BSGame(nplayers, [num_cards for _ in range(num_card_values)], agent, verbose=0)
     if not dishonesty_list:
@@ -66,7 +66,7 @@ def qlearn_learn(nplayers, num_card_values, num_cards, agent, learn_trials, test
     if not learn_list:
         learn_list = [False] * nplayers
     print "Players have dishonesty", dishonesty_list
-    print "Players have confidence", confidence_list
+    # print "Players have confidence", confidence_list
     apolicies = []
     for t in range(nplayers):
         apolicies.append(policy.DishonestPolicy(game, dishonesty_list[t], confidence=confidence_list[t], learn=learn_list[t]).decision)
@@ -94,7 +94,7 @@ def qlearn_test(nplayers, num_card_values, num_cards, agent, trials, qlearning, 
     if not learn_list:
         learn_list = [False] * nplayers
     print "Players have dishonesty", dishonesty_list
-    print "Players have confidence", confidence_list
+    # print "Players have confidence", confidence_list
     apolicies = []
     for t in range(nplayers):
         apolicies.append(policy.DishonestPolicy(game, dishonesty_list[t], confidence=confidence_list[t], learn=learn_list[t]).decision)
@@ -117,7 +117,7 @@ def alldishonest_test(nplayers, num_card_values, num_cards, trials, agent=0, dis
     if not learn_list:
         learn_list = [False] * nplayers
     print "Players have dishonesty", dishonesty_list
-    print "Players have confidence", confidence_list
+    # print "Players have confidence", confidence_list
     apolicies = []
     for t in range(nplayers):
         apolicies.append(policy.DishonestPolicy(game, dishonesty_list[t], confidence=confidence_list[t], learn=learn_list[t]).decision)
@@ -138,7 +138,7 @@ def human_test(nplayers, num_card_values, num_cards, agent, qlearnings=None, dis
     if not learn_list:
         learn_list = [False] * nplayers
     print "Players have dishonesty", dishonesty_list
-    print "Players have confidence", confidence_list
+    # print "Players have confidence", confidence_list
     apolicies = []
     for t in range(nplayers):
         if not qlearnings or not qlearnings[t]:

@@ -20,7 +20,7 @@ class DishonestPolicy(util.PolicyGenerator):
     def __init__(self, hdmdp, dishonesty, confidence=1, learn=False):
         self.hsmdp = hdmdp
         self.dishonesty = dishonesty
-        self.confidence = confidence
+        self.confidence = confidence # this value is only used for adversary learning, which is inactive
         self.learn = learn
 
     def decision(self, state, id=None):
@@ -58,7 +58,7 @@ class DishonestPolicy(util.PolicyGenerator):
             #the ai takes into account the likelihood that the opponent is lying based on previous, similar moves.
             #check advLearnCall in play_game.py for details on what exactly is stored
             learnMult = 1
-            if self.learn:
+            if self.learn: # this feature is inactive, but maintained for legacy
                 #we check if this kind of play has happened before
                 if ("honesty", changeForPlayer, bs_play[1]) in self.hsmdp.action_history[bs_play[0]]:
                     #count up all the actions
@@ -71,7 +71,7 @@ class DishonestPolicy(util.PolicyGenerator):
             #we decrease the likelihood of calling based on the number of players, as we can just let someone else do it
             #we increase the likelihood of calling based on how badly a loss hurts the player
             #we decrease the likelihood of calling based on how badly a loss hurts the caller
-            call = random.random() < (1 - prob) / self.hsmdp.nplayers * changeForPlayer / changeForCaller * learnMult
+            call = random.random() < (1 - prob) / self.hsmdp.nplayers * changeForPlayer / changeForCaller
             return 'bs' if call else 'pass'
         else:
             truthful = [a for a in self.hsmdp.actions(state) if a[0] > 0 and sum(a) == a[0]] #entirely honest plays

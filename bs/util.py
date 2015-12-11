@@ -22,11 +22,8 @@ class PolicyGenerator:
     def decision(self, state): raise NotImplementedError("Override me")
 
 class RLAlgorithm:
-    # Your algorithm will be asked to produce an action given a state.
     def getAction(self, state): raise NotImplementedError("Override me")
 
-    # We will call this function when simulating an MDP, and you should update
-    # parameters.
     # If |state| is a terminal state, this function will be called with (s, a,
     # 0, None). When this function is called, it indicates that taking action
     # |action| in state |state| resulted in reward |reward| and a transition to state
