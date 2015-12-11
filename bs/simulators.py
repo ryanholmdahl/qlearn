@@ -4,18 +4,16 @@ def rlsimulate(hsmdp, rl, numTrials=10, maxIterations=1000, verbose=False):
     for trial in range(numTrials):
         hsmdp.restart()
         state = hsmdp.startState()
-        if state == None:
-            continue
+        if not state: continue
         sequence = [state]
         totalDiscount = 1
         totalReward = 0
         for _ in range(maxIterations):
             action = rl.getAction(state)
             newState, reward = hsmdp.succAndReward(state, action)
-            if newState == None:
+            if not newState:
                 rl.incorporateFeedback(state, action, 0, None)
                 break
-            # print action
 
             sequence.append(action)
             sequence.append(reward)
@@ -27,7 +25,6 @@ def rlsimulate(hsmdp, rl, numTrials=10, maxIterations=1000, verbose=False):
             state = newState
         if verbose:
             print "\ntrial", trial, "reward", totalReward
-            # print "Trial %d (totalReward = %s): %s" % (trial, totalReward, sequence)
         totalRewards.append(totalReward)
     return totalRewards
 
@@ -41,8 +38,7 @@ def allsetsimulate(hsmdp, agent_decision, numTrials=10, maxIterations=1000, orac
         totalDiscount = 1
         totalReward = 0
         for _ in range(maxIterations):
-            if state == None:
-                break
+            if not state: break
             if state[0] == "someone_wins":
                 action = "end_game"
             else:
@@ -65,7 +61,7 @@ def allsetsimulate(hsmdp, agent_decision, numTrials=10, maxIterations=1000, orac
         totalRewards.append(totalReward)
     return totalRewards
 
-
+# Runs a simulation with a user-input human player.
 def humansimulate(hsmdp, maxIterations=1000):
     hsmdp.verbose = True
     hsmdp.restart()
@@ -74,8 +70,7 @@ def humansimulate(hsmdp, maxIterations=1000):
     totalDiscount = 1
     totalReward = 0
     for _ in range(maxIterations):
-        if state == None:
-            break
+        if not state: break
         if state[0] == "someone_wins":
             action = "end_game"
         else:

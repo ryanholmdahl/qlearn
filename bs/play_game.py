@@ -68,27 +68,26 @@ class BSGameState():
         for player in range(self.nplayers):
             self.rotate(self.hands[player])
             self.rotate(self.pile[player])
-            if self.knowledge[player] is not None:
+            if self.knowledge[player]:
                 self.knowledge[player] = (self.knowledge[player][0], self.rotateTuple(self.knowledge[player][1]))
         self.rotation_offset += 1
 
 class BSGame(HiddenStateMDP):
-    # (nplayers: 3, card_counts: (2, 6, 1), policies: list of state:action maps, agent_index: 0)
     def __init__(self, nplayers, card_counts, agent_index, verbose=0, oracle=False):
         self.nplayers = nplayers
         self.card_counts = card_counts
-        self.oracle=oracle
+        self.oracle = oracle
         self.gameState = BSGameState(nplayers, list(card_counts), agent_index if self.oracle else -1)
         self.agent_index = agent_index
         self.policies = None
         self.verbose = verbose
-        self.wins = [0 for _ in range(nplayers)]
-        self.action_history = [{} for _ in range(nplayers)]
+        self.wins = [0] * nplayers
+        self.action_history = [{}] * nplayers
 
     # Resets the game state with the same cards and number of players.
     def restart(self):
         self.gameState = BSGameState(self.nplayers, list(self.card_counts), self.agent_index if self.oracle else -1)
-        self.action_history = [{} for _ in range(self.nplayers)]
+        self.action_history = [{}] * self.nplayers
 
     # Returns the state for the agent's first turn.
     def startState(self):
@@ -174,11 +173,11 @@ class BSGame(HiddenStateMDP):
 
     # Returns the number of cards playable for the current "at-bat" card.
     def getMaxPlayable(self):
-        return self.card_counts[self.gameState.rotation_offset%len(self.card_counts)]
+        return self.card_counts[self.gameState.rotation_offset % len(self.card_counts)]
 
     # Resets the number of wins for each player.
     def resetWins(self):
-        self.wins = [0 for _ in range(self.nplayers)]
+        self.wins = [0] * self.nplayers
 
     # Returns true if the last play, stored in the game state, was honest.
     def lastPlayIsHonest(self):
@@ -223,7 +222,7 @@ class BSGame(HiddenStateMDP):
     def playAdvTurn(self, current_player):
         if self.gameState.turn_number > 0: # we don't want to rotate before the first turn
             self.gameState.rotateCards()
-        self.gameState.turn_number+=1
+        self.gameState.turn_number += 1
         state = ("play", tuple(self.gameState.hands[current_player]), tuple(self.gameState.pile[current_player]),
             self.getPileSize(), self.gameState.knowledge[current_player], self.getHandSizes())
         if self.verbose == 2: self.pprint(state, current_player)

@@ -40,8 +40,8 @@ except:
 ntrials_nonlearning = 1000
 exp_prob = 0.8
 
-baseline(nplayers, deckrange, cards_pernum, ntrials_nonlearning)
-oracle(nplayers, deckrange, cards_pernum, ntrials_nonlearning)
+# baseline(nplayers, deckrange, cards_pernum, ntrials_nonlearning)
+# oracle(nplayers, deckrange, cards_pernum, ntrials_nonlearning)
 qlearning = qlearn_learn(nplayers, deckrange, cards_pernum, agent, ntrain, ntest, explorationProb=exp_prob, dishonesty_list=dishonesty_list, verbose=False)
 
 #mblearning = mb_learn(3, 4, 4, agent, 1000, 1000, dishonesty_list=dishonesty_list, verbose=True)
