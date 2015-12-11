@@ -1,25 +1,7 @@
 import random, util, collections
 from util import cmb
 
-# naive policy:
-#   always passes on bs opportunities
-#   plays all valid/truthful cards each time if possible
-#   plays some minimal number of invalid cards otherwise
-class NaivePolicy(util.PolicyGenerator):
-    def __init__(self, hdmdp):
-        self.hsmdp = hdmdp
-
-    def decision(self, state):
-        if state[0] == 'bs':
-            return 'pass'
-        else: # 'play' state
-            truthful = [a for a in self.hsmdp.actions(state) if a[0] > 0 and sum(a) == a[0]]
-            if truthful: #we have cards to play
-                return max(truthful, key = sum)
-            else:
-                return min(self.hsmdp.actions(state), key = sum)
-
-class LessNaivePolicy(util.PolicyGenerator):
+class SimplePolicy(util.PolicyGenerator):
     def __init__(self, hdmdp):
         self.hsmdp = hdmdp
 

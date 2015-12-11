@@ -1,4 +1,4 @@
-import play_game, policy, simulators, qlearn, random, model_based
+import play_game, policy, simulators, qlearn, random
 
 # Acquires the win rate of a learning DishonestPolicy agent with dishonesty 0.5 and confidence 1
 # in each of the nplayers positions. A properly formatted call might look like:
@@ -18,7 +18,7 @@ def baseline(nplayers, num_card_values, num_cards, trials, agent=None, dishonest
             if agent != i: continue
         print "Simulating agent", i, "..."
         game = play_game.BSGame(nplayers, [num_cards for _ in range(num_card_values)], i, verbose=0)
-        ppolicy = policy.LessStupidPolicy(game)
+        ppolicy = policy.SimplePolicy(game)
         apolicies = []
         for t in range(nplayers):
             apolicies.append(policy.DishonestPolicy(game, dishonesty_list[t], confidence=confidence_list[t], learn=learn_list[t]).decision)
@@ -45,7 +45,7 @@ def oracle(nplayers, num_card_values, num_cards, trials, agent=None, dishonesty_
             if agent != i: continue
         print "Simulating agent", i, "..."
         game = play_game.BSGame(nplayers, [num_cards for _ in range(num_card_values)], i, verbose=0, oracle=True)
-        ppolicy = policy.LessStupidPolicy(game)
+        ppolicy = policy.SimplePolicy(game)
         apolicies = []
         for t in range(nplayers):
             apolicies.append(policy.DishonestPolicy(game, dishonesty_list[t], confidence=confidence_list[t], learn=learn_list[t]).decision)
@@ -83,32 +83,6 @@ def qlearn_learn(nplayers, num_card_values, num_cards, agent, learn_trials, test
     print "Wins observed:", game.wins
     print "Agent in position", agent, "has a win rate of", str(float(game.wins[agent])/sum(game.wins))
     return qlearning
-
-def mb_learn(nplayers, num_card_values, num_cards, agent, learn_trials, test_trials, dishonesty_list = None, confidence_list = None, learn_list = None, verbose=False):
-    print "Running qlearning as agent", agent, "."
-    game = play_game.BSGame(nplayers, [num_cards for _ in range(num_card_values)], agent, verbose=0)
-    if dishonesty_list is None:
-        dishonesty_list = [0.5 for _ in range(nplayers)]
-    if confidence_list is None:
-        confidence_list = [1 for _ in range(nplayers)]
-    if learn_list is None:
-        learn_list = [False for _ in range(nplayers)]
-    print "Players have dishonesty", dishonesty_list
-    print "Players have confidence", confidence_list
-    apolicies = []
-    for t in range(nplayers):
-        apolicies.append(policy.DishonestPolicy(game, dishonesty_list[t], confidence=confidence_list[t], learn=learn_list[t]).decision)
-    game.setPolicies(apolicies)
-    mb = model_based.ModelBasedAlgorithm(game.actions, game.discount())
-    print "Learning..."
-    simulators.rlsimulate(game, mb, numTrials=learn_trials, verbose=verbose)
-    mb.explorationProb = 0
-    game.resetWins()
-    print "Learning complete. Now simulating tests..."
-    simulators.rlsimulate(game, mb, numTrials=test_trials, verbose=verbose)
-    print "Wins observed:", game.wins
-    print "Agent in position", agent, "has a win rate of", str(float(game.wins[agent])/sum(game.wins)), '\n'
-    return mb
 
 # This takes as input a built qlearning and tests it against a different set of adversary agents. Useful for figuring out
 # how generally applicable a learned policy is against enemies that aren't exactly the same as those we learned against.
