@@ -1,12 +1,7 @@
 import math
 import random
 import util
-from util import cmb
 import collections
-import policy
-from play_game import BSGame
-
-#All of this is untested; I'll do that next
 
 class QLearningAlgorithm(util.RLAlgorithm):
     def __init__(self, actions, discount, featureExtractor, explorationProb=0.2, warmStart = None):

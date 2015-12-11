@@ -1,5 +1,3 @@
-import random
-
 #Does some q learning on the hdmdp.
 def rlsimulate(hsmdp, rl, numTrials=10, maxIterations=1000, verbose=False):
     totalRewards = []  # The rewards we get on each trial
