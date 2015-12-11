@@ -1,15 +1,13 @@
 import itertools
 from util import HiddenStateMDP
 from policy import *
-from copy import deepcopy
 
 class BSGameState():
-    # (nplayers: 3, card_counts: [2, 6, 1])
-    def __init__(self, nplayers, card_counts, oracle=-1):
+    def __init__(self, nplayers, card_counts, oracle_index=-1):
         self.nplayers = nplayers
         self.hands = [] # hands, pile, knowledge all indexed by player: [[0, 1, 0], [2, 0, 0]]
         self.pile = [] # contribution per player to pile
-        self.knowledge = []
+        self.knowledge = [] # player's knowledge of opponents' hands
         self.last_play = None
         self.rotation_offset = 0
         self.turn_number = 0
@@ -21,21 +19,20 @@ class BSGameState():
                 self.pile[player].append(0)
                 self.hands[player].append(0)
 
-        if oracle != -1:
+        if oracle_index != -1:
             handSize = sum(card_counts) / nplayers
-            ranksForOracle = len(card_counts) / 2 #the oracle is dealt cards only from the first len(cards)/2 cards it will play
+            ranksForOracle = len(card_counts) / 2 # the oracle is dealt cards only from the first len(cards)/2 cards it will play
             for i in range(ranksForOracle):
-                cardAtI = oracle + i * nplayers
-                if cardAtI >= len(card_counts): cardAtI -= len(card_counts)
+                cardAtI = oracle_index + i * nplayers
+                cardAtI %= len(card_counts)
                 cards = min(card_counts[cardAtI], handSize/ranksForOracle)
-                self.hands[oracle][cardAtI] += cards
+                self.hands[oracle_index][cardAtI] += cards
                 card_counts[cardAtI] -= cards
 
         cards = [n for n, count in enumerate(card_counts) if count > 0] # card indexes w nonzero counts
         while cards:
             for player in range(nplayers):
-                if oracle != -1:
-                    if player == oracle: continue
+                if oracle_index != -1 and player == oracle_index: continue
                 chosen_card = random.choice(cards)
                 self.hands[player][chosen_card] += 1
                 card_counts[chosen_card] -= 1
@@ -75,15 +72,6 @@ class BSGameState():
                 self.knowledge[player] = (self.knowledge[player][0], self.rotateTuple(self.knowledge[player][1]))
         self.rotation_offset += 1
 
-    def duplicateGameState(self):
-        saved = BSGameState(self.nplayers, [])
-        saved.hands = deepcopy(self.hands)
-        saved.pile = deepcopy(self.pile)
-        saved.knowledge = deepcopy(self.knowledge)
-        saved.last_play = deepcopy(self.last_play)
-        saved.rotation_offset = self.rotation_offset
-        return saved
-
 class BSGame(HiddenStateMDP):
     # (nplayers: 3, card_counts: (2, 6, 1), policies: list of state:action maps, agent_index: 0)
     def __init__(self, nplayers, card_counts, agent_index, verbose=0, oracle=False):
@@ -96,10 +84,6 @@ class BSGame(HiddenStateMDP):
         self.verbose = verbose
         self.wins = [0 for _ in range(nplayers)]
         self.action_history = [{} for _ in range(nplayers)]
-
-    # Returns a copy of the game state.
-    def hiddenState(self):
-        return self.gameState.duplicateGameState()
 
     # Resets the game state with the same cards and number of players.
     def restart(self):

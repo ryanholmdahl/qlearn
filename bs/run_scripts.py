@@ -8,8 +8,8 @@ from tests import *
 # dishonesty_list = [0.5, 0.5, 0.5, 0.5]
 # dishonesty_list = [0.75, 0.75, 0.75, 0.75]
 
-nplayers = 3
-deckrange = 5
+nplayers = 4
+deckrange = 6
 cards_pernum = 3
 
 print 'agent index? (0 if empty)'
@@ -31,11 +31,11 @@ try:
 except ValueError:
     ntrain = 20000
 
-print 'testing iterations? (5000 if empty)'
+print 'testing iterations? (1000 if empty)'
 try:
     ntest = int(raw_input())
 except:
-    ntest = 5000
+    ntest = 1000
 
 ntrials_nonlearning = 1000
 exp_prob = 0.8

@@ -2,9 +2,6 @@ import math, random
 
 class HiddenStateMDP:
 
-    #Returns a copy of the hidden game state.
-    def hiddenState(self): raise NotImplementedError("Override me")
-
     #Reset the hidden state.
     def restart(self): raise NotImplementedError("Override me")
 
