@@ -1,0 +1,89 @@
+Running qlearning as agent 0 .
+Players have dishonesty [0.1, 0.1, 0.1, 0.1]
+Players have confidence [1, 1, 1, 1]
+Learning...
+Learning complete. Now simulating tests...
+Wins observed: [747, 13, 33, 18]
+Agent in position 0 has a win rate of 0.921085080148
+Running qlearning as agent 1 .
+Players have dishonesty [0.1, 0.1, 0.1, 0.1]
+Players have confidence [1, 1, 1, 1]
+Learning...
+Learning complete. Now simulating tests...
+Wins observed: [8, 676, 27, 31]
+Agent in position 1 has a win rate of 0.911051212938
+Running qlearning as agent 2 .
+Players have dishonesty [0.1, 0.1, 0.1, 0.1]
+Players have confidence [1, 1, 1, 1]
+Learning...
+Learning complete. Now simulating tests...
+Wins observed: [14, 8, 797, 34]
+Agent in position 2 has a win rate of 0.934349355217
+Running qlearning as agent 3 .
+Players have dishonesty [0.1, 0.1, 0.1, 0.1]
+Players have confidence [1, 1, 1, 1]
+Learning...
+Learning complete. Now simulating tests...
+Wins observed: [17, 11, 36, 693]
+Agent in position 3 has a win rate of 0.915455746367
+
+Running qlearning as agent 0 .
+Players have dishonesty [0.5, 0.5, 0.5, 0.5]
+Players have confidence [1, 1, 1, 1]
+Learning...
+Learning complete. Now simulating tests...
+Wins observed: [728, 4, 24, 17]
+Agent in position 0 has a win rate of 0.941785252264
+Running qlearning as agent 1 .
+Players have dishonesty [0.5, 0.5, 0.5, 0.5]
+Players have confidence [1, 1, 1, 1]
+Learning...
+Learning complete. Now simulating tests...
+Wins observed: [8, 771, 10, 34]
+Agent in position 1 has a win rate of 0.936816524909
+Running qlearning as agent 2 .
+Players have dishonesty [0.5, 0.5, 0.5, 0.5]
+Players have confidence [1, 1, 1, 1]
+Learning...
+Learning complete. Now simulating tests...
+Wins observed: [5, 8, 831, 7]
+Agent in position 2 has a win rate of 0.976498237368
+Running qlearning as agent 3 .
+Players have dishonesty [0.5, 0.5, 0.5, 0.5]
+Players have confidence [1, 1, 1, 1]
+Learning...
+Learning complete. Now simulating tests...
+Wins observed: [3, 12, 25, 655]
+Agent in position 3 has a win rate of 0.942446043165
+
+Running qlearning as agent 0 .
+Players have dishonesty [0.75, 0.75, 0.75, 0.75]
+Players have confidence [1, 1, 1, 1]
+Learning...
+Learning complete. Now simulating tests...
+Wins observed: [780, 2, 24, 13]
+Agent in position 0 has a win rate of 0.952380952381
+Running qlearning as agent 1 .
+Players have dishonesty [0.75, 0.75, 0.75, 0.75]
+Players have confidence [1, 1, 1, 1]
+Learning...
+Learning complete. Now simulating tests...
+Wins observed: [6, 835, 6, 23]
+Agent in position 1 has a win rate of 0.959770114943
+Running qlearning as agent 2 .
+Players have dishonesty [0.75, 0.75, 0.75, 0.75]
+Players have confidence [1, 1, 1, 1]
+Learning...
+Learning complete. Now simulating tests...
+Wins observed: [9, 4, 903, 6]
+Agent in position 2 has a win rate of 0.979392624729
+Running qlearning as agent 3 .
+Players have dishonesty [0.75, 0.75, 0.75, 0.75]
+Players have confidence [1, 1, 1, 1]
+Learning...
+Learning complete. Now simulating tests...
+Wins observed: [3, 3, 23, 855]
+Agent in position 3 has a win rate of 0.967194570136
+
+Against 0.75, position 0:
+Counter({'nofcard_0': 24.343150360773063, 'nnextcard_0': 23.81029388447796, 'hasnextcard': 17.742172207951857, 'have_card': 17.209315731656066, 'action_bs': 16.963249940957084, 'pass_know_nothave_0': 12.141522116054157, 'handsizerank_0': 11.215977510742697, 'pass_sum_know_nothave_nplayed5': 11.160499302044235, 'nnextcards_played_0': 11.134829694937212, 'handsizerank_1': 10.52770906473249, 'honest': 10.160072284272001, 'handsizerank_2': 9.939000980548796, 'handsizerank_3': 9.869778536403565, 'action_(1, 0, 0, 0, 2, 0)': 9.585497128895431, 'action_pass': 7.8808336611326695, 'pass_know_nothave_1': 6.622460672187543, 'nplayed_action_1': 6.589752658934205, 'lie': 6.548310206067455, 'action_(0, 0, 1, 0, 2, 0)': 6.425839593753315, 'action_(0, 1, 0, 0, 2, 0)': 6.381943681651287, 'nofcard_1': 6.379795256913148, 'action_(0, 0, 0, 1, 2, 0)': 6.378146023884449, 'bs_player_3': 6.012494385312398, 'action_(2, 0, 0, 0, 0, 0)': 5.954486350068681, 'nnextcard_1': 5.936731080271394, 'nnextcard_3': 5.933778542935261, 'bs_nplayed_1': 5.872972579676602, 'nnextcard_2': 5.871662584745574, 'nofcard_2': 5.829682652184631, 'bs_player_2': 5.769142783193169, 'bs_nplayed_2': 5.636112640233244, 'nextcard_played': 5.573552795402086, 'bs_nplayed_3': 5.454164721046218, 'nplayed_action_2': 5.239471551002517, 'bs_player_1': 5.18161277245029, 'nnextcards_played_1': 5.155116619561799, 'pass_nplayed_2': 5.127632076842133, 'action_(0, 0, 0, 0, 2, 1)': 5.0145931348181065, 'nofcard_3': 4.999837822557868, 'nplayed_action_3': 4.879158280402754, 'pass_player_1': 4.639594383547507, 'pass_nplayed_3': 4.439242934072378, 'action_(2, 0, 1, 0, 0, 0)': 4.385609937326036, 'action_(2, 0, 0, 0, 0, 1)': 4.2531532380826365, 'action_(2, 1, 0, 0, 0, 0)': 4.220446675076572, 'pass_sum_know_nothave_nplayed4': 4.098849668089083, 'semitruthful': 3.9044126435671753, 'action_(1, 0, 1, 0, 0, 1)': 3.893430788910384, 'bs_know_nothave_5': 3.833989126695781, 'action_(1, 0, 0, 0, 0, 2)': 3.7973351375923574, 'action_(1, 0, 0, 1, 0, 1)': 3.7944264811775565, 'action_(1, 0, 0, 2, 0, 0)': 3.7926220729477107, 'action_(0, 0, 2, 0, 0, 0)': 3.6161888605522625, 'extra_cards_3': 3.5615704806545536, 'action_(1, 0, 0, 0, 0, 0)': 3.437101880107725, 'bs_know_nothave_6': 3.4288220862667704, 'action_(1, 1, 0, 1, 0, 0)': 3.3237651948427223, 'pass_know_have_0': 3.312392087090744, 'action_(0, 0, 1, 1, 0, 0)': 3.1591030564357814, 'action_(0, 0, 1, 0, 0, 1)': 3.1583760268311187, 'action_(0, 1, 1, 0, 0, 0)': 3.0445757266868645, 'action_(0, 2, 0, 0, 0, 0)': 2.8762050302788333, 'bs_know_nothave_4': 2.8345678159887737, 'pass_player_2': 2.8298665325870482, 'bs_sum_know_nothave_nplayed8': 2.7950493316498917, 'pass_know_nothave_5': 2.707916776984887, 'full_lie': 2.643897562500211, 'action_(0, 0, 0, 2, 0, 0)': 2.5971915235527354, 'action_(0, 1, 0, 1, 0, 0)': 2.591775709171792, 'action_(0, 1, 0, 0, 0, 1)': 2.5879782438584065, 'action_(0, 0, 0, 0, 0, 2)': 2.587062344838899, 'action_(1, 0, 1, 1, 0, 0)': 2.5577364488689414, 'action_(0, 0, 0, 1, 0, 1)': 2.552307391994411, 'bs_sum_know_nothave_nplayed7': 2.479831387008137, 'bs_know_nothave_3': 2.287826446103174, 'extra_cards_1': 2.2766738894574554, 'bs_sum_know_nothave_nplayed6': 2.266463149527417, 'bs_sum_know_nothave_nplayed5': 2.0270967238214546, 'bs_sum_know_nothave_nplayed9': 2.0208181185617726, 'forced_lie': 1.9533687988103001, 'action_(1, 0, 0, 1, 1, 0)': 1.8935595143044686, 'action_(1, 1, 0, 0, 1, 0)': 1.884359623348678, 'bs_sum_know_nothave_nplayed4': 1.8192027334885665, 'action_(2, 0, 0, 0, 1, 0)': 1.8163865105582848, 'bs_know_nothave_2': 1.8137270532641703, 'pass_sum_know_nothave_nplayed1': 1.617328150698882, 'bs_know_nothave_1': 1.5451073965657123, 'action_(1, 1, 0, 0, 0, 0)': 1.4949237427731659, 'action_(1, 0, 0, 1, 0, 0)': 1.4763642569466586, 'bs_sum_know_nothave_nplayed3': 1.4729960056798417, 'action_(1, 0, 0, 0, 0, 1)': 1.4621171848407666, 'action_(0, 1, 0, 0, 1, 0)': 1.3848120873666947, 'action_(1, 0, 1, 0, 0, 0)': 1.3681050320914143, 'action_(1, 0, 0, 0, 1, 1)': 1.2891200097693474, 'bs_know_nothave_0': 1.2192100160719548, 'bs_sum_know_nothave_nplayed2': 1.2064508919240982, 'played_all_and_only': 1.1005915271382527, 'action_(0, 1, 2, 0, 0, 0)': 1.0361489427004487, 'action_(0, 0, 2, 0, 0, 1)': 1.0341399354982055, 'pass_sum_know_nothave_nplayed3': 0.9886759283776887, 'bs_sum_know_nothave_nplayed1': 0.8753415992952869, 'action_(0, 0, 2, 1, 0, 0)': 0.8602517335997564, 'action_(0, 0, 1, 0, 0, 0)': 0.8357790062121588, 'action_(0, 0, 0, 1, 0, 0)': 0.7848850580524913, 'action_(0, 1, 0, 0, 0, 0)': 0.7786965493019403, 'action_(0, 0, 0, 0, 0, 1)': 0.7694134308260105, 'action_(3, 0, 0, 0, 0, 0)': 0.7684840540956507, 'extra_cards_2': 0.710065835955511, 'action_(0, 0, 0, 0, 3, 0)': 0.6532767665082252, 'nnextcards_played_3': 0.6532767665082252, 'action_(0, 0, 2, 0, 1, 0)': 0.6174931391304289, 'action_(0, 1, 1, 1, 0, 0)': 0.615491392224586, 'action_(0, 1, 1, 0, 0, 1)': 0.6123196031695662, 'action_(0, 2, 1, 0, 0, 0)': 0.6123018306723055, 'action_(0, 0, 1, 2, 0, 0)': 0.6094015885537798, 'action_(0, 0, 1, 0, 0, 2)': 0.6078616228641421, 'action_(0, 0, 1, 1, 0, 1)': 0.603105146330562, 'pass_player_3': 0.41137274499794085, 'action_(0, 0, 0, 0, 1, 1)': 0.4054654679943996, 'action_(1, 1, 1, 0, 0, 0)': 0.3392076244475483, 'pass_know_nothave_4': 0.2811494806972832, 'bs_know_have_0': 0.2648433297275128, 'action_(0, 1, 1, 0, 1, 0)': 0.21867704343266936, 'action_(0, 0, 1, 1, 1, 0)': 0.2145152697052662, 'action_(0, 0, 1, 0, 1, 1)': 0.21395040373110677, 'action_(0, 0, 1, 0, 1, 0)': 0.201018851795055, 'bs_know_have_1': 0.09966553491394736, 'bs_has_card': 0.09797502553996354, 'pass_know_nothave_6': 0.0925358390412992, 'action_(0, 1, 0, 1, 1, 0)': 0.05945490267271142, 'action_(0, 1, 0, 0, 1, 1)': 0.04618936169859716, 'action_(0, 0, 0, 1, 1, 1)': 0.04533351850590638, 'action_(0, 0, 0, 2, 1, 0)': 0.04386686044430932, 'action_(0, 0, 0, 0, 1, 2)': 0.040526117693983954, 'pass_has_card': 0.022940414635594545, 'pass_know_have_1': 0.022940414635594545, 'action_(0, 0, 3, 0, 0, 0)': 0.0010868680388452484, 'bs_know_have_2': -0.0016905093739838276, 'action_(0, 0, 0, 0, 1, 0)': -0.01612326556615224, 'action_(0, 2, 0, 0, 0, 1)': -0.04303338816371486, 'action_(0, 3, 0, 0, 0, 0)': -0.044770467793923824, 'action_(0, 1, 0, 2, 0, 0)': -0.05681315156912568, 'action_(0, 1, 0, 1, 0, 1)': -0.07577929033341818, 'action_(0, 2, 0, 0, 1, 0)': -0.09285413851073261, 'action_(0, 0, 0, 0, 0, 3)': -0.10272195734158425, 'action_(0, 0, 0, 2, 0, 1)': -0.11488911219878235, 'action_(0, 0, 0, 3, 0, 0)': -0.22851504027249173, 'nnextcards_played_2': -0.23484059066793658, 'pass_sum_know_nothave_nplayed6': -0.2511490344240198, 'action_(0, 0, 0, 1, 0, 2)': -0.3363353493228235, 'pass_sum_know_nothave_nplayed9': -0.6692415486566217, 'pass_sum_know_nothave_nplayed2': -0.809369846789662, 'action_(0, 0, 0, 1, 1, 0)': -0.8115238646674799, 'played_all': -1.1796320890816532, 'pass_nplayed_1': -1.6860413497820526, 'action_(1, 0, 1, 0, 1, 0)': -1.8529094751081976, 'action_(1, 0, 0, 0, 1, 0)': -2.446201318737463, 'pass_know_nothave_2': -2.696527977797849, 'pass_sum_know_nothave_nplayed7': -2.9367118118485944, 'pass_sum_know_nothave_nplayed8': -5.3180471463585155, 'action_(1, 1, 0, 0, 0, 1)': -8.804290882812914, 'action_(1, 0, 2, 0, 0, 0)': -10.055116933297713, 'action_(1, 2, 0, 0, 0, 0)': -10.658353200950131, 'pass_know_nothave_3': -11.26822324603484, 'action_(0, 1, 0, 0, 0, 2)': -13.96282126974892, 'action_(0, 2, 0, 1, 0, 0)': -14.325810835372767, 'action_(2, 0, 0, 1, 0, 0)': -18.906882148327096, 'action_(0, 0, 0, 0, 2, 0)': -34.020860153670554})
