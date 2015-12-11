@@ -18,7 +18,7 @@ def baseline(nplayers, num_card_values, num_cards, trials, agent=None, dishonest
             if agent != i: continue
         print "Simulating agent", i, "..."
         game = play_game.BSGame(nplayers, [num_cards for _ in range(num_card_values)], i, verbose=0)
-        ppolicy = policy.LessStupidPolicy(game)
+        ppolicy = policy.LessNaivePolicy(game)
         apolicies = []
         for t in range(nplayers):
             apolicies.append(policy.DishonestPolicy(game, dishonesty_list[t], confidence=confidence_list[t], learn=learn_list[t]).decision)
@@ -45,7 +45,7 @@ def oracle(nplayers, num_card_values, num_cards, trials, agent=None, dishonesty_
             if agent != i: continue
         print "Simulating agent", i, "..."
         game = play_game.BSGame(nplayers, [num_cards for _ in range(num_card_values)], i, verbose=0, oracle=True)
-        ppolicy = policy.LessStupidPolicy(game)
+        ppolicy = policy.LessNaivePolicy(game)
         apolicies = []
         for t in range(nplayers):
             apolicies.append(policy.DishonestPolicy(game, dishonesty_list[t], confidence=confidence_list[t], learn=learn_list[t]).decision)
@@ -75,13 +75,13 @@ def qlearn_learn(nplayers, num_card_values, num_cards, agent, learn_trials, test
     game.setPolicies(apolicies)
     qlearning = qlearn.QLearningAlgorithm(game.actions, game.discount(), featureExtractor, explorationProb=explorationProb)
     print "Learning..."
-    simulators.rlsimulate(game, qlearning, numTrials=learn_trials, verbose=verbose, maxIterations = maxIters)
+    simulators.rlsimulate(game, qlearning, numTrials=learn_trials, verbose=False, maxIterations = maxIters)
     qlearning.explorationProb = 0
     game.resetWins()
     print "Learning complete. Now simulating tests..."
     simulators.rlsimulate(game, qlearning, numTrials=test_trials, verbose=verbose, maxIterations = maxIters)
     print "Wins observed:", game.wins
-    print "Agent in position", agent, "has a win rate of", str(float(game.wins[agent])/sum(game.wins))
+    print "Agent in position", agent, "has a win rate of", str(float(game.wins[agent])/sum(game.wins)), '\n'
     return qlearning
 
 def mb_learn(nplayers, num_card_values, num_cards, agent, learn_trials, test_trials, dishonesty_list = None, confidence_list = None, learn_list = None, verbose=False):
