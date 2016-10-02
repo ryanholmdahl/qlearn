@@ -1,0 +1,2 @@
+# Q-learning on Games of Imperfect Information
+We applied Q-learning, the process of learning the value of state-action pairs, to games where the full state is not surfaced to the decision maker. Our full results are described in the PDF included in this repository, but, in summary, we determined that a Q-learning agent could eventually understand the likelihood of various world states given the surfaced state and act accordingly.
